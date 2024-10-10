@@ -158,6 +158,11 @@
  eoanb_political_power_10_command_power_75: "£pol_power §H10§! £command_power §H75§!"
  eoanb_political_power_10_command_power_75_blocked: "£pol_power §R10§! £command_power §R75§!"
  eoanb_political_power_10_command_power_75_tooltip: "It costs 10£pol_power and 75£command_power to take the decision."
+
+ eoanb_political_power_10_command_power_15_army_xp_20: "£pol_power §H10§! £command_power §H15§! £army_experience §H20§!"
+ eoanb_political_power_10_command_power_15_army_xp_20_blocked: "£pol_power §R10§! £command_power §R15§! £army_experience §R20§!"
+ eoanb_political_power_10_command_power_15_army_xp_20_tooltip: "It costs 10£pol_power, 15£command_power and 20£army_experience to take the decision."
+
  eoanb_political_power_25_army_experience_25_command_power_50: "£pol_power §H25§! £army_experience §H25§! £command_power §H50§!"
  eoanb_political_power_25_army_experience_25_command_power_50_blocked: "£pol_power §R25§! £army_experience §R25§! £command_power §R50§!"
  eoanb_political_power_25_army_experience_25_command_power_50_tooltip: "It costs 25£pol_power, 25£army_experience, and 50£command_power to take the decision."
@@ -330,6 +335,21 @@
  eoanb_decision_generic_recruit_colonial_troops_2_desc: "We will recruit some Infantry in our Colonies.\n\n§YThis decision can only be taken once.§!"
  eoanb_decision_advance_to_the_napoleonic_age: "Advace to the Napoleonic Age"
  eoanb_decision_advance_to_the_napoleonic_age_desc: "We will adapt new and advanced tactics, but this will take some time!"
+
+ eoanb_decision_napoleonic_idea_1: "Adapt New Napoleonic Tactics"
+ eoanb_decision_napoleonic_idea_1_desc: "We will adapt new and advanced tactics, but this will take some time!"
+ eoanb_decision_napoleonic_idea_2: "Adapt New Napoleonic Tactics"
+ eoanb_decision_napoleonic_idea_2_desc: "We will adapt new and advanced tactics, but this will take some time!"
+ eoanb_decision_napoleonic_idea_3: "Adapt New Napoleonic Tactics"
+ eoanb_decision_napoleonic_idea_3_desc: "We will adapt new and advanced tactics, but this will take some time!"
+
+ eoanb_decision_victorian_idea_1: "Adapt New Napoleonic Tactics"
+ eoanb_decision_victorian_idea_1_desc: "We will adapt new and advanced tactics, but this will take some time!"
+ eoanb_decision_victorian_idea_2: "Adapt New Napoleonic Tactics"
+ eoanb_decision_victorian_idea_2_desc: "We will adapt new and advanced tactics, but this will take some time!"
+ eoanb_decision_victorian_idea_3: "Adapt New Napoleonic Tactics"
+ eoanb_decision_victorian_idea_3_desc: "We will adapt new and advanced tactics, but this will take some time!"
+
  eoanb_tt_decision_recruit_colonial_infantry_2: "You will receive two §YColonial Infantry§! regiments in §YLuanda§!."
  eoanb_decision_generic_recruit_colonial_troops_3: "Recruit Colonial Infantry"
  eoanb_decision_generic_recruit_colonial_troops_3_desc: "We will recruit some Infantry in our Colonies.\n\n§YThis decision can only be taken once.§!"
