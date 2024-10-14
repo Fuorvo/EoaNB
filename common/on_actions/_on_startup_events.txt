@@ -12,6 +12,7 @@ on_actions = {
 				add_dynamic_modifier = {
 					modifier = inflation_dynamic_modifier
 				}
+				calculate_startup_money_balance = yes
 				if = {
 					limit = {
 						is_ai = no

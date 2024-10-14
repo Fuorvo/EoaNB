@@ -1,7 +1,7 @@
 ﻿l_english:
 # MONEY SYSTEM # 
 # GUI:
- MONEY_TOOLTIP: "We currently have §Y[?money|2][GetCurrentSIUnit]§![GetCurrencyTextIcon]. \n--------------\nCurrent balance: [?total_balance_temp|2+=][GetCurrentSIUnit][GetCurrencyTextIcon] \n--------------\nTotal Income ([?income_modifier|2+=%]): [?total_income_temp|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Taxes: [?income_from_our_taxes|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Consumer Goods Factories: [?income_from_our_consumer_goods_factories|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Unused Civilian Factories: [?income_from_our_free_civilian_factories|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Subsidies: [?income_from_other_sources|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n--------------\nTotal Expenses ([?expenses_modifier|2-=%]): [?total_expenses_temp|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Social Spending: [?expenses_from_our_social_spending|2+][GetCurrentSIUnit] \n   Law and Order Spending: [?expenses_from_our_law_spending|2+][GetCurrentSIUnit] \n   Road Maintenance Spending: [?expenses_from_our_road_spending|2+][GetCurrentSIUnit] \n   Navy Spending: [?expenses_from_our_navy_spending|2+][GetCurrentSIUnit] \n   Research and Education Spending: [?expenses_from_our_research_spending|2+][GetCurrentSIUnit] \n   Military Spending: [?expenses_from_our_army_spending|2+][GetCurrentSIUnit] \n   Used Military Factories: [?expenses_from_our_used_mil_factories|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Interests: [?expenses_from_loans|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Subsidies: [?expenses_from_other_sources|2+][GetCurrentSIUnit]"
+ MONEY_TOOLTIP: "We currently have §Y[?money|2][GetCurrentSIUnit]§![GetCurrencyTextIcon]. \n--------------\nCurrent balance: [?total_balance_var|2+=][GetCurrentSIUnit][GetCurrencyTextIcon] \n--------------\nTotal Income ([?income_modifier|2+=%]): [?total_income_temp|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Taxes: [?income_from_our_taxes|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Consumer Goods Factories: [?income_from_our_consumer_goods_factories|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Unused Civilian Factories: [?income_from_our_free_civilian_factories|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Subsidies: [?income_from_other_sources|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n--------------\nTotal Expenses ([?expenses_modifier|2-=%]): [?total_expenses_temp|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Social Spending: [?expenses_from_our_social_spending|2+][GetCurrentSIUnit] \n   Law and Order Spending: [?expenses_from_our_law_spending|2+][GetCurrentSIUnit] \n   Road Maintenance Spending: [?expenses_from_our_road_spending|2+][GetCurrentSIUnit] \n   Navy Spending: [?expenses_from_our_navy_spending|2+][GetCurrentSIUnit] \n   Research and Education Spending: [?expenses_from_our_research_spending|2+][GetCurrentSIUnit] \n   Military Spending: [?expenses_from_our_army_spending|2+][GetCurrentSIUnit] \n   Used Military Factories: [?expenses_from_our_used_mil_factories|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Interests: [?expenses_from_loans|2+][GetCurrentSIUnit][GetCurrencyTextIcon] \n   Subsidies: [?expenses_from_other_sources|2+][GetCurrentSIUnit]"
  MONEY_TOOLTIP_DELAYED: "Current Loans: §Y[?current_loans_sum|^]§![GetCurrentSIUnit][GetCurrencyTextIcon] \n--------------\nA detailed view on the economy can be found in the economy window in the political tab."
 
  MONEY_DIPLOMACY_TOOLTIP: "§Y[FROM.GetNameWithFlag]'s§! treasury is §Y[?THIS.money|2][THIS.GetCurrentSIUnit]§! [THIS.GetCurrencyTextIcon]"
@@ -44,9 +44,9 @@
  ECONOMY_WINDOW_INCOME_ENTRY_SUBSIDY_TT: "§Y[This.GetNameDefCap]§! currently gains [?income_from_subsidy_sources|2+][GetCurrentSIUnit][GetCurrencyTextIcon] from §Ysubsidies§! each week."
 
  ECONOMY_WINDOW_TOTAL_INCOME_ENTRY: "Total Income  |  ([?income_modifier|2+=%]):"
- ECONOMY_WINDOW_TOTAL_INCOME_ENTRY_VALUE: "[?total_income_temp|2+]"
- ECONOMY_WINDOW_TOTAL_INCOME_ENTRY_TT: "The total income of §Y[This.GetNameDef]§! amounts to [?total_income_temp|2+][GetCurrentSIUnit][GetCurrencyTextIcon] per month."
- ECONOMY_WINDOW_TOTAL_INCOME_ENTRY_TT_DELAYED: "Modified by: [?income_modifier|2+=%] (capped at §Y-100%§!) \n     Ideas: [?income_modifier_from_ideas|2+=%] \n     Decisions: [?income_modifier_from_decisions|2+=%] \n     Other: [?income_modifier_from_other|2+=%]"
+ ECONOMY_WINDOW_TOTAL_INCOME_ENTRY_VALUE: "[?total_income_var|2+]"
+ ECONOMY_WINDOW_TOTAL_INCOME_ENTRY_TT: "The total income of §Y[This.GetNameDef]§! amounts to [?total_income_var|2+][GetCurrentSIUnit][GetCurrencyTextIcon] per month."
+ #ECONOMY_WINDOW_TOTAL_INCOME_ENTRY_TT_DELAYED: "Modified by: [?income_modifier|2+=%] (capped at §Y-100%§!) \n     Ideas: [?income_modifier_from_ideas|2+=%] \n     Decisions: [?income_modifier_from_decisions|2+=%] \n     Other: [?income_modifier_from_other|2+=%]"
 
  ECONOMY_WINDOW_EXPENSES_ENTRY_SOCIAL_SPENDING: "Social Spending  |  ([?social_spending_cost_modifier|2-=%]):"
  ECONOMY_WINDOW_EXPENSES_ENTRY_SOCIAL_SPENDING_VALUE: "[?expenses_from_our_social_spending|2+]"
@@ -149,13 +149,13 @@
  ECONOMY_WINDOW_EXPENSES_ENTRY_NAVY_SPENDING_SLIDER_RIGHT_BUTTON_TT_DELAYED: "§YThis would have the following effects:§! \n[!income_entry_navy_spending_slider_right_button_click]"
 
  ECONOMY_WINDOW_TOTAL_EXPENSES_ENTRY: "Total Expenses ([?expenses_modifier|2-=%]):"
- ECONOMY_WINDOW_TOTAL_EXPENSES_ENTRY_VALUE: "[?total_expenses_temp|2+]"
- ECONOMY_WINDOW_TOTAL_EXPENSES_ENTRY_TT: "The total expenses of §Y[This.GetNameDef]§! amount to [?total_expenses_temp|2+][GetCurrentSIUnit][GetCurrencyTextIcon] per month."
+ ECONOMY_WINDOW_TOTAL_EXPENSES_ENTRY_VALUE: "[?total_expenses_var|2+]"
+ ECONOMY_WINDOW_TOTAL_EXPENSES_ENTRY_TT: "The total expenses of §Y[This.GetNameDef]§! amount to [?total_expenses_var|2+][GetCurrentSIUnit][GetCurrencyTextIcon] per month."
  ECONOMY_WINDOW_TOTAL_EXPENSES_ENTRY_TT_DELAYED: "Modified by: [?expenses_modifier|2-=%] (capped at §Y-100%§!) \n     Inflation: [?current_inflation|2-=%] \n     Ideas: [?expenses_modifier_from_ideas|2-=%] \n     Decisions: [?expenses_modifier_from_decisions|2-=%] \n     Other: [?expenses_modifier_from_other|2-=%]"
 
  ECONOMY_WINDOW_BALANCE_ENTRY: "§YFinal Monthly Balance§!"
- ECONOMY_WINDOW_BALANCE_ENTRY_VALUE: "[?total_balance_temp|2+=]"
- ECONOMY_WINDOW_BALANCE_ENTRY_TT: "The balance of §Y[This.GetNameDef]§! amounts to [?total_balance_temp|2+=][GetCurrentSIUnit][GetCurrencyTextIcon] per month."
+ ECONOMY_WINDOW_BALANCE_ENTRY_VALUE: "[?total_balance_var|2+=]"
+ ECONOMY_WINDOW_BALANCE_ENTRY_TT: "The balance of §Y[This.GetNameDef]§! amounts to [?total_balance_var|2+=][GetCurrentSIUnit][GetCurrencyTextIcon] per month."
 
  ECONOMY_WINDOW_TREASURY_ENTRY: "§YTotal Treasury§!"
  ECONOMY_WINDOW_TREASURY_ENTRY_VALUE: "[?money|2+=]"

@@ -1190,7 +1190,7 @@ eoanb_category_economic = {
 				has_idea = bankruptcy
 			}
 			has_taken_a_loan = yes
-			calculate_money_balance = yes
+			#calculate_money_balance = yes
 			set_temp_variable = {
 				required_income = expenses_from_loans
 			}
@@ -1199,7 +1199,7 @@ eoanb_category_economic = {
 			}
 			NOT = {
 				check_variable = {
-					total_income_temp > required_income
+					total_income_var > required_income
 				}
 			}
 		}
@@ -1208,7 +1208,7 @@ eoanb_category_economic = {
 				has_idea = bankruptcy
 			}
 			has_taken_a_loan = yes
-			calculate_money_balance = yes
+			#calculate_money_balance = yes
 			set_temp_variable = {
 				required_income = expenses_from_loans
 			}
@@ -1217,12 +1217,12 @@ eoanb_category_economic = {
 			}
 			NOT = {
 				check_variable = {
-					total_income_temp > required_income
+					total_income_var > required_income
 				}
 			}
 		}
 		available = {
-			calculate_money_balance = yes
+			#calculate_money_balance = yes
 			set_temp_variable = {
 				required_income = expenses_from_loans
 			}
@@ -1233,7 +1233,7 @@ eoanb_category_economic = {
 				custom_trigger_tooltip = {
 					tooltip = HAS_MORE_INCOME_THAN_LOAN_EXPENSES
 					check_variable = {
-						total_income_temp > required_income
+						total_income_var > required_income
 					}
 				}
 				has_war = yes
@@ -1262,7 +1262,7 @@ eoanb_category_economic = {
 			}
 			has_war = yes
 			has_taken_a_loan = yes
-			calculate_money_balance = yes
+			#calculate_money_balance = yes
 			set_temp_variable = {
 				required_income = expenses_from_loans
 			}
@@ -1271,7 +1271,7 @@ eoanb_category_economic = {
 			}
 			NOT = {
 				check_variable = {
-					total_income_temp > required_income
+					total_income_var > required_income
 				}
 			}
 		}
@@ -1281,7 +1281,7 @@ eoanb_category_economic = {
 			}
 			has_war = yes
 			has_taken_a_loan = yes
-			calculate_money_balance = yes
+			#calculate_money_balance = yes
 			set_temp_variable = {
 				required_income = expenses_from_loans
 			}
@@ -1290,12 +1290,12 @@ eoanb_category_economic = {
 			}
 			NOT = {
 				check_variable = {
-					total_income_temp > required_income
+					total_income_var > required_income
 				}
 			}
 		}
 		available = {
-			calculate_money_balance = yes
+			#calculate_money_balance = yes
 			set_temp_variable = {
 				required_income = expenses_from_loans
 			}
@@ -1306,7 +1306,7 @@ eoanb_category_economic = {
 				custom_trigger_tooltip = {
 					tooltip = HAS_MORE_INCOME_THAN_LOAN_EXPENSES
 					check_variable = {
-						total_income_temp > required_income
+						total_income_var > required_income
 					}
 				}
 				has_war = no
