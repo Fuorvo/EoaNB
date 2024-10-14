@@ -1,3 +1,4 @@
+# MONEY SYSTEM #
 ideas = {
 	country = {
 		bankruptcy = {

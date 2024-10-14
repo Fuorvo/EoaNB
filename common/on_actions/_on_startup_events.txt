@@ -13,12 +13,12 @@ on_actions = {
 					modifier = inflation_dynamic_modifier
 				}
 				calculate_startup_money_balance = yes
-				if = {
-					limit = {
-						is_ai = no
-					}
-					set_variable = { show_economy_window = 1 }
-				}
+				#if = {
+				#	limit = {
+				#		is_ai = no
+				#	}
+				#	set_variable = { show_economy_window = 1 }
+				#}
 				if = {
 					limit = {
 						NOT = { has_idea = taxation_level_1 }

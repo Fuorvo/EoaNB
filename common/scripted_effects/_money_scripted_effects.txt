@@ -59,18 +59,6 @@ calculate_money_balance = {
 }
 
 # example usage:
-## calculate_temporary_money_balance = yes
-calculate_temporary_money_balance = {
-	set_temp_variable = { total_balance_temp = 0 }
-
-	# Temporary Income:
-	calculate_temporary_money_income = yes
-
-	# Temporary Expenses:
-	calculate_temporary_money_expenses = yes
-}
-
-# example usage:
 ## calculate_money_income = yes
 calculate_money_income = {
 	set_variable = { total_income_var = 0 }
@@ -644,6 +632,18 @@ calculate_money_expenses_modifiers = {
 }
 
 ### TEMPORARY CALCULATIONS ###
+
+# example usage:
+## calculate_temporary_money_balance = yes
+calculate_temporary_money_balance = {
+	set_temp_variable = { total_balance_temp = 0 }
+
+	# Temporary Income:
+	calculate_temporary_money_income = yes
+
+	# Temporary Expenses:
+	calculate_temporary_money_expenses = yes
+}
 
 # example usage:
 ## calculate_temporary_money_income = yes
