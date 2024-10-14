@@ -98,16 +98,16 @@ scripted_gui = {
 
 		effects = {
 			open_button_click = {
-				if = {
-					limit = {
-						has_variable = show_economy_window
-					}
-					clear_variable = show_economy_window
-				}
-				else = {
+				#if = {
+				#	limit = {
+				#		has_variable = show_economy_window
+				#	}
+				#	clear_variable = show_economy_window
+				#}
+				#else = {
 				#	clear_variable = show_parliament_political_tab_window
 					set_variable = { show_economy_window = 1 }
-				}
+				#}
 				calculate_temporary_money_balance = yes
 			}
 		}
@@ -151,12 +151,72 @@ scripted_gui = {
 		effects = {
 			close_button_click = {
 				clear_variable = show_economy_window
+				#clear all other temporary variables?
+				clear_variable = total_balance_var_gui
+				clear_variable = total_income_var_gui
+				clear_variable = total_expenses_var_gui
+				clear_variable = income_from_our_taxes_gui
+				clear_variable = tax_modifier
+				clear_variable = tax_modifier_from_ideas
+				clear_variable = tax_modifier_from_decisions
+				clear_variable = tax_modifier_from_other
+				clear_variable = income_from_our_consumer_goods_factories_gui
+				clear_variable = consumer_goods_modifier
+				clear_variable = consumer_goods_modifier_from_ideas
+				clear_variable = consumer_goods_modifier_from_decisions
+				clear_variable = consumer_goods_modifier_from_other
+				clear_variable = income_from_our_free_civilian_factories_gui
+				clear_variable = income_from_other_sources_gui
+				clear_variable = income_modifier
+				clear_variable = income_modifier_from_ideas
+				clear_variable = income_modifier_from_decisions
+				clear_variable = income_modifier_from_other
+				clear_variable = expenses_from_our_social_spending_gui
+				clear_variable = social_spending_cost_modifier
+				clear_variable = social_spending_cost_modifier_from_ideas
+				clear_variable = social_spending_cost_modifier_from_decisions
+				clear_variable = social_spending_cost_modifier_from_other
+				clear_variable = expenses_from_our_research_spending_gui
+				clear_variable = research_spending_cost_modifier
+				clear_variable = research_spending_cost_modifier_from_ideas
+				clear_variable = research_spending_cost_modifier_from_decisions
+				clear_variable = research_spending_cost_modifier_from_other
+				clear_variable = expenses_from_our_army_spending_gui
+				clear_variable = army_spending_cost_modifier
+				clear_variable = army_spending_cost_modifier_from_ideas
+				clear_variable = army_spending_cost_modifier_from_decisions
+				clear_variable = army_spending_cost_modifier_from_other
+				clear_variable = expenses_from_our_navy_spending_gui
+				clear_variable = navy_spending_cost_modifier
+				clear_variable = navy_spending_cost_modifier_from_ideas
+				clear_variable = navy_spending_cost_modifier_from_decisions
+				clear_variable = navy_spending_cost_modifier_from_other
+				clear_variable = expenses_from_our_road_spending_gui
+				clear_variable = road_spending_cost_modifier
+				clear_variable = road_spending_cost_modifier_from_ideas
+				clear_variable = road_spending_cost_modifier_from_decisions
+				clear_variable = road_spending_cost_modifier_from_other
+				clear_variable = expenses_from_our_law_spending_gui
+				clear_variable = law_spending_cost_modifier
+				clear_variable = law_spending_cost_modifier_from_ideas
+				clear_variable = law_spending_cost_modifier_from_decisions
+				clear_variable = law_spending_cost_modifier_from_other
+				clear_variable = expenses_from_our_used_mil_factories_gui
+				clear_variable = expenses_from_loans_gui
+				clear_variable = expenses_from_other_sources_gui
+				clear_variable = expenses_modifier
+				clear_variable = expenses_modifier_from_ideas
+				clear_variable = expenses_modifier_from_decisions
+				clear_variable = expenses_modifier_from_other
 			}
 			pay_loan_button_click = {
 				set_temp_variable = { loan_size = -1 }
 				add_to_variable = { current_loans_sum = loan_size }
 				set_temp_variable = { money_to_gain = loan_size }
 				add_money_with_tooltip_effect = yes
+				hidden_effect = {
+					calculate_temporary_money_balance = yes
+				}
 			}
 			pay_loan_button_shift_click = {
 				set_temp_variable = { loan_size = current_loans_sum }
@@ -174,11 +234,15 @@ scripted_gui = {
 				add_to_variable = { current_loans_sum = loan_size }
 				set_temp_variable = { money_to_gain = loan_size }
 				add_money_with_tooltip_effect = yes
+				hidden_effect = {
+					calculate_temporary_money_balance = yes
+				}
 			}
 			take_loan_button_click = {
 				hidden_effect = {
 					set_temp_variable = { loans_amount = 1 }
 					take_loan_effect = yes
+					calculate_temporary_money_balance = yes
 				}
 				effect_tooltip = {
 					set_temp_variable = { loan_size = 10 }
@@ -192,10 +256,16 @@ scripted_gui = {
 			take_loan_button_control_click = {
 				set_temp_variable = { loans_amount = 10 }
 				take_loan_effect = yes
+				hidden_effect = {
+					calculate_temporary_money_balance = yes
+				}
 			}
 			take_loan_button_shift_click = {
 				set_temp_variable = { loans_amount = 50 }
 				take_loan_effect = yes
+				hidden_effect = {
+					calculate_temporary_money_balance = yes
+				}
 			}
 
 			# Sliders:
