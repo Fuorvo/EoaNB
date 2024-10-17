@@ -1,4 +1,4 @@
-﻿1857.1.1 = {
+﻿1857.5.11 = {
 	capital = 266
 
 	oob = "PER_1857"
@@ -32,9 +32,9 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 3 }
 
-        add_manpower = 40000 #No more ghost divisions
+    add_manpower = 32582 #No more ghost divisions #adjusted starting pop, tag gains +150 weekly @skoodge 
 
 	add_ideas = {
 		#POLITICS
@@ -48,14 +48,14 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 
 		law_pre_industrial_army
 
 		#stagnation_growth
 		border_control
-	limited_conscription
+		limited_conscription
 		slavery
 		absolutism
 
@@ -66,7 +66,7 @@
 		state_religion
 		#religion_shiite
 
-	 social_spending_level_1
+	 	social_spending_level_1
 		law_spending_level_4
 		road_spending_level_1
 		navy_spending_level_1
@@ -112,11 +112,65 @@
 			
 			set_variable = { PER_power_of_the_qajar_ppg = 0.35 } 
 			add_dynamic_modifier = { modifier = PER_dynamic_modifier_power_of_the_qajars }
+			
+			#set_variable = { var = PER_qajar_power_variable value = 2 } #might use later for additional mechanics @skoodge
+			
+			266 = { #Tehran
+			add_dynamic_modifier = { modifier = PER_medium_support_for_qajar }
+		    }
+			418 = { #Semnan
+			add_dynamic_modifier = { modifier = PER_low_support_for_qajar }
+		    }
+			420 = { #Gilan
+			add_dynamic_modifier = { modifier = PER_contested_land }
+		    }
+			417 = { #Hamadan
+			add_dynamic_modifier = { modifier = PER_contested_land }
+		    }
+			414 = { #Kerman
+			add_dynamic_modifier = { modifier = PER_contested_land }
+		    }
+			795 = { #Laristan
+			add_dynamic_modifier = { modifier = PER_opposition_tribe }
+		    }
+			411 = { #Isfahan
+			add_dynamic_modifier = { modifier = PER_placated_tribe }
+		    }
+			419 = { #Tabriz
+			add_dynamic_modifier = { modifier = PER_opposition_tribe }
+		    }
+			421 = { #Kurdistan
+			add_dynamic_modifier = { modifier = PER_opposition_tribe }
+		    }
+			1305 = { #Ilam
+			add_dynamic_modifier = { modifier = PER_opposition_tribe }
+		    }
+			412 = { #Fars
+			add_dynamic_modifier = { modifier = PER_opposition_tribe }
+		    }
+			1393 = { #South Turkmenistan
+			add_dynamic_modifier = { modifier = PER_sedition_tribe }
+		    }
+			416 = { #Khorasan
+			add_dynamic_modifier = { modifier = PER_placated_tribe }
+		    }
+			410 = { #West Baluchistan
+			add_dynamic_modifier = { modifier = PER_opposition_tribe }
+		    }
+			1392 = { #North Sistan
+			add_dynamic_modifier = { modifier = PER_opposition_tribe }
+		    }
+			999 = { #South Sistan
+			add_dynamic_modifier = { modifier = PER_sedition_tribe }
+		    }
+			444 = { #East Baluchistan
+			add_dynamic_modifier = { modifier = PER_sedition_tribe }
+		    }
 
 
 	set_politics = {
 		ruling_party = autocracy
-}
+        }
 
 set_popularities = {
 		anarchism = 0

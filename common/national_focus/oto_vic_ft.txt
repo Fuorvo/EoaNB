@@ -881,6 +881,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_tooltip = OTO_decision_expand_zonguldak_coalfield
+			unlock_decision_tooltip = OTO_decision_invite_ernst_weiss
 		}
 	}
 
@@ -919,6 +921,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = OTO_general_agricultural_funds
 		}
 	}
 
@@ -1011,6 +1014,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = OTO_empowered_urban_unions
 		}
 	}
 
@@ -1197,6 +1201,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = OTO_empowered_rural_unions
 		}
 	}
 
@@ -1301,6 +1306,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_tooltip = OTO_decision_pernik_coal_mines
 		}
 	}
 
@@ -1417,6 +1423,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			OTO_character_neofit_rilski = {
+				add_advisor_role = {
+					advisor = {
+						slot = political_advisor
+						idea_token = OTO_advisor_neofit_rilski
+						research_bonus = {
+
+						}
+						traits = {
+
+						}
+						ai_will_do = {
+							factor = 5
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -2249,6 +2272,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_tooltip = OTO_decision_revive_siderokavsia
 		}
 	}
 
