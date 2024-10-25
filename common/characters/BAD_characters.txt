@@ -14,7 +14,7 @@ characters={
 			}
 		}
 		country_leader = {
-			desc = "BAD_FREDERICK_I_LEADER_DESC"
+			desc = "BAD_FRIEDRICH_I_LEADER_DESC"
 			ideology = constit_monarch
 			expire = "1907.1.1.1"
 		}
@@ -25,6 +25,9 @@ characters={
 	
 	#Centrism
 	#BAD_anton_von_stabel (see advisors)
+
+	#Fundamentalism
+	#BAD_hermann_von_vicari (see advisors)
 	
 	### POSSIBLE CHANGES UNTIL 1914 (some under advisors) ###
 
@@ -303,27 +306,6 @@ characters={
 			legacy_id = 2205
 		}
 	}
-	BAD_emil_kessler = {
-		name = "Emil Keßler"
-		portraits = {
-			civilian = {
-				small = "GFX_idea_BAD_advisor_Emil_Kessler"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = BAD_advisor_emil_kessler
-			allowed = {
-				original_tag = BAD
-			}
-			traits = {
-				BAD_trait_Emil_Kessler
-			}
-			ai_will_do = {
-				factor = 10
-			}
-		}
-	}
 	#BAD_franz_anton_regenauer = { #delete?
 	#	name = "Franz Anton Regnauer"
 	#	portraits = {
@@ -431,7 +413,7 @@ characters={
 				BAD_trait_Friedrich_Engelhorn
 			}
 			research_bonus = {
-				biochemistry_tech = 0.03
+				biochemistry_tech = 0.08
 				process_engineering_tech = 0.03
 			}
 			ai_will_do = {
@@ -528,6 +510,42 @@ characters={
 	#		}
 	#	}
 	#}
+	BAD_hermann_von_vicari = {
+		name = "Hermann von Vicari"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_BAD_advisor_Hermann_von_Vicari"
+				large = "GFX_GENERIC_Portrait_Europe_generic_leader_politician_7"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BAD_advisor_hermann_von_vicari
+			allowed = {
+				original_tag = BAD
+			}
+			visible = {
+				NOT = {
+					OR = {
+						has_government = centrism
+						has_government = ideology_social_liberalism
+					}
+				}
+			}
+			traits = {
+				BAD_trait_Hermann_von_Vicari
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_TEMP_DESC"
+			ideology = christian
+			expire = "1869.1.1.1"
+			#id = -1
+		}
+	}
 	BAD_joseph_victor_von_scheffel = {
 		name = "Joseph Victor von Scheffel"
 		portraits = {
@@ -582,6 +600,20 @@ characters={
 		portraits = {
 			civilian = {
 				small = "GFX_idea_BAD_advisor_Karl_Benz"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BAD_advisor_karl_benz
+			traits = {
+				BAD_trait_Karl_Benz
+			}
+			research_bonus = {
+				mechanical_engineering_tech = 0.05
+				engine_tech = 0.15
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}

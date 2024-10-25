@@ -347,7 +347,7 @@ focus_tree = {
 		id = PER_bushehr_wheat_exports
 		icon = GFX_Focus_Economy_Growth
 		x = 7
-		y = 4
+		y = 5
 		cost = 70
 
 		prerequisite = { focus = PER_stabilize_the_wheat_market }
@@ -368,11 +368,11 @@ focus_tree = {
 		focus = {
 		id = PER_the_fars_fields
 		icon = GFX_Focus_Agriculture_field_question
-		x = 7
+		x = 9
 		y = 5
 		cost = 70
 
-		prerequisite = { focus = PER_bushehr_wheat_exports }
+		prerequisite = { focus = PER_the_foreign_opium_market }
 		
 		ai_will_do = {
 			factor = 1
@@ -382,10 +382,11 @@ focus_tree = {
 		focus = {
 		id = PER_kashan_pottery
 		icon = GFX_Focus_Distribute_Silver
-		x = 7
+		x = 8
 		y = 6
 		cost = 70
 
+		prerequisite = { focus = PER_bushehr_wheat_exports }
 		prerequisite = { focus = PER_the_fars_fields }
 		
 		ai_will_do = {
@@ -394,7 +395,7 @@ focus_tree = {
 	}
 
 		focus = {
-		id = PER_opium_production_in_isfahan
+		id = PER_opium_production
 		icon = GFX_Focus_War_Opium
 		x = 9
 		y = 2
@@ -408,55 +409,13 @@ focus_tree = {
 	}
 
 		focus = {
-		id = PER_opium_production_in_khorasan
-		icon = GFX_Focus_War_Opium
+		id = PER_the_foreign_opium_market
+		icon = GFX_Focus_adopt_international_exchange_rates
 		x = 9
 		y = 3
 		cost = 70
 
-		prerequisite = { focus = PER_opium_production_in_isfahan }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-		focus = {
-		id = PER_opium_production_in_tehran
-		icon = GFX_Focus_War_Opium
-		x = 9
-		y = 4
-		cost = 70
-
-		prerequisite = { focus = PER_opium_production_in_khorasan }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-		focus = {
-		id = PER_opium_production_in_kerman
-		icon = GFX_Focus_War_Opium
-		x = 9
-		y = 5
-		cost = 70
-
-		prerequisite = { focus = PER_opium_production_in_tehran }
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-		focus = {
-		id = PER_the_foreign_opium_market
-		icon = GFX_Focus_adopt_international_exchange_rates
-		x = 9
-		y = 6
-		cost = 70
-
-		prerequisite = { focus = PER_opium_production_in_kerman }
+		prerequisite = { focus = PER_opium_production }
 		
 		ai_will_do = {
 			factor = 1
@@ -470,7 +429,6 @@ focus_tree = {
 		y = 7
 		cost = 70
 
-		prerequisite = { focus = PER_the_foreign_opium_market }
 		prerequisite = { focus = PER_kashan_pottery }
 		
 		ai_will_do = {
@@ -1062,7 +1020,7 @@ focus_tree = {
 		y = 6
 		cost = 70
 
-		prerequisite = { focus = PER_teheran_Bushehr_line }
+		prerequisite = { focus = PER_teheran_bushehr_line }
 		prerequisite = { focus = PER_better_urban_planning }
 		
 		ai_will_do = {
@@ -1075,7 +1033,7 @@ focus_tree = {
 		icon = GFX_Focus_Government_Centralisation
 		x = 34
 		y = 2
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_tanzimat }
 		
@@ -1089,7 +1047,7 @@ focus_tree = {
 		icon = GFX_Focus_Central_State_Administration
 		x = 33
 		y = 3
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_centralization_efforts }
 		
@@ -1103,7 +1061,7 @@ focus_tree = {
 		icon = GFX_Focus_Commercial_Act
 		x = 33
 		y = 4
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_administrative_reforms }
 		
@@ -1117,7 +1075,7 @@ focus_tree = {
 		icon = GFX_Focus_Renovate_School
 		x = 33
 		y = 5
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_taxation_reforms }
 		
@@ -1131,7 +1089,7 @@ focus_tree = {
 		icon = GFX_Focus_refugee_management
 		x = 35
 		y = 3
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_centralization_efforts }
 		
@@ -1145,7 +1103,7 @@ focus_tree = {
 		icon = GFX_Focus_Newspaper_Tax
 		x = 35
 		y = 4
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_weakening_of_tribal_power }
 		
@@ -1159,7 +1117,7 @@ focus_tree = {
 		icon = GFX_Focus_Justice_local_sherrifs
 		x = 35
 		y = 5
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_centralize_public_health_politics }
 		
@@ -1173,10 +1131,251 @@ focus_tree = {
 		icon = GFX_Focus_Government_Reform_Administration
 		x = 34
 		y = 6
-		cost = 70
+		cost = 35
 
 		prerequisite = { focus = PER_educational_reforms }
 		prerequisite = { focus = PER_judicial_reforms }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_illat_e_iran
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 34
+		y = 7
+		cost = 35
+
+		prerequisite = { focus = PER_cultural_reforms }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_dast_e_qajar
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 33
+		y = 8
+		cost = 35
+
+		prerequisite = { focus = PER_illat_e_iran }
+		mutually_exclusive = { focus= PER_ravikard_e_illat }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_qajar_wrath
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 30
+		y = 9
+		cost = 35
+
+		prerequisite = { focus = PER_dast_e_qajar }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_kurdish_menace
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 29
+		y = 10
+		cost = 35
+
+		prerequisite = { focus = PER_qajar_wrath }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_bakhtiari_annoyance
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 31
+		y = 10
+		cost = 35
+
+		prerequisite = { focus = PER_qajar_wrath }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_ravikard_e_illat
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 35
+		y = 8
+		cost = 35
+
+		prerequisite = { focus = PER_illat_e_iran }
+		mutually_exclusive = { focus= PER_dast_e_qajar }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_dialogue_tribes
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 38
+		y = 9
+		cost = 35
+
+		prerequisite = { focus = PER_ravikard_e_illat }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_kurdish_discussion
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 37
+		y = 10
+		cost = 35
+
+		prerequisite = { focus = PER_dialogue_tribes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_speak_baluchi
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 39
+		y = 10
+		cost = 35
+
+		prerequisite = { focus = PER_dialogue_tribes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_dealing_tribes
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 34
+		y = 9
+		cost = 35
+
+		prerequisite = { focus = PER_dast_e_qajar focus = PER_ravikard_e_illat }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_shahsavan_question
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 33
+		y = 10
+		cost = 35
+
+		prerequisite = { focus = PER_dealing_tribes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_bakhtiari_question
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 33
+		y = 11
+		cost = 35
+
+		prerequisite = { focus = PER_shahsavan_question }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_turkmen_question
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 33
+		y = 12
+		cost = 35
+
+		prerequisite = { focus = PER_bakhtiari_question }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_kurdish_question
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 34
+		y = 13
+		cost = 35
+
+		prerequisite = { focus = PER_baluchi_question }
+		prerequisite = { focus= PER_turkmen_question }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_khamseh_question
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 35
+		y = 10
+		cost = 70
+
+		prerequisite = { focus = PER_dealing_tribes }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_qashqai_question
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 35
+		y = 11
+		cost = 35
+
+		prerequisite = { focus = PER_khamseh_question }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = PER_baluchi_question
+		icon = GFX_Focus_Government_Reform_Administration
+		x = 35
+		y = 12
+		cost = 35
+
+		prerequisite = { focus = PER_qashqai_question }
 		
 		ai_will_do = {
 			factor = 1
@@ -1319,10 +1518,20 @@ focus_tree = {
 		y = 5
 		cost = 70
 
+		available = { has_idea = PER_idea_nezam_e_jadid }
+
 		prerequisite = { focus = PER_nezam_e_jadid }
 		
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_war_support = 0.02
+			swap_ideas = {
+				remove_idea = PER_idea_nezam_e_jadid
+				add_idea = PER_idea_nezam_e_jadid_2
+			}
 		}
 	}
 
@@ -1368,9 +1577,17 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_stability = 0.05
-			#15 Relations with every tribe # gotta wait for mechanic
 			news_event = persia.3 
 			add_ideas = PER_idea_tribal_autonomy
+			## 15 relations with every tribe ## 
+			PER_qajar_high_loyalty_increase_effect = yes 
+			PER_bakhtiari_high_loyalty_increase_effect = yes 
+			PER_qashqai_high_loyalty_increase_effect = yes
+			PER_kurdish_lur_high_loyalty_increase_effect = yes
+			PER_turkmen_high_loyalty_increase_effect = yes
+			PER_baluch_high_loyalty_increase_effect = yes
+			PER_shahsevan_afshar_high_loyalty_increase_effect = yes
+			PER_khamseh_high_loyalty_increase_effect = yes
  		}
 	}
 
@@ -1391,6 +1608,7 @@ focus_tree = {
 			#15 Qajar influence # gotta wait for mechanic
 			army_experience = 10
 			add_stability = 0.05
+			PER_qajar_low_strength_decrease_effect = yes
 		}
 	}
 

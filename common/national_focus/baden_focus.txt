@@ -1,23 +1,29 @@
 focus_tree = {
 	id = baden_focus
-
 	country = {
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = BAD
 		}
 	}
+	continuous_focus_position = { x = 100 y = 1200 }
 
 	default = no
 
+	### ECONOMY ###
+
+	# ECONOMY #
+	
 	focus = {
-		id = BAD_focus_industrial_situation
+		id = BAD_focus_economic_situation
 		icon = GFX_focus_BAD_Industrial_Situation
 		x = 6
 		y = 0
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -26,8 +32,9 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			unlock_decision_category_tooltip = BAD_decision_category_economy
 		}
 	}
@@ -38,6 +45,10 @@ focus_tree = {
 		x = 6
 		y = 1
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -46,35 +57,26 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
-		prerequisite = { focus = BAD_focus_industrial_situation }
+		prerequisite = { focus = BAD_focus_economic_situation }
+		
 		completion_reward = {
-			swap_ideas = { remove_idea = BAD_badische_tuftler add_idea = BAD_badische_tuftler1 }
-			BAD_karl_benz = {
-				add_advisor_role = {
-					advisor = {
-						slot = political_advisor
-						idea_token = BAD_advisor_karl_benz
-						traits = {
-							BAD_trait_Karl_Benz
-						}
-						research_bonus = {
-							mechanical_engineering_tech = 0.05
-							engine_tech = 0.07
-						}
-						ai_will_do = {
-							factor = 10
-						}
-					}
-				}
-			}
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = mechanical_engineering_tech }
+			swap_ideas = { remove_idea = BAD_idea_baden_tinkerer_1 add_idea = BAD_idea_baden_tinkerer_2 }
 		}
 	}
+	
+	# RESOURCES #
+
 	focus = {
-		id = BAD_focus_der_schwarzwald
-		icon = GFX_focus_BAD_Schwarzwald
+		id = BAD_focus_agriculture_and_resources
+		icon = GFX_Focus_Resource_Deforestation
 		x = 2
 		y = 2
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -84,26 +86,27 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = BAD_focus_land_of_inventors }
+		
 		completion_reward = {
-			add_ideas = BAD_idea_der_schwarzwald
-			custom_effect_tooltip = BAD_customeffect_logging_bonus_one
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = biochemistry_tech }
+			activate_mission_tooltip = BAD_mission_establish_lumber_industry
+			activate_mission_tooltip = BAD_mission_establish_mineral_industry
 			hidden_effect = {
-				set_variable = { logging_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.logging_total = building_level@logging_camp }
-				}
-				set_variable = { logging_total_bonus = logging_total }
-				add_to_variable = { logging_total_bonus = 1 }
-				add_ideas = BAD_boost_logging
+				activate_mission = BAD_mission_establish_lumber_industry
+				activate_mission = BAD_mission_establish_mineral_industry
 			}
 		}
 	}
+
 	focus = {
-		id = BAD_focus_reforestation
-		icon = GFX_Focus_Resource_Wood
+		id = BAD_focus_der_schwarzwald
+		icon = GFX_focus_BAD_Schwarzwald
 		x = 1
 		y = 3
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -112,64 +115,23 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
-		prerequisite = { focus = BAD_focus_der_schwarzwald }
-		mutually_exclusive = { focus = BAD_focus_improved_mining }
+		prerequisite = { focus = BAD_focus_agriculture_and_resources }
+		
 		completion_reward = {
-			activate_mission_tooltip = BAD_mission_reforestation
-			hidden_effect = {
-				activate_mission = BAD_mission_reforestation
-			}
-			swap_ideas = { remove_idea = BAD_idea_der_schwarzwald add_idea = BAD_idea_der_schwarzwald1 }
+			add_ideas = BAD_idea_schwarzwald_1
 		}
 	}
-	focus = {
-		id = BAD_focus_woodcuttery_industry
-		icon = GFX_Focus_invest_in_logging
-		x = 1
-		y = 4
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_reforestation }
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.25 uses = 1 category = excavation_tech }
-			unlock_decision_tooltip =  BAD_decision_expand_wood_industry
-		}
-	}
+
 	focus = {
 		id = BAD_focus_black_forest_woodcutters
-		icon = GFX_Focus_Resource_Deforestation
+		icon = GFX_Focus_Resource_Wood
 		x = 1
-		y = 5
+		y = 4
 		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
 		}
-		prerequisite = { focus = BAD_focus_woodcuttery_industry }
-
-		completion_reward = {
-			unlock_decision_tooltip = BAD_decision_schwarzwald_logging_camps
-			add_tech_bonus = { bonus = 0.25 uses = 1 category = process_engineering_tech }
-		}
-	}
-
-	focus = {
-		id = BAD_focus_improved_mining
-		icon = GFX_Focus_coal_mines
-		x = 3
-		y = 3
-		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -179,45 +141,24 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = BAD_focus_der_schwarzwald }
-		mutually_exclusive = { focus = BAD_focus_reforestation }
+
 		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = mechanical_engineering_tech }
-			swap_ideas = { remove_idea = BAD_idea_der_schwarzwald add_idea = BAD_idea_der_schwarzwald2 }
-			activate_mission_tooltip = BAD_mission_coal_mining
-			hidden_effect = {
-				activate_mission = BAD_mission_coal_mining
-			}
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = process_engineering_tech }
+			unlock_decision_tooltip = BAD_decision_expand_woodcutting_industry
+			unlock_decision_tooltip = BAD_decision_schwarzwald_logging_camps
 		}
 	}
-	
+
 	focus = {
-		id = BAD_focus_haslach_silver_mine
-		icon = GFX_focus_BAD_Haslach
-		x = 3
-		y = 4
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		
-		prerequisite = { focus = BAD_focus_improved_mining }
-		
-		completion_reward = {
-			unlock_decision_tooltip = BAD_decision_support_haslach
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = economics_tech }
-		}
-	}
-	focus = {
-		id = BAD_focus_expanded_iron_mining
-		icon = GFX_Focus_Production_Raw_Iron
-		x = 3
+		id = BAD_focus_expand_mining_districts
+		icon = GFX_Focus_Resource_Extraction_Mining
+		x = 1
 		y = 5
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -226,20 +167,108 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
-		prerequisite = { focus = BAD_focus_haslach_silver_mine }
+		prerequisite = { focus = BAD_focus_black_forest_woodcutters }
 
 		completion_reward = {
 			add_tech_bonus = { bonus = 0.25 uses = 1 category = excavation_tech }
 			unlock_decision_tooltip = BAD_decision_expand_mining_districts
+			unlock_decision_tooltip = BAD_decision_establish_coal_mining
 		}
 	}
+
+	focus = {
+		id = BAD_focus_fruits_of_our_soil
+		icon = GFX_Focus_Agriculture_wheat
+		x = 3
+		y = 3
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_agriculture_and_resources }
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = farming_tech category = resource_extraction_tech }
+			unlock_decision_tooltip = BAD_decision_expand_farmlands
+			add_ideas = BAD_idea_agriculture_1
+		}
+	}
+
+	focus = {
+		id = BAD_focus_freiburgs_wine
+		icon = GFX_Focus_Resource_Wine
+		x = 3
+		y = 4
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_fruits_of_our_soil }
+		
+		completion_reward = {
+			swap_ideas = { remove_idea = BAD_idea_agriculture_1 add_idea = BAD_idea_agriculture_2 }
+		}
+	}
+
+	focus = {
+		id = BAD_focus_tabacco_plantations
+		icon = GFX_Focus_Resource_Tobacco
+		x = 3
+		y = 5
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_freiburgs_wine }
+		
+		completion_reward = {
+			swap_ideas = { remove_idea = BAD_idea_agriculture_2 add_idea = BAD_idea_agriculture_3 }
+		}
+	}
+
+	# RAILWAYS #
+
 	focus = {
 		id = BAD_focus_badenian_railways
 		icon = GFX_focus_BAD_Badische_Staatseisenbahn
 		x = 6
 		y = 2
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		available_if_capitulated = no
+		available = {
+			OR = {
+				has_completed_focus = BAD_focus_privatize_railways
+				has_completed_focus = BAD_focus_reform_program
+			}
+		}
 		ai_will_do = {
 			factor = 40
 			modifier = {
@@ -248,7 +277,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = BAD_focus_land_of_inventors }
-		available = { Or = { has_completed_focus = BAD_focus_privatize_railways has_completed_focus = BAD_focus_reform_program } }
+		
 		completion_reward = {
 			add_ideas = BAD_idea_state_railways_1
 			activate_mission_tooltip = BAD_mission_railway_expansion
@@ -257,12 +286,16 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = BAD_focus_homeland_railway_expansion
 		icon = GFX_Focus_transport_railroad_development
 		x = 6
 		y = 3
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -272,26 +305,21 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = BAD_focus_badenian_railways }
+
 		completion_reward = {
 			swap_ideas = { remove_idea = BAD_idea_state_railways_1 add_idea = BAD_idea_state_railways_2 }
-			custom_effect_tooltip = BAD_customeffect_infra_bonus_three
-			hidden_effect = {
-				set_variable = { infra_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.infra_total = infrastructure_level }
-				}
-				set_variable = { infra_total_bonus = infra_total }
-				add_to_variable = { infra_total_bonus = 3 }
-				add_ideas = BAD_boost_infra
-			}
 		}
 	}
+
 	focus = {
 		id = BAD_focus_railway_germans
 		icon = GFX_focus_BAD_Badische_Staatseisenbahn
 		x = 6
 		y = 4
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -301,6 +329,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = BAD_focus_homeland_railway_expansion }
+
 		completion_reward = {
 			swap_ideas = { remove_idea = BAD_idea_state_railways_2 add_idea = BAD_idea_state_railways_3 }
 			add_opinion_modifier = { target = BAV modifier = small_increase }
@@ -311,12 +340,16 @@ focus_tree = {
 			reverse_add_opinion_modifier = { target = HSD modifier = small_increase }
 		}
 	}
+
 	focus = {
 		id = BAD_focus_railway_switzerland
 		icon = GFX_Focus_Diplomatic_Ally_SWI
 		x = 6
 		y = 5
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -326,6 +359,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = BAD_focus_railway_germans }
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -338,12 +372,19 @@ focus_tree = {
 			reverse_add_opinion_modifier = { target = SWI modifier = small_increase }
 		}
 	}
+	
+	# INDUSTRY #
+
 	focus = {
-		id = BAD_focus_future_of_agriculture
-		icon = GFX_focus_BAD_Future_Agriculture
+		id = BAD_focus_manufactures_and_factories
+		icon = GFX_Focus_industrial_town
 		x = 10
 		y = 2
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -353,232 +394,231 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = BAD_focus_land_of_inventors }
+
 		completion_reward = {
-			custom_effect_tooltip = BAD_customeffect_farm_bonus_one
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = process_engineering_tech category = mechanical_engineering_tech }
+			activate_mission_tooltip = BAD_mission_establish_machine_engineering_industry
 			hidden_effect = {
-				set_variable = { farm_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.farm_total = building_level@farm }
-				}
-				set_variable = { farm_total_bonus = farm_total }
-				add_to_variable = { farm_total_bonus = 1 }
-				add_ideas = BAD_boost_farm
-			}
-		}
-	}
-	focus = {
-		id = BAD_focus_fruits_of_soil
-		icon = GFX_Focus_agricultural_economy
-		x = 9
-		y = 3
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_future_of_agriculture }
-		mutually_exclusive = { focus = BAD_focus_processed_goods }
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = biochemistry_tech }
-		}
-	}
-	focus = {
-		id = BAD_focus_freiburgs_wine
-		icon = GFX_Focus_Resource_Wine
-		x = 9
-		y = 4
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_fruits_of_soil }
-		completion_reward = {
-			add_timed_idea = {
-				idea = BAD_idea_freiburg_wine
-				days = 730
-			}
-		}
-	}
-	focus = {
-		id = BAD_focus_support_peasantry
-		icon = GFX_Focus_Agriculture_wheat
-		x = 9
-		y = 5
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_freiburgs_wine }
-		completion_reward = {
-			unlock_decision_tooltip = BAD_decision_farms
-			add_tech_bonus = {bonus = 0.5 uses = 1 category = farming_tech category = resource_extraction_tech }
-		}
-	}
-	focus = {
-		id = BAD_focus_processed_goods
-		icon = GFX_Focus_Worker_Appeal
-		x = 11
-		y = 3
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_future_of_agriculture }
-		mutually_exclusive = { focus = BAD_focus_fruits_of_soil }
-		completion_reward = {
-			add_tech_bonus = {bonus = 0.5 uses = 1 category = process_engineering_tech category = mechanical_engineering_tech }
-		}
-	}
-	focus = {
-		id = BAD_focus_textile_production
-		icon = GFX_Focus_Production_Fabric
-		x = 11
-		y = 4
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_processed_goods }
-		completion_reward = {
-			unlock_decision_tooltip = BAD_decision_textile_production
-			add_tech_bonus = {bonus = 0.5 uses = 1 category = chemistry_tech category = economics_tech }
-		}
-	}
-	focus = {
-		id = BAD_focus_tabacco_industry
-		icon = GFX_Focus_Resource_Tobacco
-		x = 11
-		y = 5
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_textile_production }
-		completion_reward = {
-			add_timed_idea = {
-				idea = BAD_idea_tobacco_industry
-				days = 730
-			}
-		}
-	}
-	focus = {
-		id = BAD_focus_construction_industry
-		icon = GFX_Focus_Industry_Construction
-		x = 6
-		y = 6
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_railway_switzerland }
-		prerequisite = { focus = BAD_focus_tabacco_industry focus = BAD_focus_support_peasantry }
-		prerequisite = { focus = BAD_focus_expanded_iron_mining focus = BAD_focus_black_forest_woodcutters }
-		completion_reward = {
-			custom_effect_tooltip = BAV_customeffect_civ_bonus
-			hidden_effect = {
-				set_variable = { civ_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.civ_total = building_level@industrial_complex }
-				}
-				set_variable = { civ_total_bonus = civ_total }
-				add_to_variable = { civ_total_bonus = 1 }
-				add_ideas = BAD_boost_civs
-			}
-			swap_ideas = {
-				remove_idea = BAD_development
-				add_idea = BAD_development1
-			}
-		}
-	}
-	focus = {
-		id = BAD_focus_military_industry
-		icon = GFX_Focus_Industrial_Complex
-		x = 6
-		y = 7
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_construction_industry }
-		completion_reward = {
-			custom_effect_tooltip = BAV_customeffect_mil_bonus
-			hidden_effect = {
-				set_variable = { mil_total = 0 }
-				every_owned_state = {
-					add_to_variable = { ROOT.mil_total = building_level@arms_factory }
-				}
-				set_variable = { mil_total_bonus = mil_total }
-				add_to_variable = { mil_total_bonus = 1 }
-				add_ideas = BAD_boost_mils
-			}
-		}
-	}
-	focus = {
-		id = BAD_focus_arms_production
-		icon = GFX_Focus_industrial_revolution
-		x = 6
-		y = 8
-		cost = 70
-		available_if_capitulated = no
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-		prerequisite = { focus = BAD_focus_military_industry }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = industrializing
-				add_idea = industrialized
+				activate_mission = BAD_mission_establish_machine_engineering_industry
 			}
 		}
 	}
 
 	focus = {
+		id = BAD_focus_luxury_goods
+		icon = GFX_Focus_Resource_Gold_and_Silver
+		x = 9
+		y = 3
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_manufactures_and_factories }
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = humanities_tech category = economics_tech }
+			add_ideas = BAD_idea_fine_crafts_1
+		}
+	}
+
+	focus = {
+		id = BAD_focus_goldstadt_pforzheim
+		icon = GFX_Focus_Resource_Gold_Jewelry
+		x = 9
+		y = 4
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_luxury_goods }
+
+		completion_reward = {
+			unlock_decision_tooltip = BAD_decision_pforzheim_jewellers
+			swap_ideas = { remove_idea = BAD_idea_fine_crafts_1 add_idea = BAD_idea_fine_crafts_2 }
+		}
+	}
+
+	focus = {
+		id = BAD_focus_watchmaking_industry
+		icon = GFX_Focus_watchmaking_industry
+		x = 9
+		y = 5
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_goldstadt_pforzheim }
+
+		completion_reward = {
+			unlock_decision_tooltip = BAD_decision_watchmaking_industry
+			swap_ideas = { remove_idea = BAD_idea_fine_crafts_2 add_idea = BAD_idea_fine_crafts_3 }
+		}
+	}
+
+	focus = {
+		id = BAD_focus_textile_industry
+		icon = GFX_Focus_Production_Fabric
+		x = 11
+		y = 3
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_manufactures_and_factories }
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = economics_tech }
+			unlock_decision_tooltip = BAD_decision_support_textile_industry
+		}
+	}
+
+	focus = {
+		id = BAD_focus_machine_engineering_industry
+		icon = GFX_Focus_Production_Machine_Parts
+		x = 11
+		y = 4
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_textile_industry }
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = mechanical_engineering_tech }
+			unlock_decision_tooltip = BAD_decision_subsidize_steel_mill
+			unlock_decision_tooltip = BAD_decision_subsidize_machine_parts_factory
+		}
+	}
+
+	focus = {
+		id = BAD_focus_chemical_industry
+		icon = GFX_Focus_Production_Chemicals
+		x = 11
+		y = 5
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_machine_engineering_industry }
+		
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.25 uses = 1 category = chemistry_tech }
+			unlock_decision_tooltip = BAD_decision_support_basf
+		}
+	}
+	
+	# INDUSTRIALIZATION #
+
+	focus = {
+		id = BAD_focus_development_of_baden_industry
+		icon = GFX_Focus_Industrial_Complex
+		x = 6
+		y = 6
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_expand_mining_districts }
+		prerequisite = { focus = BAD_focus_tabacco_plantations }
+		prerequisite = { focus = BAD_focus_railway_switzerland }
+		prerequisite = { focus = BAD_focus_watchmaking_industry }
+		prerequisite = { focus = BAD_focus_chemical_industry }
+		completion_reward = {
+			swap_ideas = { remove_idea = BAD_idea_development_1 add_idea = BAD_idea_development_2 }
+		}
+	}
+
+	focus = {
+		id = BAD_focus_an_industrialized_country
+		icon = GFX_Focus_industrial_revolution
+		x = 6
+		y = 7
+		cost = 70
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = { focus = BAD_focus_development_of_baden_industry }
+		completion_reward = {
+			swap_ideas = { remove_idea = industrializing add_idea = industrialized }
+		}
+	}
+
+### MILITARY ###
+
+# ARMY #
+
+	focus = {
 		id = BAD_focus_our_army
 		icon = GFX_focus_BAD_Our_Army
-		x = 18
+		x = 19
 		y = 0
 		cost = 70
 		available_if_capitulated = no
@@ -592,14 +632,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			army_experience = 5
+			army_experience = 25
 		}
 	}
 
 	focus = {
 		id = BAD_focus_vereinsgewehr
 		icon = GFX_focus_BAD_Vereinsgewehr
-		x = 18
+		x = 19
 		y = 1
 		cost = 70
 		available_if_capitulated = no
@@ -613,14 +653,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+			if = {
+				limit = {
+					NOT = { has_tech = rifle_equipment1 }
+				}
+				set_technology = { rifle_equipment1 = 1 }
+			}
+			else = {
+				add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+			}
 		}
 	}
 
 	focus = {
 		id = BAD_focus_austrian_inspiration
 		icon = GFX_focus_BAD_Austrian
-		x = 14
+		x = 15
 		y = 2
 		cost = 70
 		available_if_capitulated = no
@@ -649,7 +697,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_improve_scouting_equipment
 		icon = GFX_Focus_Army_Cavalry
-		x = 13
+		x = 14
 		y = 3
 		cost = 70
 		available = { can_research = cavalry_recon } 
@@ -675,7 +723,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_austrian_rifles
 		icon = GFX_Focus_Weapon_Gun_1_WW1
-		x = 13
+		x = 14
 		y = 4
 		cost = 70
 		available_if_capitulated = no
@@ -697,7 +745,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_update_doctrines
 		icon = GFX_goal_AUS_heinrich_von_hesse
-		x = 15
+		x = 16
 		y = 3
 		cost = 70
 		available_if_capitulated = no
@@ -719,7 +767,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_create_engineer_corps
 		icon = GFX_Focus_Trade_Gun
-		x = 15
+		x = 16
 		y = 4
 		cost = 70
 		available = { has_political_power > 100 } 
@@ -769,7 +817,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_ludwig_reforms
 		icon = GFX_focus_BAD_Ludwigs_Reforms
-		x = 18
+		x = 19
 		y = 2
 		cost = 70
 		available_if_capitulated = no
@@ -806,7 +854,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_new_infantry_equipment
 		icon = GFX_Focus_Rifle_Production
-		x = 17
+		x = 18
 		y = 3
 		cost = 70
 		available_if_capitulated = no
@@ -832,7 +880,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_new_cavalry_equipment
 		icon = GFX_Focus_Army_Cavalry_Sabers
-		x = 17
+		x = 18
 		y = 4
 		cost = 70
 		available_if_capitulated = no
@@ -858,7 +906,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_jaegerbat_reform
 		icon = GFX_Focus_Army_Victorian_Traditional
-		x = 19
+		x = 20
 		y = 3
 		cost = 70
 		available = { has_army_experience > 50 has_manpower >1000 }
@@ -881,7 +929,7 @@ focus_tree = {
                         line_infantry = { x = 0 y = 0 }
 						line_infantry = { x = 0 y = 1 }
                         light_infantry = { x = 0 y = 2 }
-                } 
+                }
             }
 			744 = {
 					create_unit = {
@@ -912,7 +960,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_artillery_reform
 		icon = GFX_Goal_military_procurement_focus
-		x = 19
+		x = 20
 		y = 4
 		cost = 70
 		available_if_capitulated = no
@@ -932,37 +980,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BAD_focus_lessons_of_1812_2
-		icon = GFX_focus_BAD_Lessons_of_1812
-		x = 18
-		y = 5
-		cost = 70
-		available_if_capitulated = no
-		prerequisite = { 
-			focus = BAD_focus_new_cavalry_equipment 
-			focus = BAD_focus_artillery_reform 
-			focus = BAD_focus_austrian_rifles 
-			focus = BAD_focus_create_engineer_corps 
-			focus = BAD_focus_krupp_cooperation 
-			focus = BAD_focus_the_landwehr 	
-		}
-		ai_will_do = {
-			factor = 40
-			modifier = {
-				factor = 100
-				is_historical_focus_on = yes
-			}
-		}
-
-		completion_reward = {
-		    remove_ideas = BAD_russiancampaign
-		}
-	}
-
-	focus = {
 		id = BAD_focus_beyer_warmin
 		icon = GFX_focus_BAD_Von_Beyer
-		x = 22
+		x = 23
 		y = 2
 		cost = 70
 		available_if_capitulated = no
@@ -999,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_dreyse_rifle
 		icon = GFX_goal_focus_prussia_dreyse_rifle
-		x = 21
+		x = 22
 		y = 3
 		cost = 70
 		available_if_capitulated = no
@@ -1021,7 +1041,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_krupp_cooperation
 		icon = GFX_goal_focus_prussian_guns
-		x = 21
+		x = 22
 		y = 4
 		cost = 70
 		available_if_capitulated = no
@@ -1043,7 +1063,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_reestablish_1825_conlaw
 		icon = GFX_focus_BAD_Conscription
-		x = 23
+		x = 24
 		y = 3
 		cost = 70
 		available_if_capitulated = no
@@ -1091,7 +1111,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_the_landwehr
 		icon = GFX_focus_BAD_Landwehr
-		x = 23
+		x = 24
 		y = 4
 		cost = 70
 		available_if_capitulated = no
@@ -1111,11 +1131,39 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = BAD_focus_lessons_of_1812_2
+		icon = GFX_focus_BAD_Lessons_of_1812
+		x = 19
+		y = 5
+		cost = 70
+		available_if_capitulated = no
+		prerequisite = { 
+			focus = BAD_focus_new_cavalry_equipment 
+			focus = BAD_focus_artillery_reform 
+			focus = BAD_focus_austrian_rifles 
+			focus = BAD_focus_create_engineer_corps 
+			focus = BAD_focus_krupp_cooperation 
+			focus = BAD_focus_the_landwehr 	
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+		    remove_ideas = BAD_russiancampaign
+		}
+	}
 	
 	focus = {
 		id = BAD_focus_bruderkrieg_experience
 		icon = GFX_focus_BAD_Bruderkrieg_Experience
-		x = 18
+		x = 19
 		y = 6
 		cost = 70
 		available_if_capitulated = no
@@ -1137,7 +1185,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_own_breechloading_rifle
 		icon = GFX_Focus_Army_Defence_1
-		x = 17
+		x = 18
 		y = 7
 		cost = 70
 		available_if_capitulated = no
@@ -1194,7 +1242,7 @@ focus_tree = {
 	focus = {
 		id = BAD_focus_increase_mil_budget
 		icon = GFX_Focus_Economy_Growth
-		x = 19
+		x = 20
 		y = 7
 		cost = 70
 		available_if_capitulated = no
@@ -1256,12 +1304,18 @@ focus_tree = {
 		}
 	}
 
+	### POLITICS ###
+
+	# FRIEDRICH I #
 	focus = {
-		id = BAD_focus_frederick_1
+		id = BAD_focus_friedrich_1
 		icon = GFX_focus_BAD_Friedrich
 		x = 35
 		y = 0
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 40
@@ -1272,7 +1326,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = badenevent.5
+			add_political_power = 100
+			unlock_decision_category_tooltip = BAD_decision_category_politics
+			country_event = { id = baden.1 }
 		}
 	}
 
@@ -1282,8 +1338,11 @@ focus_tree = {
 		x = 35
 		y = 1
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
-		prerequisite = { focus = BAD_focus_frederick_1 }
+		prerequisite = { focus = BAD_focus_friedrich_1 }
 		ai_will_do = {
 			factor = 40
 			modifier = {
@@ -1293,20 +1352,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			BAD = {
-				country_event = {
-					id = badenevent.6
-				}
-			}
+			add_political_power = 50
+			add_stability = 0.02
+			country_event = { id = baden.2 }
 		}
 	}
 
 	focus = {
-		id = BAD_focus_change_criminal_code
+		id = BAD_focus_enforce_the_criminal_code
 		icon = GFX_focus_BAD_Criminal_Code
 		x = 34
 		y = 2
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
 		prerequisite = { focus = BAD_focus_kabinett_stengel }
 		ai_will_do = {
@@ -1318,17 +1378,24 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.05
+			add_political_power = 100
+			add_stability = -0.02
 		}
 	}
 
 	focus = {
-		id = BAD_focus_treaty_with_catholics
+		id = BAD_focus_negotiate_treaty_with_catholics
 		icon = GFX_Focus_Treaty_Catholic_Church
 		x = 36
 		y = 2
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
+		available = {
+			date > 1859.1.1 
+		}
 		prerequisite = { focus = BAD_focus_kabinett_stengel }
 		ai_will_do = {
 			factor = 40
@@ -1339,12 +1406,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.05
-			custom_effect_tooltip = BAD_decrease_kulturkampf_modifiers_tt
-			hidden_effect = {
-				BAD_decrease_kulturkampf_modifiers = yes
-				EOANBSYS_national_crisis_progress_add_five = yes
-			}
+			country_event = { id = baden.51 }
 		}
 	}
 
@@ -1353,13 +1415,22 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 35
 		y = 3
-		cost = 70
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
-		
-		available = { date > 1859.9.30 }
-		
-		prerequisite = { focus = BAD_focus_change_criminal_code }
-		prerequisite = { focus = BAD_focus_treaty_with_catholics }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
+		allow_branch = {
+			has_country_flag = BAD_baden_kulturkampf_second_chamber_opposition_flag
+		}
+		prerequisite = { focus = BAD_focus_enforce_the_criminal_code }
+		prerequisite = { focus = BAD_focus_negotiate_treaty_with_catholics }
 		ai_will_do = {
 			factor = 40
 			modifier = {
@@ -1369,23 +1440,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			BAD = {
-				country_event = {
-					id = badenevent.10
-				}
-			}
+			#
 		}
 	}
 
 	focus = {
-		id = BAD_focus_dissolution_cabinet
+		id = BAD_focus_future_of_badens_politics
 		icon = GFX_focus_generic_diplomatic_treaty
 		x = 35
 		y = 4
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
 		prerequisite = { focus = BAD_focus_second_chamber_opposition }
-		available = { date > 1860.1.1 }
 		ai_will_do = {
 			factor = 40
 			modifier = {
@@ -1395,28 +1464,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_idea = BAD_advisor_franz_freiherr_von_roggenbach
-					}
-				}
-				BAD = {
-					country_event = {
-						id = badenevent.7
-					}
-				}
-			}
-			else_if = {
-				limit = {
-						has_idea = BAD_advisor_franz_freiherr_von_roggenbach
-				}
-				BAD = {
-					country_event = {
-						id = badenevent.8
-					}
-				}
-			}
+			country_event = { id = baden.61 }
 		}
 	}
 
@@ -1426,8 +1474,15 @@ focus_tree = {
 		x = 29
 		y = 5
 		cost = 35
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
-		prerequisite = { focus = BAD_focus_dissolution_cabinet }
+		available = { 
+			has_country_flag = BAD_dissolution_cabinet_liberals_flag
+		}
+		prerequisite = { focus = BAD_focus_future_of_badens_politics }
 		mutually_exclusive = { focus = BAD_focus_continue_reaktionsera }
 		ai_will_do = {
 			factor = 40
@@ -1436,18 +1491,10 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
-		
-		available = { 
-			has_country_flag = BAD_dissolution_cabinet_liberals_flag
-		}
 
 		completion_reward = {
-			BAD = {
-				country_event = {
-					id = badenevent.0
-				}
-			}
-			custom_effect_tooltip = historical_option
+			add_ideas = BAD_idea_a_new_era_1
+			country_event = { id = baden.62 }
 		}
 	}
 
@@ -1457,6 +1504,9 @@ focus_tree = {
 		x = 29
 		y = 6
 		cost = 70
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
 		prerequisite = { focus = BAD_focus_easter_proclamation }
 		ai_will_do = {
@@ -1468,7 +1518,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			clr_country_flag = BAD_kabinett_stengel_flag
 			set_country_flag = BAD_kabinett_stabel_flag
 			country_event = {
 				id = badenevent.3
@@ -1552,9 +1601,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = BAD_increase_kulturkampf_modifiers_tt
+			custom_effect_tooltip = BAD_change_kulturkampf_modifiers_tt
 			hidden_effect = {
-				BAD_increase_kulturkampf_modifiers = yes
+				#BAD_increase_kulturkampf_modifiers = yes
 				effect_decrease_religion = yes
 			}
 		}
@@ -1647,10 +1696,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			or = {
-				has_idea = open_schools
-				has_idea = compulsory_education
-			}
+			has_idea = compulsory_education
 		}
 
 		completion_reward = {
@@ -1739,7 +1785,7 @@ focus_tree = {
 			}
 			decrease_ps_by_one = yes
 			swap_ideas = {
-				remove_idea = BAD_era_reaktion
+				remove_idea = BAD_idea_reactionary_era
 				add_idea = BAD_liberal_grand_duchy1
 			}
 		}
@@ -1928,7 +1974,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			unlock_decision_tooltip = BAD_decision_enact_gewerbefreiheit
+			unlock_decision_tooltip = BAD_decision_enact_free_enterprise
 		}
 	}
 
@@ -1989,7 +2035,7 @@ focus_tree = {
 				limit = {
 					has_idea = GEC_idea_gewerbefreiheit
 				}
-				unlock_decision_tooltip = BAD_decision_enact_a_proper_gewerbeordnung
+				unlock_decision_tooltip = BAD_decision_establish_an_industrial_code
 			}
 		}
 	}
@@ -2000,8 +2046,15 @@ focus_tree = {
 		x = 41
 		y = 5
 		cost = 35
+		search_filters = {
+			FOCUS_FILTER_ALTHISTORY
+			FOCUS_FILTER_POLITICAL
+		}
 		available_if_capitulated = no
-		prerequisite = { focus = BAD_focus_dissolution_cabinet }
+		available = { 
+			has_country_flag = BAD_dissolution_cabinet_conservatives_flag
+		}
+		prerequisite = { focus = BAD_focus_future_of_badens_politics }
 		mutually_exclusive = { focus = BAD_focus_easter_proclamation }
 		ai_will_do = {
 			factor = 40
@@ -2009,10 +2062,6 @@ focus_tree = {
 				factor = 0
 				is_historical_focus_on = yes
 			}
-		}
-		
-		available = { 
-			has_country_flag = BAD_dissolution_cabinet_conservatives_flag
 		}
 
 		completion_reward = {
@@ -2482,7 +2531,7 @@ focus_tree = {
 		y = 6
 		cost = 35
 		available_if_capitulated = no
-		prerequisite = { focus = BAD_focus_dissolution_cabinet }
+		prerequisite = { focus = BAD_focus_future_of_badens_politics }
 		available = {
 			or = {
 				has_completed_focus = BAD_focus_foreign_policy

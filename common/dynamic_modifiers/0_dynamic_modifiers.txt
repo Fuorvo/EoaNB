@@ -350,13 +350,15 @@ dynmod_AUS_italian_unrest = {
 dynmod_BAD_kulturkampf = {
 	enable = { always = yes }
 	
-	icon =  "GFX_idea_BAD_badenian_kulturkampf"
+	icon =  "GFX_idea_BAD_idea_baden_kulturkampf"
 	
-	fundamentalism_drift = dynmod_BAD_kulturkampf_1
-	centrism_drift = dynmod_BAD_kulturkampf_2
-	stability_factor = dynmod_BAD_kulturkampf_1
-	political_power_cost = dynmod_BAD_kulturkampf_2
-	research_speed_factor = dynmod_BAD_kulturkampf_3
+	fundamentalism_drift = BAD_kulturkampf_fund_drift
+	centrism_drift = BAD_kulturkampf_lib_drift
+	stability_factor = BAD_kulturkampf_sf
+	stability_weekly = BAD_kulturkampf_sw
+	political_power_factor = BAD_kulturkampf_ppf
+	research_speed_factor = BAD_kulturkampf_rsf
+	custom_modifier_tooltip = BAD_kulturkampf_legitimacy_modifier_tt
 }
 
 ### Denmark Dynamic Modifiers ###
@@ -544,7 +546,7 @@ PER_contested_land = { #Neutral
 PER_supportive_tribe = { #1 [60,100]
 	enable = { always = yes }
 
-	icon = GFX_
+	icon = GFX_modifiers_per_supportive_tribe
 	
 	recruitable_population_factor = 0.15
 	state_production_speed_buildings_factor = 0.1
@@ -553,7 +555,7 @@ PER_supportive_tribe = { #1 [60,100]
 PER_placated_tribe = { #2 [20,59]
 	enable = { always = yes }
 
-	icon = GFX_
+	icon = GFX_modifiers_per_placated_tribe
 	
 	state_production_speed_buildings_factor = 0.05
 }
@@ -561,7 +563,7 @@ PER_placated_tribe = { #2 [20,59]
 PER_opposition_tribe = { #3 [-20,19]
 	enable = { always = yes }
 
-	icon = GFX_
+	icon = GFX_modifiers_per_opposition_tribe
 	
 	recruitable_population_factor = -0.05
 	local_building_slots_factor = -0.1 
@@ -572,26 +574,24 @@ PER_opposition_tribe = { #3 [-20,19]
 PER_sedition_tribe = { #4 [-60,-21]
 	enable = { always = yes }
 
-	icon = GFX_
+	icon = GFX_modifiers_per_sedition_tribe
 	
 	recruitable_population_factor = -0.25
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
-	local_building_slots_factor = -0.1
 	army_speed_factor_for_controller = -0.25
 }
 
 PER_insurgency_tribe = { #5 [-100,-61]
 	enable = { always = yes }
 
-	icon = GFX_
+	icon = GFX_modifiers_per_insurgency_tribe
 	
 	recruitable_population_factor = -0.5
 	local_building_slots_factor = -0.33
 	state_resources_factor = -0.5
 	state_production_speed_buildings_factor = -0.33
-	local_building_slots_factor = -0.25
 	army_speed_factor_for_controller = -0.45
 	disable_strategic_redeployment = 1	
 }
@@ -1229,10 +1229,6 @@ dynmod_OTO_city_of_palaces = {
 	enable = { always = yes }
 
 	army_defence_factor = 0.15
-}
-
-OTO_neofit_rilski_modifier = {
-	compliance_gain = 0.25 
 }
 
 #France Dynamic Modifiers

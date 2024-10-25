@@ -166,7 +166,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.10
+			country_event = OTO_events.65
 		}
 	}
 
@@ -216,6 +216,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5 
+				uses = 2 
+				category = naval_equipment
+			}
 		}
 	}
 
@@ -291,6 +296,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			country_event = OTO_events.64
+			
 		}
 	}
 
@@ -350,6 +357,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = OTO_railway_construction_tt
 		}
 	}
 
@@ -812,6 +820,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_tooltip = OTO_decision_invite_eugene_gavand
 		}
 	}
 
@@ -1220,6 +1229,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			unlock_decision_tooltip = OTO_decision_the_agrarian_class
 		}
 	}
 
@@ -2523,6 +2533,8 @@ focus_tree = {
 		y = 5
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
 		}
 	}
 
@@ -2536,6 +2548,11 @@ focus_tree = {
 		relative_position_id = OTO_focus_legacy_of_selim_III
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -2549,6 +2566,20 @@ focus_tree = {
 		relative_position_id = OTO_focus_changing_our_rifles
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = tech_category_uniforms
+			}
+			swap_ideas = {
+				remove_idea = research_spending_level_1
+				add_idea = research_spending_level_2
+			}
 		}
 	}
 
@@ -2562,6 +2593,7 @@ focus_tree = {
 		relative_position_id = OTO_focus_investing_in_research
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			custom_effect_tooltip = OTO_arms_factory_construction_tt
 		}
 	}
 
@@ -2575,6 +2607,7 @@ focus_tree = {
 		relative_position_id = OTO_focus_stepping_up_production
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			custom_effect_tooltip = OTO_arms_factory_construction_tt
 		}
 	}
 
@@ -2588,6 +2621,7 @@ focus_tree = {
 		relative_position_id = OTO_focus_open_new_factory_konya
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			custom_effect_tooltip = OTO_arms_factory_construction_tt
 		}
 	}
 
@@ -2601,6 +2635,7 @@ focus_tree = {
 		relative_position_id = OTO_focus_investing_in_research
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			country_event = OTO_events.66
 		}
 	}
 
@@ -2609,11 +2644,24 @@ focus_tree = {
 		prerequisite = { focus = OTO_focus_potential_import_partners }
 		icon = GFX_Focus_gun_sales_ENG
 		cost = 35
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
 		x = -2
 		y = 2
 		relative_position_id = OTO_focus_potential_import_partners
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+			add_war_support = 0.01
+			custom_effect_tooltip = OTO_arms_import_ENG_tt
 		}
 	}
 
@@ -2622,11 +2670,24 @@ focus_tree = {
 		prerequisite = { focus = OTO_focus_potential_import_partners }
 		icon = GFX_Focus_gun_sales_FRA
 		cost = 35
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
 		x = 0
 		y = 2
 		relative_position_id = OTO_focus_potential_import_partners
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = tech_category_handguns
+			}
+			add_war_support = 0.01
+			custom_effect_tooltip = OTO_arms_import_FRA_tt
 		}
 	}
 
@@ -2635,11 +2696,24 @@ focus_tree = {
 		prerequisite = { focus = OTO_focus_potential_import_partners }
 		icon = GFX_Focus_gun_sales_USA
 		cost = 35
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
 		x = 2
 		y = 2
 		relative_position_id = OTO_focus_potential_import_partners
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = melee_weapons_tech
+			}
+			add_war_support = 0.01
+			custom_effect_tooltip = OTO_arms_import_USA_tt
 		}
 	}
 
@@ -2709,7 +2783,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { 
+	focus = { #New Battlefield Tactics
 		id = OTO_focus_new_battlefield_tactics
 		prerequisite = { focus = OTO_focus_expand_kara_harp_school }
 		icon = GFX_Focus_Tactics_Artillery
@@ -2719,6 +2793,12 @@ focus_tree = {
 		relative_position_id = OTO_focus_expand_kara_harp_school
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_war_support = 0.03
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.40
+				uses = 3
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -2761,7 +2841,7 @@ focus_tree = {
 		}
 	}	
 
-	focus = { 
+	focus = { #Artillery Question
 		id = OTO_focus_the_artillery_question
 		prerequisite = { focus = OTO_focus_legacy_of_selim_III }
 		icon = GFX_Focus_Weapon_Canon_4_Battery
@@ -2771,26 +2851,38 @@ focus_tree = {
 		relative_position_id = OTO_focus_legacy_of_selim_III
 		ai_will_do={ factor = 15 }
 		completion_reward = {
-			# gives deciding from whom we buy or produce it ourselves
+			add_war_support = 0.03
+			country_event = OTO_events.67
 		}
 	}
 
-	focus = { 
+	focus = { #German Artillery
 		id = OTO_focus_krupp_guns
 		prerequisite = { focus = OTO_focus_the_artillery_question }
 		mutually_exclusive = { focus = OTO_focus_american_field_guns focus = OTO_focus_producing_our_own }
 		#available = { always = no }	#gets unlocked by event mentioned above; needs to be added later
 		icon = GFX_goal_focus_prussian_guns
 		cost = 35
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
 		x = -2
 		y = 2
 		relative_position_id = OTO_focus_the_artillery_question
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 
-	focus = { 
+	focus = { #Prussian Military Envoys
 		id = OTO_focus_prussian_military_envoys
 		prerequisite = { focus = OTO_focus_krupp_guns }
 		prerequisite = { focus = OTO_focus_expand_kara_harp_school }
@@ -2801,36 +2893,86 @@ focus_tree = {
 		relative_position_id = OTO_focus_krupp_guns
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_ideas = OTO_vic_prussian_tatics
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+			PRS = {
+				add_opinion_modifier = {
+					target = OTO
+					modifier = PRS_OTTOMAN_MILITARY_COOPERATION
+				}
+			}
 		}
 	}
 
-	focus = { 
+	focus = { #American Artillery
 		id = OTO_focus_american_field_guns
 		prerequisite = { focus = OTO_focus_the_artillery_question }
 		mutually_exclusive = { focus = OTO_focus_producing_our_own focus = OTO_focus_krupp_guns }
 		#available = { always = no }	#gets unlocked by event mentioned above; needs to be added later
 		icon = GFX_focus_usa_army_of_the_union
 		cost = 35
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
 		x = 0
 		y = 2
 		relative_position_id = OTO_focus_the_artillery_question
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 2
+				category = artillery
+			}
 		}
 	}
 
-	focus = { 
+	focus = { #Our Own Artillery
 		id = OTO_focus_producing_our_own
 		prerequisite = { focus = OTO_focus_the_artillery_question }
 		mutually_exclusive = { focus = OTO_focus_american_field_guns focus = OTO_focus_krupp_guns }
 		#available = { always = no }	#gets unlocked by event mentioned above; needs to be added later
 		icon = GFX_goal_ottoman_army
 		cost = 35
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
 		x = 2
 		y = 2
 		relative_position_id = OTO_focus_the_artillery_question
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			add_war_support = 0.06
+			add_stability = 0.06
+			ENG = {
+				add_opinion_modifier = {
+					target = OTO
+					modifier = ENG_ottoman_refuses_arms_deal
+				}
+			}
+			PRS = {
+				add_opinion_modifier = {
+					target = OTO
+					modifier = PRS_OTTOMAN_REFUSES_ARMS_DEAL
+				}
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = OTO
+					modifier = usa_ottoman_refuses_arms_deal
+				}
+			}
+			custom_effect_tooltip = OTO_arms_factory_construction_tt
 		}
 	}
 
@@ -2872,7 +3014,7 @@ focus_tree = {
 		relative_position_id = OTO_focus_howitzer_production
 		ai_will_do={ factor = 15 }
 		completion_reward = {
-			# Event to decide how much to spend
+			country_event = OTO_events.69
 		}
 	}
 
@@ -2891,6 +3033,10 @@ focus_tree = {
 		relative_position_id = OTO_focus_open_new_muhendisanes
 		ai_will_do={ factor = 15 }
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = law_pre_industrial_army
+				add_idea = doctrine_napoleonic_army_1
+			}
 		}	
 	}
 

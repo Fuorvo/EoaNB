@@ -252,12 +252,16 @@ spriteTypes = {
 	# (BAD) Baden
 	# Spirits
 		spriteType = {
-			name = "GFX_idea_BAD_badenian_kulturkampf"
-			texturefile = "gfx/interface/ideas/BAD/BAD_badenian_kulturkampf.png"
+			name = "GFX_idea_BAD_idea_baden_kulturkampf"
+			texturefile = "gfx/interface/ideas/BAD/BAD_idea_baden_kulturkampf.png"
 		}
 		spriteType = {
-			name = "GFX_idea_BAD_badische_tuftler"
-			texturefile = "gfx/interface/ideas/BAD/BAD_badische_tuftler.png"
+			name = "GFX_idea_BAD_idea_baden_tinkerer"
+			texturefile = "gfx/interface/ideas/BAD/BAD_idea_baden_tinkerer.png"
+		}
+		spriteType = {
+			name = "GFX_idea_BAD_idea_fine_arts"
+			texturefile = "gfx/interface/ideas/BAD/BAD_idea_fine_arts.png"
 		}
 		spriteType = {
 			name = "GFX_idea_BAD_rise_of_industry"
@@ -281,10 +285,6 @@ spriteTypes = {
 			name = "GFX_idea_idea_BAD_badische_maschinenfabrik_durlach"
 			texturefile = "gfx/interface/ideas/BAD/idea_BAD_badische_maschinenfabrik_durlach.png"
 		}
-		spriteType = {
-			name = "GFX_idea_BAD_bergwerk_schauinsland"
-			texturefile = "gfx/interface/ideas/BAD/idea_BAD_bergwerk_schauinsland.png"
-		}
 	
 	# Advisors
 		spriteType = {
@@ -298,10 +298,6 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_idea_BAD_advisor_Damian_Ludwig"
 			texturefile = "gfx/interface/ideas/BAD/BAD_advisor_Damian_Ludwig.png"
-		}
-		spriteType = {
-			name = "GFX_idea_BAD_advisor_Emil_Kessler"
-			texturefile = "gfx/interface/ideas/BAD/BAD_advisor_Emil_Kessler.png"
 		}
 		spriteType = {
 			name = "GFX_idea_BAD_advisor_Franz_Freiherr_von_Roggenbach"
@@ -326,6 +322,10 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_idea_BAD_advisor_Gustav_Weil"
 			texturefile = "gfx/interface/ideas/BAD/BAD_advisor_Gustav_Weil.png"
+		}
+		spriteType = {
+			name = "GFX_idea_BAD_advisor_Hermann_von_Vicari"
+			texturefile = "gfx/interface/ideas/BAD/BAD_advisor_Hermann_von_Vicari.png"
 		}
 		spriteType = {
 			name = "GFX_idea_BAD_advisor_Joseph_Victor_von_Scheffel"
@@ -1397,6 +1397,10 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_idea_landwehr"
 			texturefile = "gfx/interface/ideas/GER/idea_landwehr.png"
+		}
+		spriteType = {
+			name = "GFX_idea_reactionary_era"
+			texturefile = "gfx/interface/ideas/GER/idea_reactionary_era.png"
 		}
 		spriteType = {
 			name = "GFX_idea_wiener_munzvertrag"
@@ -3539,6 +3543,10 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_idea_WUR_advisor_karl_von_varnbueler"
 			texturefile = "gfx/interface/ideas/WUR/WUR_advisor_karl_von_varnbueler.png"
+		}
+		spriteType = {
+			name = "GFX_idea_WUR_advisor_emil_kessler"
+			texturefile = "gfx/interface/ideas/WUR/WUR_advisor_emil_kessler.png"
 		}
 		spriteType = {
 			name = "GFX_idea_WUR_advisor_fidel_von_baur_breitenfeld"

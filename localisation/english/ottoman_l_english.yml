@@ -26,7 +26,7 @@
  OTO_invest_ironworks_south_east: "Invest in ironworks on the Southeast"
  OTO_establish_naval_works_lybia: "Establish naval works in Libya"
 
- #Tanzimat?
+ #Tanzimat Decisions
  OTO_decision_category_islahat_fermani: "Islahat Fermani"
  OTO_decision_category_islahat_fermani_desc: "TODO. Insert some rant about how the Empire is weak and how we will make it Strong by doing EXACTLY THIS STUFF"
  OTO_mission_step_up_education: "Stepping up education in Empire"
@@ -37,14 +37,63 @@
  OTO_decision_education_invest_pp_cost_desc: "TODO"
  OTO_decision_education_invest_money_cost: "Allocate additional funding"
  OTO_decision_education_invest_money_cost_desc: "TODO"
+ OTO_decision_construct_izmir_aidyn_railway: "Construct Izmir-Aidyn Railway"
+ OTO_decision_construct_izmir_aidyn_railway_desc: "TODO"
+
+ OTO_railway_construction_tt: "§GDecision to Construct a New Railway Will be Unlocked§!"
+ OTO_arms_factory_construction_tt: "§GDecision to Construct a New Arms Factory Will be Unlocked§!"
+ OTO_arms_import_ENG_tt: "§GDecision to Import English Ammunitions Will be Unlocked§!"
+ OTO_arms_import_FRA_tt: "§GDecision to Import French Ammunitions Will be Unlocked§!"
+ OTO_arms_import_USA_tt: "§GDecision to Import American Ammunitions Will be Unlocked§!"
+
+ #Military Reforms Decisions
+ OTO_decision_category_military_reforms: "Ottoman Military Reforms"
+ OTO_decision_category_military_reforms_desc: "TODO. Insert some rant about how the Army is weak and how we will make it Strong by doing EXACTLY THIS STUFF"
+ OTO_decision_stepping_up_production: "Step Up Arms Production in Constantinopole"
+ OTO_decision_konya_arms_factory: "Construct New Arms Factory in Konya"
+ OTO_decision_adalia_arms_factory: "Construct New Arms Factory in Adalia"
+ OTO_decision_smyrna_arms_factory: "Construct New Arms Factory in Smyrna"
+ OTO_decision_bursa_artillery_foundry:: "Construct Artillery Foundry in Bursa"
+ OTO_decision_import_british_rifles: "Import British Rifles"
+ OTO_decision_import_french_rifles: "Import French Rifles"
+ OTO_decision_import_american_rifles: "Import American Rifles"
 
  
  #Focus Tree
 
  #Events
+ ###Tanzimants
  OTO_events.63.t: "Islahat Fermani"
- OTO_events.63.d: ""
- OTO_events.63.a: ""
+ OTO_events.63.d: "TODO"
+ OTO_events.63.a: "TODO"
+ OTO_events.64.t: "Secure More Railway Work Funds"
+ OTO_events.64.d: "TODO"
+ OTO_events.64.a: "Prussians"
+ OTO_events.64.b: "Austrians"
+ OTO_events.64.c: "French"
+ OTO_events.65.t: "Meetings with political cliques" 
+ OTO_events.65.d: "TODO"
+ OTO_events.65.d: "Good riddance"
+
+ ###Military Reforms
+ OTO_events.66.t: "Potential Import Partners"
+ OTO_events.66.d: "TODO"
+ OTO_events.66.a: "British"
+ OTO_events.66.b: "French"
+ OTO_events.66.c: "Yankees" 
+ OTO_events.67.t: "A 300 Year Old Legacy…"
+ OTO_events.67.d: "TODO"
+ OTO_events.67.a: "Krupp Cannons"
+ OTO_events.67.b: "American Guns"
+ OTO_events.67.c: "We will make our own!"
+ OTO_events.68.t: "And What Of The Legacy Of Urbans ?"
+ OTO_events.68.d: "TODO"
+ OTO_events.68.a: "TODO"
+ OTO_events.69.t: "At what cost?"
+ OTO_events.69.d: "TODO"
+ OTO_events.69.a: "TODO"
+
+ 
  OTO_vassal_tribute.1.t: ""
  OTO_vassal_tribute.1.d: ""
  OTO_vassal_tribute.2.t: "Tribute"
@@ -198,6 +247,7 @@
  OTO_events.3.t: "Questions about the Grand Vizers Pay"
  OTO_1858_land_code: "1858 Land Code"
  OTO_tanzimat_reform_start: "Tanzimat Reform"
+ OTO_tanzimat_reform_eased: "Eased Tanziamat Tentions"
  OTO_license_foreign_arms: "Licensing Foreign Arms"
  OTO_religious_segregation: "Sided with Religious Segregationist"
  OTO_religious_intergration: "Sided with Religious Integrationist"
@@ -344,7 +394,7 @@
  
 
  OTO_sicker_man_of_europe: "Our situation worsens..."
- OTO_heal_sick_man: "We can no longer be considered the 'Sick Man of Europe'.
+ OTO_heal_sick_man: "We can no longer be considered the 'Sick Man of Europe'."
  
  #Opinion Modifiers
  OTO_rail_partnership: "Rail Partnership"
@@ -563,7 +613,7 @@ OTO_focus_hire_foreign_advisors: "Hire Foreign Advisors"
 OTO_focus_hire_foreign_advisors_desc: ""
 OTO_focus_uproot_aristocrats: "Uproot the Aristocrats"
 OTO_focus_uproot_aristocratsdesc: ""
-OTO_focus_embrace_new_feodalism: "Embrace the New "Feodalism""
+OTO_focus_embrace_new_feodalism: "Embrace the New 'Feodalism'"
 OTO_focus_embrace_new_feodalism_desc: ""
 OTO_focus_echoes_industrial_revolution: "Echoes of the Industrial Revolution"
 OTO_focus_echoes_industrial_revolution_desc: ""
