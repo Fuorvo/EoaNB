@@ -1,0 +1,10 @@
+ideas = {
+	ASF_leader_titles = {
+		# Example - USA
+		# USA
+		USA_president = { allowed = { always = no } }
+		USA_vice_president = { allowed = { always = no } }
+		OTT_sultan = { allowed = { always = no } }
+		OTT_grand_vizier = { allowed = { always = no } }
+	}
+}       

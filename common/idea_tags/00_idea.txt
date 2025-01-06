@@ -244,6 +244,12 @@ idea_categories = {
 
 		ledger = hidden
 	}
+	ASF_leader_titles = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+		ledger = hidden
+	}
 }
 	
 slot_ledgers = {
@@ -265,3 +271,5 @@ slot_ledgers = {
     
     # mobilization_laws = civilian
 }
+
+

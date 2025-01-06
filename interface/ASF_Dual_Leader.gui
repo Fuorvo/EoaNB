@@ -1,0 +1,75 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ASF_Dual_Leader_Pol_GUI"
+		position = { x = 178 y = 52 }
+
+		iconType = {
+			name = "dual_leader_portrait"
+			position = { x = 8 y = 14 }
+			spriteType = "GFX_Portrait_EUROPE_Generic_Politician_female_2"
+			pdx_tooltip = dual_leader_pol_tt
+			pdx_tooltip_delayed = dual_leader_tt_delayed
+		}
+
+		iconType = {
+			name = "dual_leader_portrait_frame"
+			spriteType = "GFX_pol_leader_frame"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "second_leader_name"
+			position = { x = 8 y = 205 }
+			font = "hoi_18mbs"
+			text = "second_leader"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+			vertical_alignment = center
+			pdx_tooltip = dual_leader_pol_tt
+			pdx_tooltip_delayed = dual_leader_tt_delayed
+		}
+
+		containerWindowType = {
+			name = "title_container_window"
+			position = { x = -7 y = 230 }
+
+			instantTextBoxType = {
+				name = "second_leader_title"
+				font = "hoi_18mbs"
+				text = "second_leader_title"
+				format = center
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "first_leader_title"
+				font = "hoi_18mbs"
+				position = { x = -185 y = 5 }
+				text = "first_leader_title"
+				format = center
+				alwaystransparent = yes
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "ASF_Dual_Leader_Diplo_GUI"
+		position = { x = 140 y = 110 }
+
+		iconType = {
+			name = "dual_leader_portrait"
+			position = { x = 10 y = 7 }
+			spriteType = "GFX_portrait_USA_woodrow_wilson"
+			pdx_tooltip = dual_leader_diplo_tt
+			pdx_tooltip_delayed = dual_leader_tt_delayed
+			scale = 0.74
+		}
+
+		iconType = {
+			name = "diplo_leader_frame"
+			spriteType = "GFX_diplo_leader_frame"
+			alwaystransparent = yes
+		}
+	}
+}

@@ -1,5 +1,53 @@
 # United States of America
 characters = {
+	USA_character_james_buchanan = {
+			name = USA_character_james_buchanan
+			# https://en.wikipedia.org/wiki/James_Buchanan
+			portraits = {
+				civilian = {
+					large = "GFX_Portrait_USA_james_buchanan"
+				}
+			}
+			country_leader = {
+				desc = "USA_character_james_buchanan_desc"
+				ideology = conserv
+				expire = "1868.6.1.1"
+				traits = {
+					hawk
+				}
+			}
+		}
+	USA_character_john_breckinridge = {
+			name = USA_character_john_breckinridge
+			# https://en.wikipedia.org/wiki/John_C._Breckinridge
+			portraits = {
+				civilian = {
+					large = "GFX_Portrait_CSA_john_breckinridge"
+					small = "gfx/interface/ideas/USA/john_c_breckinridge.dds"
+				}
+			}
+			country_leader = {
+				desc = "USA_character_john_breckinridge_desc"
+				ideology = conserv
+				expire = "1868.6.1.1"
+			}
+		}
+	USA_character_stephen_a_douglas = {
+			name = USA_character_stephen_a_douglas
+			portraits = {
+				civilian = {
+					large = "GFX_Portrait_USA_stephen_douglas"
+				}
+			}
+			country_leader = {
+				desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+				expire = "1861.6.3.1"
+				ideology = conserv
+				traits = {
+					cabinet_crisis
+				}
+			}
+		}
 	##########
 	USA_character_william_seward = {
 		# Also in Lincoln's cabinet
@@ -745,22 +793,7 @@ characters = {
 				}
 			}
 		}
-		USA_character_stephen_a_douglas = {
-			name = "Stephen A. Douglas"
-			portraits = {
-				civilian = {
-					large = "GFX_Portrait_USA_stephen_douglas"
-				}
-			}
-			country_leader = {
-				desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-				expire = "1861.6.3.1"
-				ideology = conserv
-				traits = {
-					cabinet_crisis
-				}
-			}
-		}
+		
 		USA_character_charles_sumner = {
 			name = "Charles Sumner"
 			portraits = {
@@ -875,16 +908,7 @@ characters = {
 				}
 			}
 		}
-		USA_character_john_breckinridge = {
-			name = "John C. Breckinridge"
-			# https://en.wikipedia.org/wiki/John_C._Breckinridge
-			portraits = {
-				civilian = {
-					large = "GFX_Portrait_CSA_john_breckinridge"
-					small = "gfx/interface/ideas/USA/john_c_breckinridge.dds"
-				}
-			}
-		}
+		
 		USA_character_john_bell = {
 			name = "John Bell"
 			portraits = {
