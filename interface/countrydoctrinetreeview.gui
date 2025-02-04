@@ -26,12 +26,12 @@ guiTypes = {
 				quadTextureSprite = "GFX_tiled_window_2b_border"
 			}
 
-			iconType = {
-					name = "land_doctrine_techtree_bg"
-					spriteType = "GFX_land_doctrine_techtree_bg"
-					position = { x = 0 y = 0 }
-					alwaystransparent = yes
-			}
+			#iconType = {
+			#	name = "land_doctrine_techtree_bg"
+			#	spriteType = "GFX_land_doctrine_techtree_bg"
+			##	position = { x = 0 y = 0 }
+			#	alwaystransparent = yes
+			#}
 
 			containerWindowType = {
 				name = "size_filler"
@@ -39,290 +39,132 @@ guiTypes = {
 				size = { width = 2500 height = 100% }
 			}
 
-			instantTextBoxType = {
-				name = "artillery_title"
-				position = { x = 1570 y = 100 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "NAPOLEONIC_ARTILLERY_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
+		
+			containerWindowType = {
+				name = "napoleonic_gui"
+				position = { x = 0 y = 0 }
+				Orientation = UPPER_LEFT
+
+				instantTextBoxType = {
+					name = "artillery_title"
+					position = { x = 1570 y = 100 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "NAPOLEONIC_ARTILLERY_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "infantry_title"
+					position = { x = 1100 y = 100 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "NAPOLEONIC_INFANTRY_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "cavalry_title"
+					position = { x = 600 y = 100 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "NAPOLEONIC_CAVALRY_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 			}
 
-			instantTextBoxType = {
-				name = "infantry_title"
-				position = { x = 1100 y = 100 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "NAPOLEONIC_INFANTRY_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
+			containerWindowType = {
+				name = "victorian_tree_gui"
+				position = { x = 0 y = 0 }
+				Orientation = UPPER_LEFT
+
+				instantTextBoxType = {
+					name = "vic_artillery_title"
+					position = { x = 600 y = 100}
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "VICTORIAN_ARTILLERY_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "vic_infantry_title"
+					position = { x = 1000 y = 100 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "VICTORIAN_INFANTRY_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "vic_cavalry_title"
+					position = { x = 1500 y = 100 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "VICTORIAN_CAVALRY_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "vic_colonial_title"
+					position = { x = 1950 y = 100s}
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "VICTORIAN_COLONIAL_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "vic_professional_title"
+					position = { x = 2250 y = 100 }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = { x = 0 y = 4 }
+					text = "VICTORIAN_PROFESSIONAL_DOCTRINE_LABEL"
+					maxWidth = 400
+					maxHeight = 122
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 			}
-
-			instantTextBoxType = {
-				name = "cavalry_title"
-				position = { x = 600 y = 100 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "NAPOLEONIC_CAVALRY_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "vic_artillery_title"
-				position = { x = 1450 y = 1250}
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "VICTORIAN_ARTILLERY_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "vic_infantry_title"
-				position = { x = 700 y = 1250 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "VICTORIAN_INFANTRY_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "vic_cavalry_title"
-				position = { x = 0 y = 1250 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "VICTORIAN_CAVALRY_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "vic_colonial_title"
-				position = { x = 1950 y = 1250 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "VICTORIAN_COLONIAL_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			instantTextBoxType = {
-				name = "vic_professional_title"
-				position = { x = 2250 y = 1250 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = { x = 0 y = 4 }
-				text = "VICTORIAN_PROFESSIONAL_DOCTRINE_LABEL"
-				maxWidth = 400
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-			}
-
-			#instantTextBoxType = {
-			#	name = "innovation_title"
-			#	position = { x = 1810 y = 35 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "VICTORIAN_INNOVATION_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
-			#instantTextBoxType = {
-			#	name = "asymetric_title"
-			#	position = { x = 370 y = 1285 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "MACHINE_ASYMETRIC_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
-			#instantTextBoxType = {
-			#	name = "grand_battle_title"
-			#	position = { x = 850 y = 1285 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "MACHINE_GRAND_BATTLE_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
-			#instantTextBoxType = {
-			#	name = "first_battle_title"
-			#	position = { x = 1330 y = 1285 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "MACHINE_FIRST_BATTLE_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
-			#instantTextBoxType = {
-			#	name = "colonial_force_title"
-			#	position = { x = 1810 y = 1285 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "MACHINE_COLONIAL_FORCE_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
-			#instantTextBoxType = {
-			#	name = "grand_offensive_title"
-			#	position = { x = 850 y = 2585 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "COMBINED_GRAND_OFFENSIVE_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-			#instantTextBoxType = {
-			#	name = "attack_in_posistion_title"
-			#	position = { x = 1083 y = 2585 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "COMBINED_ATTACK_IN_POSISTION_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-			#instantTextBoxType = {
-			#	name = "co-ord_fire_title"
-			#	position = { x = 1320 y = 2585 }
-			#	textureFile = ""
-			#	font = "hoi_22tech"
-			#	borderSize = { x = 0 y = 4 }
-			#	text = "COMBINED_COORDINATED_FIRE_DOCTRINE_LABEL"
-			#	maxWidth = 400
-			#	maxHeight = 122
-			#	format = center
-			#	Orientation = "UPPER_LEFT"
-			#}
-
+			### Grid Boxes ###
 			gridboxtype = {
-				name = "land_doctrine_napoleonic_tree"
-				position = { x = 80 y = 172 }
-				size = { width = 478 height = 1350 }
-				slotsize = { width = 60 height = 60 }
-				format = "UP"
+					name = "land_doctrine_napoleonic_tree"
+					position = { x = 80 y = 172 }
+					size = { width = 478 height = 1350 }
+					slotsize = { width = 60 height = 60 }
+					format = "UP"
 			}
 			gridboxtype = {
-				name = "land_doctrine_victorian_tree"
-				position = { x = 80 y = 172 }
-				size = { width = 478 height = 1350 }
-				slotsize = { width = 60 height = 60 }
-				format = "UP"
+					name = "land_doctrine_victorian_tree"
+					position = { x = 80 y = 172 }
+					size = { width = 478 height = 1350 }
+					slotsize = { width = 60 height = 60 }
+					format = "UP"
 			}
-			#gridboxtype = {
-			#	name = "doctrine_machine_asymetric_tatics_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "doctrine_machine_grand_battle_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "doctrine_machine_first_battle_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "doctrine_machine_colonial_force_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "land_doctrine_combined_arms_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "mobile_warfare_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "superior_firepower_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "grand_battle_plan_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-			#gridboxtype = {
-			#	name = "mass_assault_tree"
-			#	position = { x = 80 y = 172 }
-			#	size = { width = 478 height = 1350 }
-			#	slotsize = { width = 60 height = 60 }
-			#	format = "UP"
-			#}
-
 		}
 
 		containerWindowType = {
