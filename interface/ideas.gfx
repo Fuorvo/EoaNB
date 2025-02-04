@@ -2,7 +2,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
-		noOfFrames = 24
+		noOfFrames = 18
 	}
 
 	### new tfv nat spirit icons
@@ -5545,11 +5545,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_tur_golden_age_of_the_wolf"
 		texturefile = "gfx/interface/ideas/idea_tur_golden_age_of_the_wolf.dds"
-	}
-										
-	spriteType = {
-		name = "GFX_idea_tur_funkplan"
-		texturefile = "gfx/interface/ideas/idea_tur_funkplan.dds"
 	}
 										
 	spriteType = {

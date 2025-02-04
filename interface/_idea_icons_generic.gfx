@@ -82,12 +82,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic/mounting_debt.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_generic_agriculture"
+		texturefile = "gfx/interface/ideas/generic/economy/idea_generic_agriculture.png"
+	}
+	spriteType = {
 		name = "GFX_idea_generic_business_deregulation"
 		texturefile = "gfx/interface/ideas/generic/economy/idea_generic_business_deregulation.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_business_regulation"
 		texturefile = "gfx/interface/ideas/generic/economy/idea_generic_business_regulation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_crimean_war_debt"
+		texturefile = "gfx/interface/ideas/generic/economy/idea_generic_crimean_war_debt.png"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_reconstruction"
@@ -370,235 +378,231 @@ spriteTypes = {
 	
 	#Europe
 	spriteType = {
-		name = "GFX_idea_europe_generic_army_1"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_army_1.png"
-	}
-	spriteType = {
 		name = "GFX_idea_europe_generic_1"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_1.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_2"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_2.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_2.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_3"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_3.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_3.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_4"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_4.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_4.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_5"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_5.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_5.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_6"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_6.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_6.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_7"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_7.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_7.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_8"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_8.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_8.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_9"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_9.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_9.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_10"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_10.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_10.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_11"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_11.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_11.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_12"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_12.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_12.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_13"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_13.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_13.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_14"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_14.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_14.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_15"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_15.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_15.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_16"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_16.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_16.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_17"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_17.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_17.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_18"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_18.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_18.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_19"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_19.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_19.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_europe_generic_20"
-		texturefile = "gfx/interface/ideas/generic/europe/europe_generic_20.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/europe/europe_generic_20.dds"
 	}
 	#Africa
 	spriteType = {
 		name = "GFX_idea_africa_generic_1"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_1.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_2"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_2.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_2.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_3"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_3.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_3.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_4"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_4.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_4.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_5"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_5.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_5.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_6"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_6.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_6.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_7"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_7.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_7.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_8"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_8.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_8.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_9"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_9.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_9.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_10"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_10.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_10.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_11"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_11.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_11.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_africa_generic_12"
-		texturefile = "gfx/interface/ideas/generic/africa/africa_generic_12.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/africa/africa_generic_12.dds"
 	}
 	#Asia
 	spriteType = {
 		name = "GFX_idea_asia_generic_1"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_1.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_2"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_2.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_2.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_3"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_3.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_3.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_4"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_4.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_4.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_5"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_5.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_5.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_6"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_6.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_6.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_7"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_7.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_7.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_8"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_8.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_8.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_9"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_9.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_9.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_10"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_10.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_10.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_11"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_11.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_11.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_asia_generic_12"
-		texturefile = "gfx/interface/ideas/generic/asia/asia_generic_12.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/asia/asia_generic_12.dds"
 	}
 	#Latin
 	spriteType = {
 		name = "GFX_idea_latin_generic_1"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_1.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_2"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_2.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_2.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_3"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_3.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_3.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_4"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_4.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_4.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_5"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_5.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_5.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_6"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_6.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_6.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_7"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_7.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_7.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_8"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_8.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_8.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_9"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_9.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_9.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_10"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_10.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_10.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_11"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_11.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_11.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_latin_generic_12"
-		texturefile = "gfx/interface/ideas/generic/latin/latin_generic_12.dds"
+		texturefile = "gfx/interface/ideas/generic/_portraits/latin/latin_generic_12.dds"
 	}
 	# NativeAmerican
 	spriteType = {
@@ -748,6 +752,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic/generic_idea_government_centralisation.png"
 	}
 	spriteType = {
+		name = "GFX_idea_generic_grain_crisis"
+		texturefile = "gfx/interface/ideas/generic/generic_idea_grain_crisis.png"
+	}
+	spriteType = {
 		name = "GFX_idea_generic_improve_credit_organisation"
 		texturefile = "gfx/interface/ideas/generic/generic_idea_improve_credit_organisation.png"
 	}
@@ -758,6 +766,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_latin_monetary_union"
 		texturefile = "gfx/interface/ideas/generic/generic_idea_latin_monetary_union.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_liberalism"
+		texturefile = "gfx/interface/ideas/generic/generic_idea_liberalism.png"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_mandatory_conscription"
@@ -778,6 +790,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_monopoly"
 		texturefile = "gfx/interface/ideas/generic/generic_idea_monopoly.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_non_existing_arms_industry"
+		texturefile = "gfx/interface/ideas/generic/generic_idea_non_existing_arms_industry.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_non_existing_artillery_production"
+		texturefile = "gfx/interface/ideas/generic/generic_idea_non_existing_artillery_production.png"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_poor_working_condition"
@@ -814,6 +834,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_generic_welfare"
 		texturefile = "gfx/interface/ideas/generic/generic_idea_welfare.png"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_hospital"
+		texturefile = "gfx/interface/ideas/generic/generic_idea_hospital.png"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_widespread_bankrupcy"

@@ -181,7 +181,7 @@ ideas = {
 				allowed_civil_war = { always = no }
 				removal_cost = -1
 
-				picture = ENG_Victoria
+				picture = ENG_queen_victoria_national_spirit
 				
 				modifier = {
 					stability_factor = 0.1
@@ -194,7 +194,7 @@ ideas = {
 				allowed_civil_war = { always = no }
 				removal_cost = -1
 
-				picture = ENG_Victoria
+				picture = ENG_queen_victoria_national_spirit
 
 				traits = { 
 					hos_trait_colonial_monarch
@@ -859,6 +859,9 @@ ideas = {
 				max_fuel_factor = -0.1
 				resistance_target = -0.375
 				tax_efficiency_factor = -0.15
+				hidden_modifier = {
+					tax_efficiency_factor_from_ideas = -0.15
+				}
 			}
 		}
 
@@ -892,6 +895,9 @@ ideas = {
 				max_fuel_factor = -0.1
 				resistance_target = -0.30
 				tax_efficiency_factor = -0.1
+				hidden_modifier = {
+					tax_efficiency_factor_from_ideas = -0.1
+				}
 			}
 		}
 
@@ -925,6 +931,9 @@ ideas = {
 				MONTHLY_POPULATION = -0.1
 				resistance_target = -0.225
 				tax_efficiency_factor = -0.05
+				hidden_modifier = {
+					tax_efficiency_factor_from_ideas = -0.05
+				}
 			}
 		}
 

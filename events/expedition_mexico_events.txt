@@ -1,4 +1,4 @@
-﻿add_namespace = SPR_mexican_expedition 
+add_namespace = SPR_mexican_expedition 
 
 #-----------------------------------------
 #Ask France to inject a monarchy in mexico
@@ -53,12 +53,10 @@ country_event = {
 					target = ROOT
 					transfer_troops = no
 				}
-				set_variable = { MXE.debt_level = MEX.debt_level }
-				if = {
-					limit = { MXE = { NOT = { has_idea = egy_vic_debt } } }
-					MXE = { add_ideas = egy_vic_debt }
-				}
+				#set_variable = { MXE.debt_level = MEX.debt_level }
 				set_country_flag = MXE_empire_without_war
+				
+				# Create leader
 				create_country_leader = {
 					name = "Maximilian I"
 					desc = "POLITICS_EMPEROR_MAXIMILIAN_DESC"
@@ -68,28 +66,64 @@ country_event = {
 					traits = {
 					}
 				}
-				add_to_array = { # position 0 is null value
-						array = local_mhc_army_available_traits_array
-						index = 0
-						value = 0
+
+				# Initialize army traits array
+				add_to_array = {
+					array = local_mhc_army_available_traits_array
+					index = 0
+					value = 0
 				}
 
-				# Set MHC
-				set_temp_variable = { temp_advisor_frame = 1 }
-				set_temp_variable = { temp_advisor_trait = 17 }
-				mhc_add_army_advisor = yes
+				# Create military commanders
+				create_corps_commander = {
+					name = "Miguel Miramón"
+					portrait_path = "gfx/leaders/MXE/Portrait_MXE_Miguel_Miramon.dds"
+					traits = { cavalry_officer politically_connected }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
 
-				set_temp_variable = { temp_advisor_frame = 2 }
-				set_temp_variable = { temp_advisor_trait = 7 }
-				mhc_add_army_advisor = yes
+				create_corps_commander = {
+					name = "Leonardo Márquez"
+					portrait_path = "gfx/leaders/MXE/Portrait_MXE_Leonardo_Marquez.dds"
+					traits = { harsh_leader infantry_officer }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
 
-				set_temp_variable = { temp_advisor_frame = 3 }
-				set_temp_variable = { temp_advisor_trait = 53 }
-				mhc_add_army_advisor = yes
-			}
+				create_corps_commander = {
+					name = "Tomás Mejía"
+					portrait_path = "gfx/leaders/MXE/Portrait_MXE_Tomas_Mejia.dds"
+					traits = { cavalry_expert war_hero }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 2
+				}
 
-			AUS = {
-				country_event = { id = austria.332 } #Placeholder - Involve Austria much more in this!
+				# Add starting ideas
+				add_ideas = {
+					limited_conscription
+					partial_economic_mobilisation
+				}
+
+				# Set up starting technology
+				set_technology = {
+					infantry_weapons = 1
+					tech_support = 1
+					tech_engineers = 1
+					tech_recon = 1
+					gw_artillery = 1
+					basic_cavalry = 1
+					basic_train = 1
+				}
 			}
 		}
 	}
@@ -1033,22 +1067,26 @@ country_event = {
 				}
 				if = { 
 					limit = { FRA = { has_country_flag = FRA_mexican_intervention_flag } }
-					SPR = { diplomatic_relation = { country = FRA relation = military_access active = yes } }
-					SPR = { diplomatic_relation = { country = FRA relation = non_aggression_pact active = yes } }
-					#if = { 
-						#limit = { has_dlc = "Man the Guns" } 
-						#SPR = { diplomatic_relation = { country = FRA relation = docking_rights active = yes } }
-					#}
-				}	
+					SPR = { 
+						diplomatic_relation = { country = FRA relation = military_access active = yes } 
+						diplomatic_relation = { country = FRA relation = non_aggression_pact active = yes }
+					}
+				}
+				#if = { 
+					#limit = { has_dlc = "Man the Guns" } 
+					#SPR = { diplomatic_relation = { country = FRA relation = docking_rights active = yes } }
+				#}
 				if = { 
 					limit = { ENG = { has_country_flag = ENG_mexican_intervention_flag } }
-					SPR = { diplomatic_relation = { country = ENG relation = military_access active = yes } }	
-					SPR = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
-					#if = { 
-						#limit = { has_dlc = "Man the Guns" } 
-						#SPR = { diplomatic_relation = { country = ENG relation = docking_rights active = yes } }
-					#}
+					SPR = { 
+						diplomatic_relation = { country = ENG relation = military_access active = yes }
+						diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes }
+					}
 				}
+				#if = { 
+					#limit = { has_dlc = "Man the Guns" } 
+					#SPR = { diplomatic_relation = { country = ENG relation = docking_rights active = yes } }
+				#}
 			}
 			if = { 
 				limit = { FRA = { has_country_flag = FRA_mexican_intervention_flag } }
@@ -1109,22 +1147,26 @@ country_event = {
 				}
 				if = { 
 					limit = { SPR = { has_country_flag = SPR_mexican_intervention_flag } }
-					FRA = { diplomatic_relation = { country = SPR relation = military_access active = yes } }
-					FRA = { diplomatic_relation = { country = SPR relation = non_aggression_pact active = yes } }
-					#if = { 
-						#limit = { has_dlc = "Man the Guns" } 
-						#FRA = { diplomatic_relation = { country = SPR relation = docking_rights active = yes } }
-					#}
-				}	
+					FRA = { 
+						diplomatic_relation = { country = SPR relation = military_access active = yes }
+						diplomatic_relation = { country = SPR relation = non_aggression_pact active = yes }
+					}
+				}
+				#if = { 
+					#limit = { has_dlc = "Man the Guns" } 
+					#FRA = { diplomatic_relation = { country = SPR relation = docking_rights active = yes } }
+				#}
 				if = { 
 					limit = { ENG = { has_country_flag = ENG_mexican_intervention_flag } }
-					FRA = { diplomatic_relation = { country = ENG relation = military_access active = yes } }	
-					FRA = { diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes } }
-					#if = { 
-						#limit = { has_dlc = "Man the Guns" } 
-						#FRA = { diplomatic_relation = { country = ENG relation = docking_rights active = yes } }
-					#}
+					FRA = { 
+						diplomatic_relation = { country = ENG relation = military_access active = yes }
+						diplomatic_relation = { country = ENG relation = non_aggression_pact active = yes }
+					}
 				}
+				#if = { 
+					#limit = { has_dlc = "Man the Guns" } 
+					#FRA = { diplomatic_relation = { country = ENG relation = docking_rights active = yes } }
+				#}
 			}
 			if = {
 				limit = { ENG = { has_country_flag = ENG_mexican_intervention_flag } }
@@ -1179,22 +1221,26 @@ country_event = {
 				}
 				if = { 
 					limit = { SPR = { has_country_flag = SPR_mexican_intervention_flag } }
-					ENG = { diplomatic_relation = { country = SPR relation = military_access active = yes } }
-					ENG = { diplomatic_relation = { country = SPR relation = non_aggression_pact active = yes } }
-					#if = { 
-						#limit = { has_dlc = "Man the Guns" } 
-						#ENG = { diplomatic_relation = { country = SPR relation = docking_rights active = yes } }
-					#}
-				}	
+					ENG = { 
+						diplomatic_relation = { country = SPR relation = military_access active = yes }
+						diplomatic_relation = { country = SPR relation = non_aggression_pact active = yes }
+					}
+				}
+				#if = { 
+					#limit = { has_dlc = "Man the Guns" } 
+					#ENG = { diplomatic_relation = { country = SPR relation = docking_rights active = yes } }
+				#}
 				if = { 
 					limit = { FRA = { has_country_flag = FRA_mexican_intervention_flag } }
-					ENG = { diplomatic_relation = { country = FRA relation = military_access active = yes } }	
-					ENG = { diplomatic_relation = { country = FRA relation = non_aggression_pact active = yes } }
-					#if = { 
-						#limit = { has_dlc = "Man the Guns" } 
-						#ENG = { diplomatic_relation = { country = FRA relation = docking_rights active = yes } }
-					#}
+					ENG = { 
+						diplomatic_relation = { country = FRA relation = military_access active = yes }
+						diplomatic_relation = { country = FRA relation = non_aggression_pact active = yes }
+					}
 				}
+				#if = { 
+					#limit = { has_dlc = "Man the Guns" } 
+					#ENG = { diplomatic_relation = { country = FRA relation = docking_rights active = yes } }
+				#}
 			}
 		}
 	}
@@ -2618,7 +2664,8 @@ country_event = {
 		}
 		USA = { transfer_state = 484 }
 		USA = { transfer_state = 1359 }
-		debt_level_decrease_by_5 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		hidden_effect = { USA = { country_event = { id = SPR_mexican_expedition.38 days = 1 } } }
 	}
 	
@@ -2735,7 +2782,8 @@ country_event = {
 		ai_chance = { 
 			base = 100
 		}
-		debt_level_increase_by_1 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		hidden_effect = { USA = { country_event = { id = SPR_mexican_expedition.42 days = 1 } } }
 	}
 	
@@ -3259,13 +3307,6 @@ country_event = {
 						}
 						MXE = { transfer_state = PREV }
 						set_variable = { MXE.debt_level = MEX.debt_level }
-						if = { 
-							limit = { check_variable = { var = MXE.debt_level value = 0 compare = greater_than } }
-							if = {
-								limit = { MXE = { NOT = { has_idea = egy_vic_debt } } }
-								MXE = { add_ideas = egy_vic_debt }
-							}
-						}
 						set_variable = { var = MXE.SPR_debt_repayments_level value = MEX.SPR_debt_repayments_level }
 						if = { 
 							limit = { check_variable = { var = MXE.SPR_debt_repayments_level value = 0 compare = greater_than } }
@@ -3323,7 +3364,7 @@ country_event = { # Appointment of the Junta Superior de Gobierno
 		create_country_leader = {
 			name = "Junta Superior de Gobierno"
 			desc = "POLITICS_JUNTA_SUPERIOR_GOBIERNO_DESC"
-			picture = "Portrait_MXE_Junta_Superior_de_Gobierno.dds"
+			picture = GFX_Portrait_MXE_Junta_Superior_de_Gobierno
 			expire = "1965.1.1"
 			ideology = conserv
 			traits = {
@@ -3742,7 +3783,7 @@ country_event = { #Imperial Mexican Army is Formed
 		load_oob = MXE_imperial_army
 		create_corps_commander = {
 			name = "Karl Graf Metsch"
-			picture = "Portrait_MXE_Karl_Graf_Metsch.dds"
+			picture = GFX_Portrait_MXE_Karl_Graf_Metsch
 			traits = { cavalry_officer }
 			skill = 2
 			attack_skill = 4
@@ -3752,7 +3793,7 @@ country_event = { #Imperial Mexican Army is Formed
 		}
 		create_corps_commander = {
 			name = "Juan Nepomuceno Almonte"
-			picture = "Portrait_MXE_Juan_Nepomuceno_Almonte.dds"
+			picture = GFX_Portrait_MXE_Juan_Nepomuceno_Almonte
 			traits = { eoanb_conservative_tendencies eoanb_mexican_general }
 			skill = 3
 			attack_skill = 2
@@ -3762,7 +3803,7 @@ country_event = { #Imperial Mexican Army is Formed
 		}
 		create_corps_commander = {
 			name = "Leonardo Márquez"
-	 		picture = "Portrait_MEC_Leonard_Marquez.dds"
+	 		picture = "gfx/leaders/MEC/Portrait_MEC_Leonard_Marquez.png"
 			traits = { harsh_leader eoanb_conservative_tendencies eoanb_mexican_general }
 	 		skill = 4
 			id = 18634
@@ -5298,7 +5339,3 @@ country_event = { #Imperial Triumph (called by on_peaceconference_ended on_actio
 #----------------------------------------------------
 #
 #----------------------------------------------------
-
-
-
-

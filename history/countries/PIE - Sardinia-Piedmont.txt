@@ -37,7 +37,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_3
-		taxation_level_3
+		taxation_level_1
 		cl_restricted
 		
 		#stagnation_growth
@@ -154,7 +154,7 @@
 		civil_army_cloth = 1
 		tech_infantry_practical_rifling = 1
 		tech_infantry_caplock_pistol = 1
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1
 		corliss_steam_engine = 1
 		high_speed_steam_engine = 1
@@ -208,10 +208,7 @@
 		amount = 25
 		producer = PIE
 	}
-	#How to set up initial debt_level
-	#PIE = {
-	#	add_to_variable = {var = debt_level value = 1} #Sardinia-Piemont's National Debt amounted to 677.02m Lire (= 26.84m Pound Sterling as of 1871) at the end of 1857; income per year 144.98m Francs (= 5.75m Pound Sterling) = 4.67 GDP of debt
-	#}
+	#Sardinia-Piemont's National Debt amounted to 677.02m Lire (= 26.84m Pound Sterling as of 1871) at the end of 1857; income per year 144.98m Francs (= 5.75m Pound Sterling) = 4.67 GDP of debt
 
 	# POLITICAL LEADERS
 	recruit_character = PIE_victor_emmanuel_ii
@@ -423,7 +420,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_3
-		taxation_level_3
+		taxation_level_1
 		cl_restricted
 		
 		#stagnation_growth
@@ -498,7 +495,7 @@
 		#Weapons & Equipment
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Smoothbore
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1 #Minie
 		rifle_equipment2 = 1 #Enfield
 		tech_infantry_breech_loading = 1
@@ -794,10 +791,6 @@
 		amount = 25
 		producer = PIE
 	}
-	#How to set up initial debt_level
-	#PIE = {
-	#	add_to_variable = {var = debt_level value = 1} #Sardinia-Piemont's National Debt amounted to 677.02m Lire (= 26.84m Pound Sterling as of 1871) at the end of 1857; income per year 144.98m Francs (= 5.75m Pound Sterling) = 4.67 GDP of debt
-	#}
 	
 	PIE_archduke_karl_ludwig = {
 		set_character_flag = PIE_Not_Transfer_SAR

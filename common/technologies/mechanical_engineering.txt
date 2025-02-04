@@ -101,7 +101,7 @@ technologies = {
 	
 	tech_humanities_metropolitan = {
 		
-		consumer_goods_expected_value = 0.01
+		consumer_goods_factor = 0.01
 		production_factory_efficiency_gain_factor = 0.04
 		line_change_production_efficiency_factor = 0.02
 		
@@ -237,29 +237,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -320,29 +298,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -407,29 +363,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -461,6 +395,7 @@ technologies = {
 		path = {
 			leads_to_tech = corliss_steam_engine
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -476,29 +411,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -769,29 +682,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -2939,10 +2830,10 @@ technologies = {
 			position = { x = 22 y = 16 }
 		}
 		
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 57 y = 58 }
-		}
+		#folder = {
+		#	name = mtgnavalfolder
+		#	position = { x = 57 y = 58 }
+		#}
 		
 		path = {
 			leads_to_tech = internal_combustion_engine
@@ -3028,6 +2919,7 @@ technologies = {
 		path = {
 			leads_to_tech = factory_industry_1
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -3081,6 +2973,7 @@ technologies = {
 		path = {
 			leads_to_tech = factory_industry_2
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -3139,6 +3032,7 @@ technologies = {
 		path = {
 			leads_to_tech = factory_industry_3
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -3187,6 +3081,7 @@ technologies = {
 		path = {
 			leads_to_tech = factory_industry_4
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -3240,6 +3135,7 @@ technologies = {
 		path = {
 			leads_to_tech = factory_industry_5
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -3282,6 +3178,7 @@ technologies = {
 		path = {
 			leads_to_tech = factory_industry_6
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -4194,10 +4091,10 @@ technologies = {
 			tribal_steam_experiments = 1
 		}
 		
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 0 y = 58 }
-		}
+		#folder = {
+		#	name = mtgnavalfolder
+		#	position = { x = 0 y = 58 }
+		#}
 		
 		path = {
 			leads_to_tech = high_speed_steam_engine
@@ -4225,29 +4122,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -4278,17 +4153,19 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -2 y = 2 }
+			position = { x = 7 y = 3 }
 		}
 		
 		path = {
 			leads_to_tech = porter_allen_engine
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
 			leads_to_tech = steam_locomotive
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -4337,10 +4214,10 @@ technologies = {
 		#	position = { x = 4 y = 0 }
 		#}
 		
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 6 y = 58 }
-		}
+		#folder = {
+		#	name = mtgnavalfolder
+		#	position = { x = 6 y = 58 }
+		#}
 		
 		path = {
 			leads_to_tech = early_aerodynamics
@@ -4387,6 +4264,7 @@ technologies = {
 		path = {
 			leads_to_tech = impulse_steam_turbine
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		ai_will_do = {
@@ -4433,10 +4311,10 @@ technologies = {
 			gibbs_theory_of_thermodynamics = 1
 		}
 		
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 42 y = 58 }
-		}
+		#folder = {
+		#	name = mtgnavalfolder
+		#	position = { x = 42 y = 58 }
+		#}
 		
 		path = {
 			leads_to_tech = de_laval_turbine
@@ -4519,10 +4397,10 @@ technologies = {
 			position = { x = 10 y = 22 }
 		}
 		
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 51 y = 58 }
-		}
+		#folder = {
+		#	name = mtgnavalfolder
+		#	position = { x = 51 y = 58 }
+		#}
 		
 		path = {
 			leads_to_tech = diesel_engine
@@ -4567,6 +4445,7 @@ technologies = {
 		path = {
 			leads_to_tech = diesel_locomotive_1
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		path = {
 			leads_to_tech = v8_engines
@@ -4638,6 +4517,7 @@ technologies = {
 		path = {
 			leads_to_tech = diesel_locomotive_4
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		path = {
 			leads_to_tech = v6_engines

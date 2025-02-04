@@ -13,6 +13,19 @@
 		type = civil_war
 	}
 
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.05 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 0.01 }
+	set_variable = { current_loans_sum = 6 }
+
 	add_ideas = {
 		#POLITICS
 
@@ -26,12 +39,12 @@
 		war_economy
 		limited_exports
 		army_spending_level_4
-		taxation_level_3
-	cl_legal
+		taxation_level_1
+		cl_legal
 
 		#stagnation_growth
 		border_control
-	extensive_conscription
+		extensive_conscription
 		segregation
 		universal_male_suffrage
 
@@ -49,7 +62,6 @@
 		research_spending_level_1
 
 		#NATIONAL SPIRITS
-		egy_vic_debt
 		PRU_BSupport
 	PRU_1856_constitution
 	PRU_the_northern_campaign
@@ -111,13 +123,7 @@ set_popularities = {
 	doctrine_napoleonic_defensive_tactics = 1
 	}
 
-	#How to set up initial debt_level
-	#PRU = {
-	#	add_to_variable = {var = debt_level value = 4} #Peru's National Debt amounts to 46.70m Pesos (= 9.71m Pound Sterling) as of 1856; income per year 16m Pesos (= 2.44m Pound Sterling; 12m Pesos from Guano alone!) = 3.98 GDP of debt
-	#	add_to_variable = {var = SPR_debt_repayments_level value = 3}
-	#	set_country_flag = SPR_paying_debt_interest_flag
-	#	set_country_flag = PRU_coup_is_original_tag
-	#}
+	#Peru's National Debt amounts to 46.70m Pesos (= 9.71m Pound Sterling) as of 1856; income per year 16m Pesos (= 2.44m Pound Sterling; 12m Pesos from Guano alone!) = 3.98 GDP of debt
 
 	# POLITICAL LEADERS
 	recruit_character = PRR_Manuel_Ignacio_de_Vivanco

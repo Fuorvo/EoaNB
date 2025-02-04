@@ -61,7 +61,7 @@
 
 		#ECONOMY
 		limited_exports
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 		
 		
@@ -84,7 +84,6 @@
 		research_spending_level_1
 
 		#NATIONAL SPIRITS
-		egy_vic_debt
 		SPR_pragmatica_sancion
 		SPR_a_divided_country
 		SPR_the_carlist_threat
@@ -141,7 +140,7 @@
 		tribal_leching = 1
 		tech_infantry_flintlock_pistol = 1
 		tech_infantry_caplock_pistol = 1
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1
 		hand_revolvers = 1
 		tech_infantry_infantry_swords = 1
@@ -277,9 +276,8 @@
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 1000 producer = SPR }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1000 producer = SPR }
 
-	#How to set up initial debt_level
 	SPR = {
-		add_to_variable = {var = debt_level value = 30} #Spain's National Debt amounted to 14.3bn Reales (715m Peso/Spanish Dollars = 3.575bn Peseta/Franc as of 1850 exchange rate = 141.7m Pound Sterling as of 1871) at the end of 1859; yearly income roughly 12.4m Pound Sterling = 11.4 GDP of debt
+		#Spain's National Debt amounted to 14.3bn Reales (715m Peso/Spanish Dollars = 3.575bn Peseta/Franc as of 1850 exchange rate = 141.7m Pound Sterling as of 1871) at the end of 1859; yearly income roughly 12.4m Pound Sterling = 11.4 GDP of debt
 		add_to_variable = { var = SPR_debt_repayment_profits value = 0.5 } #From: CHL, COL, ECU, PRU, VEN
 		set_cosmetic_tag = SPR_victorian
 	}
@@ -378,8 +376,8 @@
 				fixed_ship_engine_slot = ship_engine_sail_1
 				fixed_ship_armor_slot = empty
 				mid_1_custom_slot = ship_cannon_battery_0
-				mid_2_custom_slot = ship_cannon_battery_0
-				front_1_custom_slot = ship_cannon_battery_0
+				mid_2_custom_slot = empty
+				front_1_custom_slot = empty
 				rear_1_custom_slot = empty
 			}
 			obsolete = yes
@@ -395,9 +393,9 @@
 				fixed_ship_engine_slot = ship_engine_sail_1
 				fixed_ship_armor_slot = ship_armor_capital_hardwood_0
 				mid_1_custom_slot = ship_cannon_battery_0
-				mid_2_custom_slot = ship_cannon_battery_0
-				front_1_custom_slot = ship_cannon_battery_0
-				rear_1_custom_slot = ship_cannon_battery_0
+				mid_2_custom_slot = empty
+				front_1_custom_slot = empty
+				rear_1_custom_slot = empty
 			}
 			obsolete = yes
 		}
@@ -412,8 +410,8 @@
 				fixed_ship_engine_slot = ship_engine_sail_2
 				fixed_ship_armor_slot = ship_armor_capital_hardwood_0
 				mid_1_custom_slot = ship_cannon_battery_1
-				mid_2_custom_slot = ship_cannon_battery_1
-				front_1_custom_slot = ship_cannon_battery_1
+				mid_2_custom_slot = empty
+				front_1_custom_slot = empty
 				rear_1_custom_slot = empty
 			}
 			obsolete = no
@@ -429,8 +427,8 @@
 				fixed_ship_engine_slot = ship_engine_steam_screw_cruiser
 				fixed_ship_armor_slot = ship_armor_capital_hardwood_1
 				mid_1_custom_slot = ship_cannon_battery_1
-				mid_2_custom_slot = ship_cannon_battery_1
-				front_1_custom_slot = ship_cannon_battery_1
+				mid_2_custom_slot = empty
+				front_1_custom_slot = empty
 				rear_1_custom_slot = empty
 			}
 			obsolete = no
@@ -446,9 +444,9 @@
 				fixed_ship_engine_slot = ship_engine_steam_screw_cruiser
 				fixed_ship_armor_slot = ship_armor_capital_hardwood_1
 				mid_1_custom_slot = ship_cannon_battery_1
-				mid_2_custom_slot = ship_cannon_battery_1
-				front_1_custom_slot = ship_cannon_battery_1
-				rear_1_custom_slot = ship_cannon_battery_0
+				mid_2_custom_slot = empty
+				front_1_custom_slot = empty
+				rear_1_custom_slot = empty
 			}
 			obsolete = no
 		}

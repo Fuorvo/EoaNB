@@ -4331,27 +4331,6 @@ country_event = {
 		name = acw_generic.10.a
 		trigger = { tag = USA }
 		army_experience = -20
-		hidden_effect = {
-			# Remove Jackson as MHC
-			set_temp_variable = { temp_advisor_frame = 4 }
-			mhc_remove_army_advisor = yes
-			# Remove Lee as MHC
-			set_temp_variable = { temp_advisor_frame = 5 }
-			mhc_remove_army_advisor = yes
-			# Remove Thomas as MHC
-			set_temp_variable = { temp_advisor_frame = 6 }
-			mhc_remove_army_advisor = yes
-			# Remove Hood as MHC
-			set_temp_variable = { temp_advisor_frame = 7 }
-			mhc_remove_army_advisor = yes
-			# Cleaning generic army advisors
-			mhc_remove_generic_army_advisors = yes
-			# Remove Mallory as MHC
-			set_temp_variable = { temp_advisor_frame = 2 }
-			mhc_remove_navy_advisor = yes
-			# Cleaning generic navy advisors
-			mhc_remove_generic_navy_advisors = yes
-		}
 	}
 	option = {
 		name = acw_generic.10.b
@@ -4556,6 +4535,7 @@ country_event = {
 	picture = GFX_report_event_generic_battle
 
 	trigger = {
+		tag = USA
 		CSA = {
 			owns_state = 365
 		}
@@ -4646,18 +4626,6 @@ country_event = {
 				}
 			}
 			set_country_flag = USA_grantsherman_rejoin
-
-	# Add Grant as MHC
-	set_temp_variable = { temp_advisor_frame = 8 }
-	set_temp_variable = { temp_advisor_trait = 21 }
-	mhc_add_army_advisor = yes
-	mhc_add_mark_advisor_as_high_army_brass = yes
-
-	# Add Sherman as MHC
-	set_temp_variable = { temp_advisor_frame = 9 }
-	set_temp_variable = { temp_advisor_trait = 5 }
-	mhc_add_army_advisor = yes
-	mhc_add_mark_advisor_as_high_army_brass = yes
 	}
 }
 
@@ -6049,6 +6017,10 @@ country_event = {
 	picture = GFX_report_event_usa_capitol
 	fire_only_once = yes
 	is_triggered_only = yes
+
+	trigger = {
+		has_character = USA_character_john_e_wool
+	}
 
 	option = { # He has served long enough. Let him rest.
 		name = acw_generic.45.a
@@ -11557,17 +11529,17 @@ country_event = {
 			}
 		}
 		add_political_power = -65
-		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						is_historical_focus_on = no
-						is_ai = no
-					}
-				}
-				country_event = { id = acw_generic.120 days = 10 random_days = 5 }
-			}
-		}
+		#hidden_effect = {
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				is_historical_focus_on = no
+		#				is_ai = no
+		#			}
+		#		}
+		#		country_event = { id = acw_generic.120 days = 10 random_days = 5 }
+		#	}
+		#}
 	}
 	option = {
 		name = acw_generic.118.b
@@ -11592,17 +11564,17 @@ country_event = {
 
 	option = {
 		name = acw_generic.119.a
-		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						is_historical_focus_on = no
-						is_ai = no
-					}
-				}
-				country_event = { id = acw_generic.120 days = 10 random_days = 5 }
-			}
-		}
+		#hidden_effect = {
+		#	if = {
+		#		limit = {
+		#			OR = {
+		#				is_historical_focus_on = no
+		#				is_ai = no
+		#			}
+		#		}
+		#		country_event = { id = acw_generic.120 days = 10 random_days = 5 }
+		#	}
+		#}
 	}
 }
 

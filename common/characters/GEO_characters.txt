@@ -3,14 +3,13 @@ characters={
 		name= "Nikoloz I Dadiani"
 		portraits={
 			civilian = {
-				large = "gfx/leaders/GEO/Portrait_GEO_Nikolo_I.dds"
+				large = "gfx/leaders/GEO/Portrait_GEO_Nikolo_I.png"
 			}
 		}
 		country_leader={
 			desc = "POLITICS_GEO_MINORS_DESC"
 			ideology = despotism
 			expire = "1891.12.31"
-			#id= -1
 		}
 	}
 }

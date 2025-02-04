@@ -294,25 +294,7 @@ country_event = {
 						transfer_state_to = PREV.PREV
 					}
 				}
-				SAA = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				TRZ = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				KAD = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				TUG = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
@@ -324,42 +306,12 @@ country_event = {
 						transfer_state_to = PREV.PREV
 					}
 				}
-				BAO = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				SIN = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				KAB = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				FTJ = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
 					}
 				}
-				# TOU = {
-				# 	every_owned_state = {
-				# 		remove_core_of = PREV
-				#		transfer_state_to = PREV.PREV
-				# 	}
-				# }
-				# BAM = {
-				# 	every_owned_state = {
-				# 		remove_core_of = PREV
-				#		transfer_state_to = PREV.PREV
-				# 	}
-				# }
 				KOY = {
 					every_owned_state = {
 						remove_core_of = PREV
@@ -370,24 +322,6 @@ country_event = {
 					target = MND
 					transfer_troops = no
 				}
-				KOG = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				AKA = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				MSN = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				MOS = {
 					every_owned_state = {
 						remove_core_of = PREV
@@ -395,12 +329,6 @@ country_event = {
 					}
 				}
 				DDI = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				DAH = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
@@ -430,19 +358,7 @@ country_event = {
 						transfer_state_to = PREV.PREV
 					}
 				}
-				TKN = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				KKY = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				MMA = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
@@ -461,12 +377,6 @@ country_event = {
 					}
 				}
 				BMM = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				KBG = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
@@ -491,12 +401,6 @@ country_event = {
 					}
 				}
 				BNY = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				MAA = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
@@ -527,18 +431,6 @@ country_event = {
 					}
 				}
 				NYW = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				LGR = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				UJJ = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
@@ -586,12 +478,6 @@ country_event = {
 						transfer_state_to = PREV.PREV
 					}
 				}
-				LOZ = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				WYO = {
 					every_owned_state = {
 						remove_core_of = PREV
@@ -622,30 +508,6 @@ country_event = {
 						transfer_state_to = PREV.PREV
 					}
 				}
-				GGL = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				KVG = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				OVB = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				HMB = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				BTS = {
 					every_owned_state = {
 						remove_core_of = PREV
@@ -658,19 +520,7 @@ country_event = {
 						transfer_state_to = PREV.PREV
 					}
 				}
-				HER = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				OOR = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				KDG = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV
@@ -682,25 +532,7 @@ country_event = {
 						transfer_state_to = PREV.PREV
 					}
 				}
-				TGN = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				BRN = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
 				ARR = {
-					every_owned_state = {
-						remove_core_of = PREV
-						transfer_state_to = PREV.PREV
-					}
-				}
-				BUS = {
 					every_owned_state = {
 						remove_core_of = PREV
 						transfer_state_to = PREV.PREV

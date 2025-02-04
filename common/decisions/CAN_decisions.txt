@@ -419,14 +419,13 @@ political_actions = {
 
 	CAN_mission_Transfer_Ruperts_Land = {
 		icon = generic_civil_support
-
 		fire_only_once = yes
-
 		days_remove = 10
-
 		cost = 0
 
-		allowed = { TAG = CAN }
+		allowed = {
+			TAG = CAN
+		}
 
 		visible = {
 			always = no
@@ -436,33 +435,42 @@ political_actions = {
 			CAN = {
 				transfer_state = 682
 				add_state_claim = 682
+
 				transfer_state = 466
 				add_state_claim = 466
+
 				transfer_state = 467
 				add_state_claim = 467
+
 				transfer_state = 469
 				add_state_claim = 469
+
 				transfer_state = 472
 				add_state_claim = 472
+
 				transfer_state = 683
 				add_state_claim = 683
+
 				transfer_state = 470
 				add_state_claim = 470
+
 				transfer_state = 471
 				add_state_claim = 471
+
 				transfer_state = 332
 				add_state_claim = 332
-				transfer_state = 1406
-				add_state_claim = 1406
-				transfer_state = 1403
-				add_state_claim = 1403
+
 				transfer_state = 1174
 				add_state_claim = 1174
 			}
 
 			if = {
-				limit = { NFL = { is_subject_of = ENG } }
-				NFL = { transfer_state = 332 }
+				limit = {
+					NFL = { is_subject_of = ENG }
+				}
+				NFL = {
+					transfer_state = 332
+				}
 			}
 
 			hidden_effect = {
@@ -562,239 +570,212 @@ political_actions = {
 						instant_build = yes
 					}
 				}
-			682 = {
-				set_building_level = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
+				682 = {
+					set_building_level = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+					set_building_level = {
+						type = dockyard
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = arms_factory
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					set_building_level = {
+						type = cotton_farm
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = logging_camp
+						level = 1
+						instant_build = yes
+					}
 				}
-				set_building_level = {
-					type = dockyard
-					level = 0
-					instant_build = yes
+				466 = {
+					set_building_level = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_building_level = {
+						type = dockyard
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = arms_factory
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = industrial_complex
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = cotton_farm
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = logging_camp
+						level = 1
+						instant_build = yes
+					}
 				}
-				set_building_level = {
-					type = arms_factory
-					level = 0
-					instant_build = yes
+				683 = {
+					set_building_level = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_building_level = {
+						type = dockyard
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = arms_factory
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = industrial_complex
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = cotton_farm
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = logging_camp
+						level = 0
+						instant_build = yes
+					}
 				}
-				set_building_level = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+				467 = {
+					set_building_level = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_building_level = {
+						type = dockyard
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = arms_factory
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = industrial_complex
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = cotton_farm
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = logging_camp
+						level = 0
+						instant_build = yes
+					}
 				}
-				set_building_level = {
-					type = cotton_farm
-					level = 0
-					instant_build = yes
+				469 = {
+					set_building_level = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					set_building_level = {
+						type = dockyard
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = arms_factory
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = industrial_complex
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = cotton_farm
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = logging_camp
+						level = 0
+						instant_build = yes
+					}
 				}
-				set_building_level = {
-					type = logging_camp
-					level = 1
-					instant_build = yes
+				470 = {
+					set_building_level = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+					set_building_level = {
+						type = dockyard
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = arms_factory
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = industrial_complex
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = cotton_farm
+						level = 0
+						instant_build = yes
+					}
+					set_building_level = {
+						type = logging_camp
+						level = 0
+						instant_build = yes
+					}
 				}
-			}
-			466 = {
-				set_building_level = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			set_building_level = {
-				type = dockyard
-				level = 0
-				instant_build = yes
-			}
-			set_building_level = {
-				type = arms_factory
-				level = 0
-				instant_build = yes
-			}
-			set_building_level = {
-				type = industrial_complex
-				level = 0
-				instant_build = yes
-			}
-			set_building_level = {
-				type = cotton_farm
-				level = 0
-				instant_build = yes
-			}
-			set_building_level = {
-				type = logging_camp
-				level = 1
-				instant_build = yes
+				CAN = {
+					country_event = {
+						id = britishcanada.57
+						days = 1
+					}
+				}
 			}
 		}
-		683 = {
-			set_building_level = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-			}
-			set_building_level = {
-			type = dockyard
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = arms_factory
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = industrial_complex
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = cotton_farm
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = logging_camp
-			level = 0
-			instant_build = yes
-					}
-				}
-			683 = {
-			set_building_level = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-			}
-			set_building_level = {
-			type = dockyard
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = arms_factory
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = industrial_complex
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = cotton_farm
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = logging_camp
-			level = 0
-			instant_build = yes
-					}
-				}
-			467 = {
-			set_building_level = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-			}
-			set_building_level = {
-			type = dockyard
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = arms_factory
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = industrial_complex
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = cotton_farm
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = logging_camp
-			level = 0
-			instant_build = yes
-					}
-				}
-			469 = {
-			set_building_level = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-			}
-			set_building_level = {
-			type = dockyard
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = arms_factory
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = industrial_complex
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = cotton_farm
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = logging_camp
-			level = 0
-			instant_build = yes
-					}
-				}
-			470 = {
-			set_building_level = {
-			type = infrastructure
-			level = 3
-			instant_build = yes
-			}
-			set_building_level = {
-			type = dockyard
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = arms_factory
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = industrial_complex
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = cotton_farm
-			level = 0
-			instant_build = yes
-			}
-			set_building_level = {
-			type = logging_camp
-			level = 0
-			instant_build = yes
-					}
-				}
-			CAN = {	country_event = { id = britishcanada.57 days = 1 }
-					}
-				}
-			}
 
 		ai_will_do = {
 			base = 1000
 		}
 	}
+
 
 	CAN_decisions_sign_1 = {
 		icon = generic_break_treaty
@@ -1104,122 +1085,6 @@ political_actions = {
 		}
 		ai_will_do = {
 			base = 1000
-		}
-	}
-
-	CAN_IND_fund_movements_Maritime = {
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 50
-
-		cost = 25
-
-		allowed = { TAG = CAN }
-
-		visible = {
-			has_completed_focus = CAN_Influence_Media_other_Provinces
-			has_idea = CAN_idea_IND_Anti_British_Power
-			is_subject_of = ENG
-		}
-
-		modifier = {
-			consumer_goods_expected_value = 0.03
-			political_power_cost = 0.05
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-			BRK = {
-				add_timed_idea = {
-					idea = CAN_IND_Foreign_Influence
-					days = 250
-				}
-			}
-			NVS = {
-				add_timed_idea = {
-					idea = CAN_IND_Foreign_Influence
-					days = 250
-				}
-			}
-			NFL = {
-				add_timed_idea = {
-					idea = CAN_IND_Foreign_Influence
-					days = 250
-				}
-			}
-		}
-	}
-	CAN_IND_fund_movements_Hudson = {
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 50
-
-		cost = 25
-
-		allowed = { TAG = CAN }
-
-		visible = {
-			has_completed_focus = CAN_Influence_Media_other_Provinces
-			has_idea = CAN_idea_IND_Anti_British_Power
-			is_subject_of =ENG
-		}
-
-		modifier = {
-			consumer_goods_expected_value = 0.03
-			political_power_cost = 0.05
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-			HBC = {
-				add_timed_idea = {
-					idea = CAN_IND_Foreign_Influence
-					days = 250
-				}
-			}
-		}
-	}
-
-	CAN_IND_fund_movements_Caledonia = {
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 50
-
-		cost = 25
-
-		allowed = { TAG = CAN }
-
-		visible = {
-			has_completed_focus = CAN_Influence_Media_other_Provinces
-			has_idea = CAN_idea_IND_Anti_British_Power
-			is_subject_of = ENG
-		}
-
-		modifier = {
-			consumer_goods_expected_value = 0.03
-			political_power_cost = 0.05
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-			BCO = {
-					add_timed_idea = {
-					idea = CAN_IND_Foreign_Influence
-					days = 250
-				}
-			}
 		}
 	}
 
@@ -2110,291 +1975,9 @@ eoanb_category_economic = {
 
 
 eoanb_category_politics_internal = {
-
-
-	CAN_IND_WAR_Secret_Network_Established = {
-
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 100
-
-		cost = 0
-
-		allowed = { TAG = CAN }
-
-		visible = {
-		always = no
-		}
-
-		modifier = {
-		political_power_cost = 0.25
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-		CAN = {
-		country_event = {
-		id = britishcanada.72
-		days = 0
-				}
-			}
-		}
-	}
-
-	#PLAYER ONLY
-	CAN_IND_Intervene = {
-
-	icon = generic_construction
-
-	fire_only_once = yes
-
-	cost = 50
-
-	allowed = { TAG = ENG }
-
-	visible = {
-		tag = ENG
-		ENG = {
-			is_ai = no
-		}
-		CAN = {
-			OR = {
-				has_completed_focus = CAN_prepare_diplomatically
-				has_completed_focus = CAN_prepare_internally
-			}
-		}
-	}
-
-	remove_effect = {
-		CAN = {
-		country_event = {
-		id = britishcanada.94
-		days = 0
-				}
-			}
-		}
-	}
-
-
-	CAN_IND_WAR_Consequence_Hard_times = {
-
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 30
-
-		cost = 0
-
-		allowed = { TAG = CAN }
-
-		visible = {
-		always = no
-		}
-
-		modifier = {
-		consumer_goods_expected_value = 0.01
-		political_power_cost = 0.01
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-		hidden_effect = {
-		random_list = {
-				50 = {
-					CAN = {
-				country_event = britishcanada.73
-					}
-				}
-				50 = {
-					CAN = {
-				country_event = britishcanada.74
-						}
-					}
-				}
-			}
-		}
-	}
-
-	CAN_IND_WAR_Consequence_Great_times = {
-
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 30
-
-		cost = 0
-
-		allowed = { TAG = CAN }
-
-		visible = {
-		always = no
-		}
-
-		modifier = {
-		consumer_goods_expected_value = 0.01
-		political_power_cost = 0.01
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-		hidden_effect = {
-		random_list = {
-				50 = {
-					CAN = {
-				country_event = britishcanada.75
-					}
-				}
-				50 = {
-					CAN = {
-				country_event = britishcanada.76
-						}
-					}
-				}
-			}
-		}
-	}
-
 	}
 
 eoanb_category_military = {
-
-	CAN_IND_buy_military_equipment_rifles = {
-
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 25
-
-		cost = 25
-
-		allowed = { TAG = CAN }
-
-		visible = {
-		has_completed_focus = CAN_Buy_Military_Equipment
-		USA = {
-		exists = yes
-		}
-		Not = {
-		has_completed_focus = CAN_Independent_Canada
-		has_war_with = USA
-			}
-		}
-
-		days_re_enable = 1
-
-		modifier = {
-		consumer_goods_expected_value = 0.25
-		political_power_cost = 0.01
-		}
-
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-		add_equipment_to_stockpile = {
-		type = infantry_equipment_rifle_1
-		amount = 1000
-		producer = USA
-			}
-		}
-	}
-
-	CAN_IND_buy_military_equipment_uniforms = {
-
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 25
-
-		cost = 25
-
-		allowed = { TAG = CAN }
-
-		visible = {
-		has_completed_focus = CAN_Buy_Military_Equipment
-		USA = {
-		exists = yes
-		}
-		Not = {
-		has_completed_focus = CAN_Independent_Canada
-		has_war_with = USA
-			}
-		}
-
-		days_re_enable = 1
-
-		modifier = {
-		consumer_goods_expected_value = 0.25
-		political_power_cost = 0.01
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-		add_equipment_to_stockpile = {
-		type = uniform_equipment_1
-		amount = 1000
-		producer = USA
-			}
-		}
-	}
-
-	CAN_IND_buy_military_equipment_cannons = {
-
-		icon = generic_construction
-
-		fire_only_once = yes
-
-		days_remove = 25
-
-		cost = 25
-
-		allowed = { TAG = CAN }
-
-		visible = {
-		has_completed_focus = CAN_Buy_Military_Equipment
-		USA = {
-		exists = yes
-		}
-		Not = {
-		has_completed_focus = CAN_Independent_Canada
-		has_war_with = USA
-			}
-		}
-
-		days_re_enable = 1
-
-		modifier = {
-		consumer_goods_expected_value = 0.25
-		political_power_cost = 0.01
-		}
-
-		ai_will_do = {
-			base = 1000
-		}
-		remove_effect = {
-		add_equipment_to_stockpile = {
-		type = cannon_equipment_1
-		amount = 100
-		producer = USA
-			}
-		}
-	}
-
 }
 	
 CAN_BOP_category = {

@@ -244,7 +244,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_usa_military_dictatorship"
-		texturefile = "gfx/interface/ideas/USA/idea_usa_military_dictatorship.dds"
+		texturefile = "gfx/interface/ideas/USA/idea_usa_military_dictatorship.png"
 	}
 	spriteType = {
 		name = "GFX_idea_usa_pax_americana"
@@ -589,11 +589,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_caxias"
-		texturefile = "gfx/interface/ideas/BRA/Advisor_Luis_Alves_de_Lima_e_Silva.png"
-	}
-	
-	spriteType = {
 		name = "GFX_idea_ferraz"
 		texturefile = "gfx/interface/ideas/BRA/Advisor_Angelo_Moniz_da_Sa_Ferraz.png"
 	}
@@ -688,11 +683,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_BRA_Jose_Egidio_Gordilho_de_Barbuda_Filho"
-		texturefile = "gfx/interface/ideas/BRA/idea_BRA_Jose_Egidio_Gordilho_de_Barbuda_Filho.png"
-	}
-
-	spriteType = {
 		name = "GFX_idea_BRA_Antonio_Eneas_Gustavo_Galvao"
 		texturefile = "gfx/interface/ideas/BRA/idea_BRA_Antonio_Eneas_Gustavo_Galvao.png"
 	}
@@ -700,11 +690,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_BRA_Jose_Antonio_Correia_da_Camara"
 		texturefile = "gfx/interface/ideas/BRA/idea_BRA_Jose_Antonio_Correia_da_Camara.png"
-	}
-
-	spriteType = {
-		name = "GFX_idea_BRA_Polidoro_da_Fonseca_Quintanilha_Jordao"
-		texturefile = "gfx/interface/ideas/BRA/idea_BRA_Polidoro_da_Fonseca_Quintanilha_Jordao.png"
 	}
 
 	spriteType = {
@@ -726,5 +711,4 @@ spriteTypes = {
 		name = "GFX_idea_BRA_Napoleao_Joao_Baptista_Level"
 		texturefile = "gfx/interface/ideas/BRA/idea_BRA_Napoleao_Joao_Baptista_Level.png"
 	}
-
 }

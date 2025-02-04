@@ -12,7 +12,7 @@
 	### Economy
     add_ideas = generic_unemployment_idea
     set_variable = { unemployment_value_modifier = 0.1 }
-    set_variable = { current_unemployment = 0.05 }
+    set_variable = { current_unemployment = 0.03 }
     clamp_variable = {
         var = current_unemployment
         min = 0
@@ -42,14 +42,14 @@
 		#ECONOMIC POLICY
 		mixed_economy
 		limited_exports
-		taxation_level_3
+		taxation_level_2
 		civilian_economy
 		cl_legal
 		industrializing
 		
 		#INTERNAL BUDGET
 		social_spending_level_1
-		law_spending_level_3
+		law_spending_level_2
 		road_spending_level_2
 		navy_spending_level_3
 		army_spending_level_2
@@ -135,7 +135,7 @@
 		#Weapons & Equipment
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Neusuhler Gewehr M/1809
-		tech_infantry_percussion_cap = 1 #Augustin M/1842
+		  #Augustin M/1842
 		rifle_equipment1 = 1 #Lütticher Gewehr M/1854
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
 		tech_infantry_caplock_pistol = 1 #Caplock Pistols
@@ -266,11 +266,7 @@
 	add_equipment_to_stockpile = { type = cavalry_equipment_0 amount = 150 producer = SAX }
 	add_equipment_to_stockpile = { type = rifled_cannon_equipment_0 amount = 18 producer = SAX }
 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 8 producer = SAX }
-
-	#How to set up initial debt_level
-	#SAX = {
-	#	add_to_variable = {var = debt_level value = 1} #Saxony's National Debt amounted to 60.7m Thaler (roughly 2m pounds of Silver; 182.1m Mark as of 1871/73 exchange rate = 8.9m Pound Sterling as of 1871) at the end of 1859; income per year 11.2m Thaler (= 1.64m Pound Sterling) = 5.4 GDP of debt
-	#}
+	#Saxony's National Debt amounted to 60.7m Thaler (roughly 2m pounds of Silver; 182.1m Mark as of 1871/73 exchange rate = 8.9m Pound Sterling as of 1871) at the end of 1859; income per year 11.2m Thaler (= 1.64m Pound Sterling) = 5.4 GDP of debt
 
 	### POLITICAL LEADERS ###
 

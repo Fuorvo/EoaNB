@@ -17,8 +17,8 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
-	set_variable = { current_loans_sum = 1 }
+    add_to_variable = { money = 0.01 }
+	set_variable = { current_loans_sum = 5 }
 
 	add_ideas = {
 		#POLITICAL LIBERTIES
@@ -40,7 +40,7 @@
 		#ECONOMIC POLICY
 		mixed_economy
 		export_focus
-		taxation_level_3
+		taxation_level_1
 		civilian_economy
 		cl_legal
 		agrarian
@@ -106,7 +106,7 @@
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Gewehr 1801
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
-		tech_infantry_percussion_cap = 1 #Dreyse M/41
+		  #Dreyse M/41
 		tech_infantry_practical_rifling = 1 #Practical Rifling
 		tech_infantry_infantry_swords = 1 #Infantry Swords
 		socket_bayonet = 1 #Socket Bayonet
@@ -185,6 +185,9 @@
 		#Food Preservation
 		early_medicine = 1 #Early Medicine
 		food_preserving_icebox = 1 #Icebox Preservation
+		#Agriculture
+		early_artificial_fertilizer = 1 #Early Artificial Fertilizer
+		pre_industrial_farms = 1 #Pre-Industrial Farms
 		
 		###Electronics and Instruments
 		#Alternating Current
@@ -212,11 +215,7 @@
 
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 50 producer = LCK }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 50 producer = LCK }
-
-	#How to set up initial debt_level
-	#LCK = {
-	#	add_to_variable = {var = debt_level value = 1} #Lübeck's National Debt amounted to 12.08m Mark Kurant (4.97m Thaler, 14.92m Mark as of 1871/73 exchange rate = 0.73m Pound Sterling as of 1871) as of 1862; income per year 1.33m Mark Kurant (0.55m Thaler = 0.08m Pound Sterling) = 9.13 GDP of debt (result of fire of 1842 and credits for rebuild)
-	#}
+	#Lübeck's National Debt amounted to 12.08m Mark Kurant (4.97m Thaler, 14.92m Mark as of 1871/73 exchange rate = 0.73m Pound Sterling as of 1871) as of 1862; income per year 1.33m Mark Kurant (0.55m Thaler = 0.08m Pound Sterling) = 9.13 GDP of debt (result of fire of 1842 and credits for rebuild)
 
 	# POLITICAL LEADERS
 

@@ -7,6 +7,19 @@
 
 	set_research_slots = 2
 
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.05 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 0.01 }
+	set_variable = { current_loans_sum = 6 }
+
 	add_ideas = {
 		#POLITICS
 		#hos_is_leader
@@ -20,7 +33,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 
 		#stagnation_growth
@@ -117,61 +130,12 @@
 		early_artificial_fertilizer = 1
 		electrical_engineering = 1
 	}
-
-	#How to set up initial debt_level
-	#ROM = {
-	#	add_to_variable = {var = debt_level value = 1} #Wallachia's National Debt amounts to 14,767,869 Piasters (= 126,000 Pound Sterling) as of 1857; income per year 37,616,217 Piasters (= 320,000 Pound Sterling) = 0.39 GDP of debt; 1,400,000 Piasters as tribute to the Ottoman Empire
-	#}
+	#Wallachia's National Debt amounts to 14,767,869 Piasters (= 126,000 Pound Sterling) as of 1857; income per year 37,616,217 Piasters (= 320,000 Pound Sterling) = 0.39 GDP of debt; 1,400,000 Piasters as tribute to the Ottoman Empire
 	
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 1000 producer = ROM }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1000 producer = ROM }
 	add_equipment_to_stockpile = { type = cavalry_equipment amount = 300 producer = ROM }
 
-	# POLITICAL LEADERS
-
-#create_country_leader = {
-#	name = "Barbu Dimitrie Stirbei"
-#	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-#	picture = "Portrait_ROM_Barbu_Dimitrie_Stirbei.dds"
-#	expire = "1965.1.1"
-#	ideology = despotism
-#	traits = {
-#		#
-#	}
-#}
-
-#create_country_leader = {
-#	name = "Alexandru I. Cuza"
-#	desc = "POLITICS_CUZA_DESC"
-#	picture = "Portrait_ROM_A.I.Cuza.dds"
-#	expire = "1965.1.1"
-#	ideology = despotism
-#	traits = {
-#		#
-#	}
-#}
-
-#create_country_leader = {
-#	name = "Mihail Kogălniceanu"
-#	desc = "POLITICS_KOGALNICEANU_DESC"
-#	picture = "Portrait_ROM_M_Kogalniceanu.dds"
-#	expire = "1965.1.1"
-#	ideology = despotism
-#	traits = {
-#		#
-#	}
-#}
-
-create_country_leader = {
-	name = "Ion C. Brătianu"
-	desc = "POLITICS_BRATIANU_DESC"
-	picture = "GFX_Portrait_ROM_I_C_Brat"
-	expire = "1965.1.1"
-	ideology = reactionary # Radical Liberals represented by radical democracy until the foundation of the National Liberal Party
-	traits = {
-		#
-	}
-}
 
 ###Country LEADERS	
 	recruit_character = ROM_alexandru_ghica
@@ -179,6 +143,10 @@ create_country_leader = {
 	recruit_character = ROM_monstrous_coalition
 	recruit_character = ROM_provinsional_goverment
 	recruit_character = ROM_carol_i
+	#recruit_character = ROM_Barbu_Dimitrie_Stirbei
+	#recruit_character = ROM_Mihail_Kogalniceanu
+	#recruit_character = ROM_Ion_Constantin_Bratianu
+	#recruit_character = ROM_Lascar_Cataragiu
 
 ###Generals and Advisors
 	recruit_character = ROM_alexander_macedonsky
@@ -194,10 +162,13 @@ create_country_leader = {
 	recruit_character = ROM_Constantin_Robescu
 	recruit_character = ROM_Gheorghe_Slaniceanu
 	recruit_character = ROM_Carol_Davila
+
 ###Admirals
 	recruit_character = ROM_anton_barbieri
+
 ###Army Chiefs
 	recruit_character = ROM_Emanoil_Florescu
+
 }
 1870.1.1={
 	 set_cosmetic_tag = ROM_united_principalities

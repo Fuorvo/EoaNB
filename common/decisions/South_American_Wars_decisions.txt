@@ -2,15 +2,22 @@ war_planning = {
 	south_america_civil_war_purchase_spanish_support = {
 		icon = power_struggle
 		available = { 
-			debt_not_bankrupt_trigger = yes 
-			SPR = { debt_not_bankrupt_trigger = yes }
+			set_temp_variable = { loan_size_to_check = 50}
+			has_less_than_specific_loan_size = yes 
+			SPR = { set_temp_variable = { loan_size_to_check = 50}
+			has_less_than_specific_loan_size = yes }
 			custom_trigger_tooltip = {
 				tooltip = SPR_loan_support_limit_tooltip
 				check_variable = { var = SPR_debt_repayments_level value = 15 compare = less_than_or_equals }
 			}
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
-		custom_cost_trigger = { check_variable = { debt_level < 50 } }
-		custom_cost_text = eoanb_decision_cost_1_debt_loc
+		
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		visible = { 
 			if = { 
 				limit = { TAG = MEC }
@@ -71,10 +78,12 @@ war_planning = {
 		days_re_enable = 45
 		days_remove = 7
 		complete_effect = {
-			debt_level_increase_by_1 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			if = {
 				limit = { NOT = { OR = { TAG = D01 TAG = D02 TAG = D03 TAG = D04 } } }
-				SPR_foreign_debt_repayments_increase_by_1 = yes
+				set_temp_variable = { money_to_gain = -0.5 }
+				add_money_with_tooltip_effect = yes
 			}
 		}
 		remove_effect = {
@@ -99,7 +108,8 @@ war_planning = {
 			base = 10
 			modifier = {
 				factor = 0
-				check_variable = { debt_level > 44 }
+				set_temp_variable = { loan_size_to_check = 45}
+    			has_less_than_specific_loan_size = yes
 			}
 		}
 	}
@@ -719,7 +729,7 @@ eoanb_category_war_measures = {
 				SPR = { transfer_state = 686 }
 				SPR = { set_country_flag = SPR_Lares_end }
 				PRT = { clr_country_flag = PRT_Lares }
-				country_event = { id = lares.3 days = 3 }
+				country_event = { id = spain_caribbean.6 days = 3 }
 			}
 			custom_effect_tooltip = PRT_spain_war_decision_SPR_WIN
 		}

@@ -104,11 +104,8 @@
 	
 	give_military_access = HES	#Historical Military Roads connecting Westphalia to Brandenburg
 	give_military_access = THU	#Historical Military Roads connecting Westphalia to Brandenburg
-
-	#How to set up initial debt_level
-	#PRS = {
-	#	add_to_variable = {var = debt_level value = 1} #Prussia's National Debt amounted to 260.59m Thaler (PRS: 253.59m Thaler + Schwarzburg-Sondershausen: 1,550,021 Thaler + Anhalt: 5,119,731 Thaler + Lippe-Detmold: 335.000 Thaler; totals = 38.14m Pound Sterling as of 1871) at the end of 1857; income per year 125.12m Thaler (PRS: 123.24m Thaler + S.S.: 534,447 Thaler + A.: 1,045,888 Thaler + L.D.: 300.000 Thaler; totals = 18.31m Pound Sterling) = 2.08 GDP of debt
-	#}
+	
+	#Prussia's National Debt amounted to 260.59m Thaler (PRS: 253.59m Thaler + Schwarzburg-Sondershausen: 1,550,021 Thaler + Anhalt: 5,119,731 Thaler + Lippe-Detmold: 335.000 Thaler; totals = 38.14m Pound Sterling as of 1871) at the end of 1857; income per year 125.12m Thaler (PRS: 123.24m Thaler + S.S.: 534,447 Thaler + A.: 1,045,888 Thaler + L.D.: 300.000 Thaler; totals = 18.31m Pound Sterling) = 2.08 GDP of debt
 
 	if = {
 		limit = {
@@ -165,7 +162,7 @@
 		#Weapons & Equipment
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #M/1809
-		tech_infantry_percussion_cap = 1 #M/41
+		  #M/41
 		rifle_equipment1 = 1 #Dreyse M/54
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
 		tech_infantry_caplock_pistol = 1 #Caplock Pistols
@@ -304,9 +301,32 @@
 		###Special Projects
 		
 		###Land Doctrines
-		#land_doctrine_victorian = 1 #Victorian Army
-		#Focus on Innovation
-		#doctrine_victorian_innovation = 1 #Innovative Thinking
+		land_doctrine_napoleonic = 1
+		#Cavalry
+		doctrine_napoleonic_a_mobile_army = 1
+		doctrine_napoleonic_light_cavalry = 1
+		doctrine_napoleonic_reconnaissance = 1
+		doctrine_napoleonic_screening_tactics = 1
+		doctrine_napoleonic_pursuit_the_enemy = 1
+		doctrine_napoleonic_rearguard_support = 1
+		#Infantry
+		doctrine_napoleonic_improved_military_research = 1
+		doctrine_napoleonic_innovative_highcommand = 1
+		doctrine_napoleonic_focus_on_offense = 1
+		doctrine_napoleonic_the_collumn_formation = 1
+		doctrine_napoleonic_line_formation = 1
+		doctrine_napoleonic_mixed_orders = 1
+		doctrine_napoleonic_skirmishing_tactics = 1
+		doctrine_napoleonic_the_corps_system = 1
+		#Artillery
+		doctrine_napoleonic_artillery_schools = 1
+		doctrine_napoleonic_light_artillery = 1
+		doctrine_napoleonic_mobile_artillery = 1
+		doctrine_napoleonic_flying_battery = 1
+		doctrine_napoleonic_grand_battery = 1
+		doctrine_napoleonic_heavier_shells = 1
+		doctrine_napoleonic_standarize_the_artillery_production = 1
+
 	}
 
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_1 amount = 3000 producer = PRS }
@@ -406,12 +426,18 @@
 	
 	#Admirals
 	recruit_character = PRS_adalbert_von_preußen
+	recruit_character = PRS_wilhelm_von_hessen_philippsthal_barchfeld
+	recruit_character = PRS_jan_schroder
+	recruit_character = PRS_gustaf_erik_hylten_cavallius
 	#Admirals for later
 	recruit_character = PRS_eduard_von_jachmann
 	recruit_character = PRS_hans_kuhn
 	recruit_character = PRS_eduard_heldt
 	recruit_character = PRS_karl_ferdinand_batsch
 	recruit_character = PRS_albrecht_von_stosch
+	
+	#MHC
+	recruit_character = PRS_albrecht_von_roon
 	
 	
 	### ADVISORS & THEORISTS ###
@@ -445,6 +471,7 @@
 	recruit_character = PRS_maximilian_von_forckenbeck
 	recruit_character = PRS_moritz_bethmann_hollweg
 	recruit_character = PRS_rudolf_virchow
+	recruit_character = PRS_rudolph_delbruck
 	recruit_character = PRS_theodor_mommsen
 	recruit_character = PRS_werner_von_siemens
 	recruit_character = PRS_wilhelm_liebknecht
@@ -498,7 +525,7 @@
 				fixed_ship_armor_slot = empty
 				front_1_custom_slot = empty
 				mid_1_custom_slot = ship_cannon_battery_0
-				mid_2_custom_slot = ship_cannon_battery_0
+				mid_2_custom_slot = empty
 				rear_1_custom_slot = empty
 			}
 			#obsolete = no
@@ -526,7 +553,7 @@
 	set_variable = { PRS_NGC_Constitution_ddf = 0.25 }
 	set_variable = { PRS_NGC_Constitution_rsf = 0.03 }
 	set_variable = { PRS_NGC_Constitution_pfmef = 0.05 }
-	set_variable = { PRS_NGC_Constitution_cgf = 0.05 }
+	set_variable = { PRS_NGC_Constitution_cgev = 0.05 }
 
 	unlock_national_focus = PRS_focus_economy
 	unlock_national_focus = PRS_focus_state_rail
@@ -696,7 +723,7 @@
 		#Weapons & Equipment
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Smoothbore
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1 #Minie
 		rifle_equipment2 = 1 #Enfield
 		tech_infantry_breech_loading = 1
@@ -973,12 +1000,12 @@
 		doctrine_napoleonic_improved_military_research = 1
 		doctrine_napoleonic_innovative_highcommand = 1
 		doctrine_napoleonic_focus_on_offense = 1
-		doctrine_napoleonic_the_column_formation = 1
+		doctrine_napoleonic_the_collumn_formation = 1
 		doctrine_napoleonic_line_formation = 1
 		doctrine_napoleonic_mixed_orders = 1
 		doctrine_napoleonic_skirmishing_tactics = 1
 		doctrine_napoleonic_the_corps_system = 1
-		#Infantry
+		#Artillery
 		doctrine_napoleonic_artillery_schools = 1
 		doctrine_napoleonic_light_artillery = 1
 		doctrine_napoleonic_mobile_artillery = 1

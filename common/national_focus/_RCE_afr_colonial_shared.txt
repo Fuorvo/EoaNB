@@ -357,6 +357,8 @@ shared_focus = {
 	}
 	available = {
 		has_tech = early_medicine
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
 	}
 	prerequisite = { 
 		focus = afr_colony_generic_focus_social_reforms
@@ -371,7 +373,8 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		debt_level_increase_by_1 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		if = {
 			limit = { 
 				NOT = { has_tech = hygiene }
@@ -406,6 +409,8 @@ shared_focus = {
 	available_if_capitulated = no
 	available = { 
 		has_tech = antiseptics
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
 	}
 	ai_will_do = {
 		factor = 1000
@@ -423,7 +428,8 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		debt_level_increase_by_2 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		add_tech_bonus = {
 			bonus = 1
 			uses = 1
@@ -460,6 +466,8 @@ shared_focus = {
 	}
 	available = {
 		has_tech = copper_salts_pesticides
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
 	}
 	prerequisite = {
 		focus = afr_colony_generic_focus_reform_regional_hospitals
@@ -474,7 +482,8 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-		debt_level_increase_by_1 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		if = { 
 			limit = { 
 				has_idea = afr_colonial_malaria_scourge_2
@@ -548,6 +557,8 @@ shared_focus = {
 			has_completed_focus = afr_colony_generic_focus_strengthen_government
 			is_subject = no
 		}
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
 	}
 	prerequisite = { 
 		focus = afr_colony_generic_focus_social_reforms
@@ -557,7 +568,8 @@ shared_focus = {
 	}
 	
 	completion_reward = {
-		debt_level_increase_by_2 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		if = { 
 			limit = { 
 				has_idea = Oceania_colonial_reforming_kingdom
@@ -598,6 +610,8 @@ shared_focus = {
 			has_completed_focus = afr_colony_generic_focus_spread_military
 			has_completed_focus = afr_colony_generic_focus_centralized_army
 		}
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
 	}
 	ai_will_do = {
 		factor = 1000
@@ -606,7 +620,8 @@ shared_focus = {
 		focus = afr_colony_generic_focus_reform_regional_schools
 	}
 	completion_reward = {
-		debt_level_increase_by_2 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		if = { 
 			limit = { 
 				has_idea = Oceania_colonial_reforming_kingdom_1
@@ -647,12 +662,15 @@ shared_focus = {
 	}
 	available = {
 		has_completed_focus = afr_colony_generic_focus_limited_constitution
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
 	}
 	prerequisite = {
 		focus = afr_colony_generic_focus_reform_regional_military
 	}
 	completion_reward = {
-		debt_level_increase_by_2 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 		if = { 
 			limit = { 
 				has_idea = Oceania_colonial_reforming_kingdom_2
@@ -1032,6 +1050,10 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
+	}
 	prerequisite = { focus = afr_colony_generic_focus_centralized_administration }
 	prerequisite = { focus = afr_colony_generic_focus_centralized_army }
 	completion_reward = {
@@ -1146,7 +1168,8 @@ shared_focus = {
 				add_extra_state_shared_building_slots = 2
 			}
 		}
-		debt_level_decrease_by_1 = yes
+		set_temp_variable = { money_to_gain = -0.5 }
+		add_money_with_tooltip_effect = yes
 	}
 }
 shared_focus = {
@@ -1185,34 +1208,51 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = afr_colony_generic_focus_high_command_reform
-	icon = GFX_Focus_conscription
-	x = 1
-	y = 3
-	relative_position_id = afr_colony_generic_focus_gov_centralized
-	cost = 75
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = { focus = afr_colony_generic_focus_centralized_army }
-	completion_reward = {
-		add_war_support = 0.05
-		army_experience = 20
-		hidden_effect = {
-			create_corps_commander = {
-				name = "Colonial General"
-				picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
-				traits = { trickster skilled_staffer expert_delegator desert_fox expert_improviser }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 4
-				logistics_skill = 4
-			}
-		}
-		custom_effect_tooltip = afr_colony_generic_focus_high_command_reform_tooltip
-	}
+    id = afr_colony_generic_focus_high_command_reform
+    icon = GFX_Focus_conscription
+    x = 1
+    y = 3
+    relative_position_id = afr_colony_generic_focus_gov_centralized
+    cost = 75
+    available_if_capitulated = no
+    
+    ai_will_do = {
+        factor = 1
+    }
+    
+    prerequisite = { focus = afr_colony_generic_focus_centralized_army }
+    
+    completion_reward = {
+        add_war_support = 0.05
+        army_experience = 20
+        hidden_effect = {
+            generate_character = {
+                token_base = colonial_general
+                name = "Colonial General"
+                portraits = {
+                    army = {
+                        large = "GFX_Portrait_EUROPE_Generic_Army_10"
+						small = "GFX_Portrait_EUROPE_Generic_Army_10_small"
+                    }
+                }
+                corps_commander = {
+                    traits = { 
+                        trickster 
+                        skilled_staffer 
+                        expert_delegator 
+                        desert_fox 
+                        expert_improviser 
+                    }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 4
+                    logistics_skill = 4
+                }
+            }
+        }
+        custom_effect_tooltip = afr_colony_generic_focus_high_command_reform_tooltip
+    }
 }
 shared_focus = {
 	id = afr_colony_generic_focus_stabilized_centralization
@@ -1429,7 +1469,7 @@ shared_focus = {
 		hidden_effect = {
 			create_corps_commander = {
 				name = "Tribal Warlord"
-				picture = "generic_leader_tribe_3.png"
+				picture = "GFX_Portrait_AFRICA_Generic_Leader_Tribe_3"
 				traits = { jungle_rat desert_fox adaptable commando skirmisher}
 				skill = 2
 				attack_skill = 2
@@ -1543,6 +1583,8 @@ shared_focus = {
 				naval_base > 0
 			}
 		}
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+		has_specific_amount_of_money_with_inflation_included = yes
 	}
 	ai_will_do = {
 		factor = 1
@@ -1577,7 +1619,8 @@ shared_focus = {
 				}
 				add_manpower = 6325
 			}
-			debt_level_increase_by_6 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		else_if = {
 			limit = {
@@ -1598,7 +1641,8 @@ shared_focus = {
 				}
 				add_manpower = 6325
 			}
-			debt_level_increase_by_3 = yes
+			set_temp_variable = { money_to_gain = -0.8 }
+			add_money_with_tooltip_effect = yes
 		}
 		else_if = {
 			limit = {
@@ -1622,7 +1666,8 @@ shared_focus = {
 					instant_build = yes
 				}
 			}
-			debt_level_increase_by_6 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes 
 		}
 		else_if = {
 			limit = {
@@ -1641,7 +1686,8 @@ shared_focus = {
 					instant_build = yes
 				}
 			}
-			debt_level_increase_by_3 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		else = {
 			add_political_power = -100
@@ -1662,7 +1708,8 @@ shared_focus = {
 				}
 				add_manpower = 6325
 			}
-			debt_level_increase_by_3 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		add_equipment_to_stockpile = { type = convoy_1 amount = 45 }
 	}
@@ -1683,7 +1730,8 @@ shared_focus = {
 			}
 		}
 		any_owned_state = { has_state_flag = afr_port_town }
-		
+		set_temp_variable = { amount_of_money_to_check = 0.5 }
+			has_specific_amount_of_money_with_inflation_included = yes
 	}
 	ai_will_do = {
 		factor = 1
@@ -1705,11 +1753,13 @@ shared_focus = {
 					instant_build = yes
 				}
 			}
-			debt_level_increase_by_4 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		else = {
 			custom_effect_tooltip = afr_colony_generic_focus_1860_gov_naval_base_tooltip
-			debt_level_increase_by_1 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		hidden_effect = {
 			if = {

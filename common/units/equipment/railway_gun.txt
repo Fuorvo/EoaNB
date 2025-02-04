@@ -5,7 +5,7 @@ equipments = {
 		parent = siege_gun_2
 		priority = 50
 		visual_level = 0
-		
+
 		#Defensive Abilities
 		defense = 20
 		breakthrough = 6.0
@@ -66,7 +66,7 @@ equipments = {
 		hard_attack = 12
 		ap_attack = 9
 		air_attack = 0
-		
+
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
@@ -91,7 +91,7 @@ equipments = {
 		hard_attack = 20
 		ap_attack = 14
 		air_attack = 0
-		
+
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
@@ -120,6 +120,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 			
+		
 		build_cost_ic = 100
 		resources = {
 			iron = 15

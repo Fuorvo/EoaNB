@@ -45,7 +45,7 @@
 		civilian_economy
 		export_focus
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 		#stagnation_growth
 		border_control
@@ -164,7 +164,7 @@
 		civil_army_cloth = 1
 		tech_infantry_practical_rifling = 1
 		tech_infantry_caplock_pistol = 1
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1
 		corliss_steam_engine = 1
 		mongolfiere = 1
@@ -194,10 +194,7 @@
 		producer = BEL
 	}
 	
-	#How to set up initial debt_level
-	#BEL = {
-	#	add_to_variable = {var = debt_level value = 1} #Belgium's National Debt amounted to 860m Francs (= 26.96m Pound Sterling) at the end of 1856; income per year 150m Francs (= 5.96m Pound Sterling; 63% indirect taxes) = 4.52 GDP of debt
-	#}
+	#Belgium's National Debt amounted to 860m Francs (= 26.96m Pound Sterling) at the end of 1856; income per year 150m Francs (= 5.96m Pound Sterling; 63% indirect taxes) = 4.52 GDP of debt
 	
 	### POLITICAL LEADERS ###
 	

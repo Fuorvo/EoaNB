@@ -27,7 +27,7 @@ FIN_decision_category_industrialization = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SAX_industry_development_ongoing_effect_tt
+			custom_effect_tooltip = eoanb_industry_development_ongoing_effect_tt
 			hidden_effect = {
 				set_country_flag = FIN_industry_development_ongoing_flag
 			}
@@ -94,7 +94,7 @@ FIN_decision_category_industrialization = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SAX_industry_development_ongoing_effect_tt
+			custom_effect_tooltip = eoanb_industry_development_ongoing_effect_tt
 			hidden_effect = {
 				set_country_flag = FIN_industry_development_ongoing_flag
 			}
@@ -146,7 +146,7 @@ FIN_decision_category_industrialization = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SAX_industry_development_ongoing_effect_tt
+			custom_effect_tooltip = eoanb_industry_development_ongoing_effect_tt
 			hidden_effect = {
 				set_country_flag = FIN_industry_development_ongoing_flag
 			}
@@ -191,7 +191,7 @@ FIN_decision_category_industrialization = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SAX_industry_development_ongoing_effect_tt
+			custom_effect_tooltip = eoanb_industry_development_ongoing_effect_tt
 			hidden_effect = {
 				set_country_flag = FIN_industry_development_ongoing_flag
 			}
@@ -225,7 +225,7 @@ FIN_decision_category_industrialization = {
 		#allowed = { TAG = FIN }
 
 		available = {
-			NOT = { has_country_flag = SAX_industry_development_ongoing_flag }
+			NOT = { has_country_flag = eoanb_industry_development_ongoing_flag }
 		}
 
 		visible = {
@@ -243,9 +243,9 @@ FIN_decision_category_industrialization = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SAX_industry_development_ongoing_effect_tt
+			custom_effect_tooltip = eoanb_industry_development_ongoing_effect_tt
 			hidden_effect = {
-				set_country_flag = SAX_industry_development_ongoing_flag
+				set_country_flag = eoanb_industry_development_ongoing_flag
 			}
 		}
 
@@ -259,7 +259,7 @@ FIN_decision_category_industrialization = {
 				}
 			}
 			hidden_effect = {
-				clr_country_flag = SAX_industry_development_ongoing_flag
+				clr_country_flag = eoanb_industry_development_ongoing_flag
 			}
 		}
 
@@ -284,23 +284,42 @@ FIN_decision_category_industrialization = {
 		}
 
 		visible = {
+			has_idea = NA_B_no_scale_railways
 			has_completed_focus = FIN_hameenlinna_helsinki_line
 		}
 
 		fire_only_once = yes
 
-		cost = 50
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
 		days_remove = 365
 
 		modifier = {
 			political_power_gain = -0.05
-			consumer_goods_expected_value = 0.05
-			production_speed_buildings_factor = -0.05
+		}
+
+		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 
 		remove_effect = {
 			swap_ideas = { remove_idea = NA_B_no_scale_railways add_idea = NA_B_early_scale_railways }
+			set_temp_variable = {
+				eoanb_prestige_change = 1
+			}
+			eoanb_change_prestige_score = yes
+			EOANBSYS_institutions_innovative_add_one = yes
+			set_temp_variable = {
+				unemployment_value = -0.0002
+			}
+			add_unemployment_effect = yes
 		}
 
 		ai_will_do = {
@@ -862,9 +881,9 @@ FIN_decision_category_industrialization = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SAX_financial_investment_ongoing_effect_tt
+			custom_effect_tooltip = eoanb_financial_investment_ongoing_effect_tt
 			hidden_effect = {
-				set_country_flag = SAX_financial_investment_ongoing_flag
+				set_country_flag = eoanb_financial_investment_ongoing_flag
 			}
 		}
 
@@ -883,7 +902,7 @@ FIN_decision_category_industrialization = {
 				swap_ideas = { remove_idea = research_spending_level_2 add_idea = research_spending_level_3 }
 			}
 			hidden_effect = {
-				clr_country_flag = SAX_financial_investment_ongoing_flag
+				clr_country_flag = eoanb_financial_investment_ongoing_flag
 			}
 		}
 
@@ -1163,13 +1182,10 @@ eoanb_category_navy = {
 
 	FIN_decision_rjurik_kalevala = {
 		icon = generic_naval
-
 		allowed = { tag = FIN }
-
 		visible = {
 			has_completed_focus = FIN_rjurik_kalevala
 		}
-
 		available = {
 			num_of_civilian_factories_available_for_projects > 2
 			if = {
@@ -1179,66 +1195,43 @@ eoanb_category_navy = {
 				has_tech = tech_naval_mtg_1850_gunboat
 			}
 		}
-
 		fire_only_once = yes
-
 		cost = 0
 		custom_cost_trigger = { has_navy_experience > 29.99 }
 		custom_cost_text = AUS_navy_experience_more_than_29
-
 		modifier = {
 			civilian_factory_use = 3
 		}
-
 		days_remove = 180
-
 		remove_effect = {
 			navy_experience = 5
 			if = {
 				limit = { has_dlc = "Man the Guns" }
-					create_equipment_variant = {
-						name = "24-gun GB Kamchatka-class M1840"
-						type = ship_hull_gunboat_0
-						name_group = NAME_THEME_HISTORICAL_GUNBOATS_0
-						parent_version = 0
-						modules={
-							fixed_ship_battery_slot=ship_cannon_battery_1
-							fixed_ship_engine_slot=ship_engine_steam_screw_gunboat
-							fixed_ship_fire_control_system_slot=fire_control_system_0
-							mid_1_custom_slot=ship_cannon_battery_1
-							fixed_ship_armor_slot=ship_armor_capital_hardwood_0
-						}
-						#obsolete = no
+				create_equipment_variant = {
+					name = "24-gun GB Kamchatka-class M1840"
+					type = ship_hull_gunboat_0
+					name_group = FIN_GB_HISTORICAL_1
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_cannon_battery_1
+						fixed_ship_engine_slot = ship_engine_sail_1
+						fixed_ship_fire_control_system_slot = fire_control_system_0
+						mid_1_custom_slot = ship_cannon_battery_1
+						fixed_ship_armor_slot = ship_armor_capital_hardwood_0
 					}
-
+				}
 				create_ship = {
 					type = ship_hull_gunboat_0
 					equipment_variant = "24-gun GB Kamchatka-class M1840"
 					name = "Rjurik"
 				}
-
 				create_ship = {
 					type = ship_hull_gunboat_0
 					equipment_variant = "24-gun GB Kamchatka-class M1840"
 					name = "Kalevala"
 				}
 			}
-			#else = {
-				#create_equipment_variant = {
-					#name = "John Ericsson Class"
-					#type = ship_monitor_0
-					#name_group = GER_CA_HISTORICAL
-					#parent_version = 0
-				#}
-
-				#create_ship = {
-					#type = ship_monitor_0
-					#equipment_variant = "John Ericsson Class"
-					#name = "HSwMS John Ericsson"
-				#}
-			#}
 		}
-
 		ai_will_do = {
 			base = 1100
 		}
@@ -1382,7 +1375,7 @@ FIN_decision_category_political_reforms = {
 		#allowed = { TAG = FIN }
 
 		available = {
-			NOT = { has_country_flag = SAX_financial_investment_ongoing_flag }
+			NOT = { has_country_flag = eoanb_financial_investment_ongoing_flag }
 		}
 
 		visible = {
@@ -1401,9 +1394,9 @@ FIN_decision_category_political_reforms = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = SAX_financial_investment_ongoing_effect_tt
+			custom_effect_tooltip = eoanb_financial_investment_ongoing_effect_tt
 			hidden_effect = {
-				set_country_flag = SAX_financial_investment_ongoing_flag
+				set_country_flag = eoanb_financial_investment_ongoing_flag
 			}
 		}
 
@@ -1424,7 +1417,7 @@ FIN_decision_category_political_reforms = {
 				swap_ideas = { remove_idea = research_spending_level_2 add_idea = research_spending_level_3 }
 			}
 			hidden_effect = {
-				clr_country_flag = SAX_financial_investment_ongoing_flag
+				clr_country_flag = eoanb_financial_investment_ongoing_flag
 			}
 		}
 

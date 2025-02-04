@@ -32,7 +32,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_3
-		taxation_level_4
+		taxation_level_2
 		cl_legal
 
 		#stagnation_growth
@@ -135,7 +135,7 @@
 		doctrine_napoleonic_improved_military_research = 1
 		doctrine_napoleonic_innovative_highcommand = 1
 		doctrine_napoleonic_focus_on_offense = 1
-		doctrine_napoleonic_the_column_formation = 1
+		doctrine_napoleonic_the_collumn_formation = 1
 		doctrine_napoleonic_line_formation = 1
 		doctrine_napoleonic_mixed_orders = 1
 		doctrine_napoleonic_skirmishing_tactics = 1
@@ -271,7 +271,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 
 		#stagnation_growth
@@ -353,7 +353,7 @@
 		#Weapons & Equipment
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Smoothbore
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1 #Minie
 		rifle_equipment2 = 1 #Enfield
 		tech_infantry_breech_loading = 1

@@ -40,7 +40,7 @@
 		#ECONOMIC POLICY
 		mixed_economy
 		export_focus
-		taxation_level_3
+		taxation_level_1
 		civilian_economy
 		cl_legal
 		industrializing
@@ -120,7 +120,7 @@
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Gewehr 1801
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
-		tech_infantry_percussion_cap = 1 #Dreyse M/41
+		  #Dreyse M/41
 		tech_infantry_practical_rifling = 1 #Practical Rifling
 		tech_infantry_infantry_swords = 1 #Infantry Swords
 		socket_bayonet = 1 #Socket Bayonet
@@ -202,6 +202,7 @@
 		food_preserving_icebox = 1 #Icebox Preservation
 		#Agriculture
 		early_artificial_fertilizer = 1 #Early Artificial Fertilizer
+		pre_industrial_farms = 1 #Pre-Industrial Farms
 		
 		###Electronics and Instruments
 		#Alternating Current
@@ -235,11 +236,7 @@
 
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 100 producer = HAM }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 100 producer = HAM }
-
-	#How to set up initial debt_level
-	#HAM = {
-	#	add_to_variable = {var = debt_level value = 1} #Hamburg's National Debt amounted to 65.29m Mark Banco (32.65m Thaler, 97.94m Mark as of 1871/73 exchange rate = 4.79m Pound Sterling as of 1871) at the end of 1855; income per year 8.64m Mark Kurant (3.56m Thaler = 0.52m Pound Sterling) = 9.21 GDP of debt (result of fire of 1842 and credits for rebuild)
-	#}
+	#Hamburg's National Debt amounted to 65.29m Mark Banco (32.65m Thaler, 97.94m Mark as of 1871/73 exchange rate = 4.79m Pound Sterling as of 1871) at the end of 1855; income per year 8.64m Mark Kurant (3.56m Thaler = 0.52m Pound Sterling) = 9.21 GDP of debt (result of fire of 1842 and credits for rebuild)
 
 	#Political Leaders
 	recruit_character = HAM_kaufleute_fraktion

@@ -1,5 +1,4 @@
 sub_units = {
-
 	cannon_artillery_support = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -27,6 +26,7 @@ sub_units = {
 			infantry_equipment = 15
 			cannon_equipment = 24
 		}
+
 		manpower = 300
 		training_time = 120
 		max_organisation = 0
@@ -62,6 +62,7 @@ sub_units = {
 			category_support_battalions
 			category_army
 			category_artillery
+            category_field_gun
 		}
 
 		combat_width = 0
@@ -72,6 +73,7 @@ sub_units = {
 			cannon_equipment = 24
 			horse_artillery_equipment = 24
 		}
+
 		transport = horse_artillery_equipment
 		
 		manpower = 300
@@ -126,6 +128,7 @@ sub_units = {
 			infantry_equipment = 15
 			howitzer_equipment = 24
 		}
+
 		manpower = 300
 		training_time = 120
 		max_organisation = 0
@@ -209,6 +212,7 @@ sub_units = {
 			howitzer_equipment = 24
 			horse_artillery_equipment = 24
 		}
+
 		transport = horse_artillery_equipment
 		manpower = 300
 		training_time = 120
@@ -267,7 +271,7 @@ sub_units = {
 			defence = 0.15
 		}
 	}
-	
+
 	siege_artillery_support = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -294,6 +298,7 @@ sub_units = {
 			infantry_equipment = 15
 			siege_gun_equipment = 24
 		}
+
 		manpower = 300
 		training_time = 120
 		max_organisation = 0
@@ -316,7 +321,6 @@ sub_units = {
 			defence = 0.05
 		}
 	}
-	
 	machine_gun_company = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -337,12 +341,12 @@ sub_units = {
 			category_all_infantry
 		}
 
-
 		combat_width = 0
 
 		need = {
 			machine_gun_equipment = 24
 		}
+
 		manpower = 300
 		training_time = 120
 		max_organisation = 0
@@ -358,7 +362,6 @@ sub_units = {
 		soft_attack = -0.4
 		hard_attack = -0.5
 
-
 		can_be_parachuted = yes
 	}
 	
@@ -370,7 +373,7 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
-
+		
 		type = {
 			infantry
 			support
@@ -383,7 +386,6 @@ sub_units = {
 			category_army
 			category_artillery
 		}
-
 
 		combat_width = 0
 
@@ -408,7 +410,7 @@ sub_units = {
 
 		can_be_parachuted = yes
 	}
-	
+
 	rocket_artillery = {
 		#abbreviation = "RART"  This is in vanilla, no clue what it does though
 		sprite = "artillery"

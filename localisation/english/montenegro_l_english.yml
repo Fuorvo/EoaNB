@@ -132,6 +132,66 @@
  MNT_focus_the_reign_of_nikola: "The Reign of Nikola"
  MNT_focus_the_reign_of_nikola_desc: " "
  
+  MNT_focus_support_for_educational_programs_from_the_tsar: "Educational Programs from the Tsar"
+ MNT_focus_support_for_educational_programs_from_the_tsar_desc: " "
+ 
+ MNT_focus_tsarist_patronage_of_montenegrin_culture: "Tsarist Patronage of Montenegrin Culture"
+ MNT_focus_tsarist_patronage_of_montenegrin_culture_desc: " "
+ 
+ MNT_focus_state_funds_for_elite_trips_to_russia: "State Funds for Elite Trips to Russia"
+ MNT_focus_state_funds_for_elite_trips_to_russia_desc: " "
+ 
+ MNT_focus_inspirations_from_russian_culture_and_science: "Inspirations from Russian Culture and Science"
+ MNT_focus_inspirations_from_russian_culture_and_science_desc: " "
+ 
+ MNT_focus_diplomatic_support_from_russia: "Diplomatic Support from Russia"
+ MNT_focus_diplomatic_support_from_russia_desc: " "
+ 
+ MNT_focus_a_state_visit_to_russia: "A State Visit to Russia"
+ MNT_focus_a_state_visit_to_russia_desc: " "
+ 
+ MNT_focus_the_mission_of_duke_dolgorukov: "The Mission of Duke Dolgorukov"
+ MNT_focus_the_mission_of_duke_dolgorukov_desc: " "
+ 
+ MNT_focus_nikolas_meeting_with_the_tsar: "Nikola's Meeting with the Tsar"
+ MNT_focus_nikolas_meeting_with_the_tsar_desc: " "
+ 
+ MNT_focus_royal_marriages_with_the_romanov_family: "Royal Marriages with the Romanov Family"
+ MNT_focus_royal_marriages_with_the_romanov_family_desc: " "
+ 
+ MNT_focus_establish_an_embassy_in_russia: "Establish an Embassy in Russia"
+ MNT_focus_establish_an_embassy_in_russia_desc: " "
+ 
+ MNT_focus_appoint_radonjic_as_ambassador_to_russia: "Appoint Radonjić as Ambassador to Russia"
+ MNT_focus_appoint_radonjic_as_ambassador_to_russia_desc: " "
+ 
+ MNT_focus_military_support_from_russia: "Military Support from Russia"
+ MNT_focus_military_support_from_russia_desc: " "
+ 
+ MNT_focus_observe_russian_military_maneuvers: "Observe Russian Military Maneuvers"
+ MNT_focus_observe_russian_military_maneuvers_desc: " "
+ 
+ MNT_focus_armament_supplies_from_russia: "Armament Supplies from Russia"
+ MNT_focus_armament_supplies_from_russia_desc: " "
+ 
+ MNT_focus_plans_of_intensifying_russian_support: "Plans of Intensifying Russian Support"
+ MNT_focus_plans_of_intensifying_russian_support_desc: " "
+ 
+ MNT_focus_intensify_cooperation_with_our_slavic_brethren: "Intensify Cooperation with our Slavic Brethren"
+ MNT_focus_intensify_cooperation_with_our_slavic_brethren_desc: " "
+ 
+ MNT_focus_military_support_from_serbia: "Military Support from Serbia"
+ MNT_focus_military_support_from_serbia_desc: " "
+ 
+ MNT_focus_purchase_weapons_from_serbia: "Purchase Weapons from Serbia"
+ MNT_focus_purchase_weapons_from_serbia_desc: " "
+ 
+ MNT_focus_ask_for_military_advisors: "Ask for Military Advisors"
+ MNT_focus_ask_for_military_advisors_desc: " "
+ 
+ MNT_focus_the_mission_of_captain_milutin_jovanovic: "The Mission of Captain Milutin Jovanovic"
+ MNT_focus_the_mission_of_captain_milutin_jovanovic_desc: " "
+ 
  MNT_focus_reapproach_russia: "Reapproach Russia"
  MNT_focus_reapproach_russia_desc: " "
  
@@ -467,13 +527,21 @@
  MNT_focus_the_crnogorac_newspaper_desc: " "
  
  MNT_focus_guerrilla_war: "Guerrilla war"
- MNT_focus_guerrilla_war_desc: ""
+ MNT_focus_guerrilla_war_desc: "For decades we have been fighting with the Ottoman empire, now with the unrest in Herzegovina we have a chance to defeat the ottomans and resolve the conflict"
  
  MNT_focus_Montenegrin_question: "Montenegrin question"
- MNT_focus_Montenegrin_question_desc: ""
+ MNT_focus_Montenegrin_question_desc: "after the end of the Crimean War, the Balkan territories became a struggle for influence, the Eastern question became a much discussed topic among the concert of great powers \nSome of the great powers such as Austria,Russia and France started having growing interest in us, we must use this chance to get them to support our cause!"
+
+ MNT_focus_bring_weapons_to_montenegro: "buy weapons from abroad"
+ MNT_focus_bring_weapons_to_montenegro_desc: "War awaits us, unfortunately we do not have enough weapons to both fund the rebels in Herzegovina and our own men, so we must use what little money we have to buy foreign weapons"
  
  MNT_focus_prepare_the_clans_for_conflict: "Prepare Clans for Conflict"
- MNT_focus_prepare_the_clans_for_conflict_desc: ""
+ MNT_focus_prepare_the_clans_for_conflict_desc: "Our little mountainous nation has long been reliant on clan lords, to come and help in the fight against the Ottomans and in the way earn their freedom, now with war at our doorstep we must call upon their leaders to mobilize their fighters"
+
+ MNT_focus_support_the_clans_beyond_our_territory: "support the clans beyond our territory"
+ MNT_focus_support_the_clans_beyond_our_territory_desc: "We will support the rebellion of the clans beyond our borders, it will take some time before the rebellion breaks out, but these rebel forces could help our cause greatly. \nOf course, we must not forget that these are unorganized clans who listen to no one but themselves, so they may rebel if it is not so convenient for us." 
+
+ MNT_tooltip_support_clan_rebelion: "after some time §Yadd two rebelion divisions will§!, but we don't have full control of the insurgency, so they may show up just when we don't need them."
  
  MNT_focus_outbreak_of_the_pro_Montenegro_revolt: "Outbreak of Montenegrin Revolt"
  MNT_focus_outbreak_of_the_pro_Montenegro_revolt_desc: ""
@@ -482,10 +550,10 @@
  MNT_focus_negotiations_with_the_ottomans_n_desc: ""
 
  MNT_the_ottomans_obsolutely_lost: "We Defeated Ottomans"
- MNT_the_ottomans_obsolutely_lost_desc: ""
+ MNT_the_ottomans_obsolutely_lost_desc: "After a long fight we managed to finally defeat our oppressors! But the fight is still not over, now we have to negotiate with the ottomans and proove our strenght at the negotiation table"
 
  MNT_focus_failure_of_the_revolt: "We Were Defeated"
- MNT_focus_failure_of_the_revolt_desc: ""
+ MNT_focus_failure_of_the_revolt_desc: "the spark of the Herzegovinian uprising has been extinguished, our goals can no longer be achieved by supporting the Herzegovinian uprising, but our struggle must continue, and we will therefore only take on this conflict with our own forces"
 
  MNT_focus_recognize_our_status_under_the_ottomans_n: "Recognize Our Status Under the Ottomans"
  MNT_focus_recognize_our_status_under_the_ottomans_n_desc: ""
@@ -494,7 +562,7 @@
  MNT_focus_defend_the_nation_n_desc: ""
 
  MNT_focus_strike_a_deal_with_the_ottomans_n: "Strike a Deal with the Ottomans"
- MNT_focus_strike_a_deal_with_the_ottomans_n_desc: ""
+ MNT_focus_strike_a_deal_with_the_ottomans_n_desc: "After our victory at the battle of Grahovac many Ottoman soldiers lay dead, and now we have forced them back to the negotiations table where they were forced to give us our demands. Although they still refuse to recognize our independen"
 
  MNT_focus_the_mostar_convention_n: "Mostar Convention"
  MNT_focus_the_mostar_convention_n_desc: ""
@@ -692,9 +760,9 @@
 	### EVENTS ###
 
  MNT_guide_gui.1.t: "Mechanics Complexity"
- MNT_guide_gui.1.d: ""
- MNT_guide_gui.1.a: "Keep Easy Mechanics"
- MNT_guide_gui.1.b: "Keep Komplex Mechanics"
+ MNT_guide_gui.1.d: "This mod offers you the opportunity to play with easy or hard mechanics for Montenegro. What is your choice?"
+ MNT_guide_gui.1.a: "Choose Easy Mechanics"
+ MNT_guide_gui.1.b: "Choose Complex Mechanics (recommended)"
 
  OTO_battleofgrahovac.1.t: "Escalation on the Border"
  OTO_battleofgrahovac.1.d: "Tensions have been gradually rising on our border. Now it almost looks like war had broken out there. There was always some tension on both sides, but now it looks like it had boiled over. There are reports of shootings and looting of border villages. The population is fleeing to the mountain areas to save themself and the little belongings they have left from that madness. We need to quickly decide what to do because this situation could destabilize the whole region. We could try to calm the situation down with words and offer some kind of appeasement, or we could send in the army to destroy those bandits."
@@ -797,7 +865,7 @@
  OTO_battleofgrahovac.23.a: "Brothers, to arms."
  
  OTO_battleofgrahovac.24.t: "Results of the Mostar Negotiations"
- OTO_battleofgrahovac.24.d: "The negotiations in Mostar have ended today, and a final agreement was drawn. Here is its content:                            - [mostar_condition_MNT_indenpendence]                              - [mostar_condition_MNT_new_territory]                  - [mostar_condition_MNT_arms_import]                - [mostar_condition_OTO_deport_mirko_petrovic_njegos_M]                         - [mostar_condition_OTO_protect_muslim_landlords_M]                     - [mostar_condition_OTO_demand_debt_repayment]"
+ OTO_battleofgrahovac.24.d: "The negotiations in Mostar have ended today, and a final agreement was drawn. Here is its content:\n-[mostar_condition_MNT_indenpendence]\n- [mostar_condition_MNT_new_territory]\n- [mostar_condition_MNT_arms_import]\n\n\n- [mostar_condition_OTO_deport_mirko_petrovic_njegos_M]\n-[mostar_condition_OTO_protect_muslim_landlords_M]\n- [mostar_condition_OTO_demand_debt_repayment]"
  OTO_battleofgrahovac.24.a: "Sign the Mostar convention."
  OTO_battleofgrahovac.24.b: "Brothers, to arms."
 
@@ -920,6 +988,19 @@
  OTO_battleofgrahovac.52.t: "Montenegro Crisis Calmed Down"
  OTO_battleofgrahovac.52.d: ""
  OTO_battleofgrahovac.52.a: "Truly great news."
+
+ OTO_battleofgrahovac.54.t: "Montenegro wants to buy weapons"
+ OTO_battleofgrahovac.54.d: "Montenegro, which is currently in dispute with the Ottoman Empire wants to buy rifles from us, we must think carefully, the sale could increase the influence in Montenegro but we may anger the Ottoman Empire, so we must consider carefully"
+ OTO_battleofgrahovac.54.a: "we'll sell them rifles"
+ OTO_battleofgrahovac.54.b: "too risky, we will not support this uprising"
+
+ OTO_battleofgrahovac.55.t: "deal accepted"
+ OTO_battleofgrahovac.55.d: "our proposal to buy weapons was aproved, foreign powers are interested in supporting our rebellion"
+ OTO_battleofgrahovac.55.a: "good deal"
+
+ OTO_battleofgrahovac.56.t: "trade rejected"
+ OTO_battleofgrahovac.56.d: "our proposal to buy weapons was rejected, foreign powers are not interested in supporting our rebellion"
+ OTO_battleofgrahovac.56.a: "we have to deal with it ourselves"
  
  montenegro.1.t: "Clans"
  montenegro.1.d: " "
@@ -1709,6 +1790,8 @@
  MNT_Balance_of_Power_foregin_interest: "Our Direction of Foreign Politics"
  MNT_Balance_of_Power_foregin_interest_desc: ""
 
+ MNT_BOP_balanced_situation: "balanced situation"
+
  MNT_france_way: "Orientation on France"
  MNT_france_way_desc: " "
 
@@ -1729,6 +1812,13 @@
 
  MNT_decision_bop_contact_russian_konzul_in_Skadar: "Contact Russian Consul in Scutari"
  MNT_decision_bop_contact_russian_konzul_in_Skadar_desc: " "
+
+ get_5_towards_FRA: "France's influence will be slightly increased"
+ get_5_towards_RUS: "Russia's influence will be slightly increased"
+
+ lose_5_towards_FRA: "Russian influence will be slightly decreased"
+ lose_5_towards_RUS: "Franch influence will be slightly weakened"
+
  
 	### DECISIONS AGRICULTURE ###
 
@@ -1814,9 +1904,11 @@
 
  BG_spies: "Spies in Rebellious Region: §B[?herzegovina_spy]§!"
 
+ MNT_sc_visible: "\n[?MNT.success] total successful count\n[?MNT.unsuccess] total unsuccessful count"
+
  before_matamovic: "At the beginning of 1857, armed uprisings broke out in many places in Herzegovina. This happened not only because of the drought of the previous year but also because of the non-compliance with the reform decree of 1856, which in many ways destabilized the situation not only in Herzegovina. If we let the volunteers go to the region, we will be able to support the uprising in the fight against the Ottoman Empire."
 
- herzegovina_uprising_1857_MNT: "At the beginning of 1857, armed uprisings broke out in many places in Herzegovina. This happened not only because of the drought of the previous year but also because of the non-compliance with the reform decree of 1856, which in many ways destabilized the situation not only in Herzegovina. The tensions in Herzegovina were used by Knjaz Danilo from Montenegro to gain support for the issue of dire situation in Herzegovina.                                                                                                                                                                                                             [wiew_stats]"
+ herzegovina_uprising_1857_MNT: "At the beginning of 1857, armed uprisings broke out in many places in Herzegovina. This happened not only because of the drought of the previous year but also because of the non-compliance with the reform decree of 1856, which in many ways destabilized the situation not only in Herzegovina. The tensions in Herzegovina were used by Knjaz Danilo from Montenegro to gain support for the issue of dire situation in Herzegovina.                                                                                                                                                                                                             [wiew_stats] [success_count_visibility] "
 
  herzegovina_uprising_1857_OTO: "At the beginning of 1857, armed uprisings broke out in many places in Herzegovina. This happened not only because of the drought of the previous year but also because of the non-compliance with the reform decree of 1856, which in many ways destabilized the situation not only in Herzegovina. We must extinguish the spark of rebellion before it spreads and sets our empire on fire.                                                                                                                                                                                                                                                                                                       [wiew_stats]"
 
@@ -1837,6 +1929,7 @@
  it_is_ottoman_empire: "Ottoman Empire"
 
 	### DECISION (pre)GRAHOVEC + HERZEGOVINA UPRISING (1857) MNT ###
+ MNT_decision_category_Herzegovinian_uprising_1857: "Herzegovinan Uprising of 1857"
 
  MNT_decision_resources_back: "Situation with Montenegrin Resources"
 
@@ -1870,7 +1963,7 @@
 
  OTO_arrest_the_rebel_leader: "Try to Arrest Rebel Leaders"
 
- OTO_mission_herzegovina_uprising_1857: "Development of the Uprising in Herzegovina"
+ OTO_mission_development_of_herzegovina_uprising_1857: "Development of the Uprising in Herzegovina"
 
  OTO_mission_herzegovina_uprising_1857_final: "Ultimatum to Army for Finishing Uprising"
 
@@ -1892,6 +1985,10 @@
 
  SER_send_Pero_matamovic: "Send Pero Matamovic to Herzegovina"
 
+ MNT_decision_purchase_of_weapons_from_Austria: "purchase of weapons from Austria"
+ MNT_decision_purchase_of_weapons_from_france: "purchase of weapons from france"
+ MNT_decision_purchase_of_weapons_from_russia: "purchase of weapons from Russia"
+
 	### DECISION NEGOTIATION ###
 
  has_another_neogotiation: "§WDoesn't have already another negotiation taking place"
@@ -1902,9 +1999,9 @@
  OTO_mission_mostar_conference: "Mostar Conference"
  Mostar_conference_triggers_show: "To get an agreement, you §Yneed§! to at least negotiate !Ystatus§! and §Yenlargement§! of Montenegro. (Montenegro must either §Ypurchase§! or §Ygive up§! on the independence. Same with new territory, you must either §Ypurchase§! them or §Ygive up§! on it.)"
 
- montenegro_revolt_desc: "       §LMontenegro Points: [?MNT.MNT_neogotions]§! £negotiations_texticon                                                     §LOttomans Points: [?OTO.MNT_neogotions]§! £negotiations_texticon             [france_support]              [russia_support]              [austria_support] [wiew_stats]"
+ montenegro_revolt_desc: "       §LMontenegro Points: [?MNT.MNT_neogotions]§! £negotiations_texticon                                                     §LOttomans Points: [?OTO.MNT_neogotions]§! £negotiations_texticon             \n					[france_support]\n					[russia_support]\n					[austria_support]\n\n[wiew_stats] [success_count_visibility]"
 
- montenegro_ottomans_neogotiations_desc: "§LMontenegro Points: [?MNT.MNT_neogotions]§! £negotiations_texticon                                                     §LOttomans Points: [?OTO.MNT_neogotions]§! £negotiations_texticon             [france_support]              [russia_support]              [austria_support]                                                                                                                                                                                                                       §BMontenegrin Barganing Options§!                                                                                                                                                                                               [MNT_indenpendence] [MNT_outer_montenegro] [MNT_arms_import]                                                                                                                                                                                                                                 §ROttomans Barganing Options§!                                                                                                                                                                                                   [OTO_deport_mirko]                                                           [OTO_protect_muslim_landlords]                                [OTO_demand_pay_repayment]                                                         "                                                                                               
+ montenegro_ottomans_neogotiations_desc: "§LMontenegro Points: [?MNT.MNT_neogotions]§! £negotiations_texticon                                                     §LOttomans Points: [?OTO.MNT_neogotions]§! £negotiations_texticon             \n					[france_support]\n					[russia_support]\n					[austria_support]\n\n                       																				§BMontenegrin Barganing Options§!                                                                                                                                                                          \n[MNT_indenpendence]\n[MNT_outer_montenegro]\n[MNT_arms_import]                                                                                                                                                                                                                        §ROttomans Barganing Options§! \n[OTO_deport_mirko] \n[OTO_protect_muslim_landlords]  \n[OTO_demand_pay_repayment]                                                         "                                                                                               
 
  add_negotiations_effect: "Montenegro and its supporters will get §Oprestige§! and Ottoman Empire will get §Ystability§!."
 
@@ -1924,7 +2021,7 @@
 
  russia_support_2: "§B||§!                                            §B||§!                     [RUS.GetFlag]                     §R||§!                                            §R||§!"
 
- russia_support_3: "§B||§!                                            §B||§!                                            §R||§!                     [RUS.GetFlag]                     §R||§!"
+ russia_support_3: "§B||§!                                            §B||§!                                            		§R||§!                   [RUS.GetFlag]                     §R||§!"
 
  austria_support_1: "§B||§!                     [AUS.GetFlag]                     §B||§!                                            §R||§!                                            §R||§!"
 
@@ -1950,7 +2047,7 @@
 
  MNT_outer_montenegro_bought: "§BExpansion Achived§! (If both sides sign the treaty [MNT.GetFlag] [is_france_supporter] [is_russia_supporter] [is_austria_supporter] get §O2 prestige§!.)          "
 
- MNT_outer_montenegro_give_up: "§RRebellious Territory Vill Remain Part of the Ottoman Empire.§! (If both sides sign the treaty [is_france_supporter] [is_russia_supporter] [is_austria_supporter] lose §O1 prestige§!.)"
+ MNT_outer_montenegro_give_up: "§RRebellious Territory will remain part of the Ottoman Empire.§! (If both sides sign the treaty [is_france_supporter] [is_russia_supporter] [is_austria_supporter] lose §O1 prestige§!.)"
 
  MNT_neogotiate_new_territory: "§BNegotiate Territorial Expansion§! §L[?MNT.MNT_neogotions_new_territoy_price]§! £negotiations_texticon"
  purchase_new_territory: "§WIt will cost §L[?MNT.MNT_neogotions_new_territoy_price]§! £negotiations_texticon . If both sides sign the treaty [MNT.GetFlag] [is_france_supporter] [is_russia_supporter] [is_austria_supporter] get §O2 prestige§!."
@@ -1993,7 +2090,7 @@
 
  MNT_OTO_mission_war_1858: "Montenegro - Ottomans War"
 
- montenegro_war_1858_desc: "§BMontenegro§! [MNT_lives]                                                                             §ROttoman Empire§! [OTO_lives]    [france_support]              [russia_support]              [austria_support]                                                                   [divisions_in_montenegro_region]/[divisions_limit] [OTO.GetFlag] divisions in region                                                               [FRA_casus_beli]                                                [RUS_casus_beli]                                    [AUS_casus_beli]" 
+ montenegro_war_1858_desc: "§BMontenegro§! [MNT_lives]                      -                   §ROttoman Empire§! [OTO_lives]				\n\n\n[france_support]\n[russia_support]\n[austria_support]\n\n\n[divisions_in_montenegro_region]/[divisions_limit] [OTO.GetFlag] divisions in region                                                               [FRA_casus_beli]                                                [RUS_casus_beli]                                    [AUS_casus_beli]" 
  
  FRA_have_casus_beli: "[FRA.GetFlag] £GFX_attack_texticon"
  RUS_have_casus_beli: "[RUS.GetFlag] £GFX_attack_texticon"
@@ -2113,7 +2210,7 @@
 	### DECISIONS CLANS ###
 
  MNT_decision_category_clans: "Montenegrin Clans"
- MNT_decision_category_clans_desc: "The territory of Montenegro is not truly unified. It's divided into clans controlled area, which some have hundreds of years long tradition. A clan becomes a member's extended family, and loyalty to one's own clan takes precedence over anything else, including a Montenegrin prince or sultan. Each clan actually creates its almost own independent state. It's led by its own leader or clerics, has its own army, and also conducts limited foreign politics within the western Balkans.                                                                                                                                                             	                                                                                                    Kuči Clan Loyalty : [kuciloyalty]   Strength of the Army : [?montenegro_KUCI_power]   Political Influence [?montenegro_KUCI_inluence]                                                                                                                                                                                                                                                                                           Vasojevíci Clan Loyalty : [vasojeviciloyalty]  Strength of the Army : [?montenegro_VASOJEVICI_power]             Political Influence [?montenegro_VASOJEVICI_inluence]                                                                                                                                                                                                                                                          Drobnjaci Clan Loyalty : [drobnjaciloyalty]    Strength of the Army : [?montenegro_DROBNJACI_power]   Political Influence [?montenegro_DROBNJACI_inluence]                                                                                                                                                                                                                                                                          Piperi Clan Loyalty : [piperiloyalty]  Strength of the Army : [?montenegro_PIPERI_power]  Political Influence [?montenegro_PIPERI_inluence]                                                                                                                                                                                                                                                                                              Cuce Clan Loyalty : [cuceloyalty]  Strength of the Army : [?montenegro_CUCE_power]  Political Influence [?montenegro_CUCE_inluence]                                                                                                                                                    Njeguši Clan Loyalty : [njegusiloyalty]  Strength of the Army : [?montenegro_NJEGUSI_power]  Political Influence [?montenegro_NJEGUSI_inluence]                                                                                                                                                           Ceklin Clan Loyalty : [ceklinloyalty]  Strength of the Army : [?montenegro_CEKLIN_power]  Political Influence  [?montenegro_CEKLIN_inluence]                                                                                                                                                     Bjelice Clan Loyalty  [bjeliceloyalty]  Strength of the Army : [?montenegro_BJELICE_power]  Political Influence [?montenegro_BJELICE_inluence]                                                                                                                                                         Grahovo Clan Loyalty  [grahovoloyalty]  Strength of the Army : [?montenegro_GRAHOVO_power]  Political Influence [?montenegro_GRAHOVO_inluence] "
+ MNT_decision_category_clans_desc: "The territory of Montenegro is not truly unified. It's divided into clans controlled area, which some have hundreds of years long tradition. A clan becomes a member's extended family, and loyalty to one's own clan takes precedence over anything else, including a Montenegrin prince or sultan. Each clan actually creates its almost own independent state. It's led by its own leader or clerics, has its own army, and also conducts limited foreign politics within the western Balkans.                                                                                                                                                             	              \nKuči Clan Loyalty : [kuciloyalty]   Strength of the Army : [?montenegro_KUCI_power]   \nPolitical Influence [?montenegro_KUCI_inluence]                                                                                                                                                            \nVasojevíci Clan Loyalty : [vasojeviciloyalty]  Strength of the Army : [?montenegro_VASOJEVICI_power]  \nPolitical Influence[?montenegro_VASOJEVICI_inluence]                                                                                                                         										\nDrobnjaci Clan Loyalty : [drobnjaciloyalty]    Strength of the Army : [?montenegro_DROBNJACI_power]   \nPolitical Influence [?montenegro_DROBNJACI_inluence]												                                                                                                                          \nPiperi Clan Loyalty : [piperiloyalty]  Strength of the Army : [?montenegro_PIPERI_power]  \nPolitical Influence [?montenegro_PIPERI_inluence]                                                                                                                                                          \nCuce Clan Loyalty : [cuceloyalty]  Strength of the Army : [?montenegro_CUCE_power]  \nPolitical Influence [?montenegro_CUCE_inluence]											                                                                                                                               \nNjeguši Clan Loyalty : [njegusiloyalty]  Strength of the Army : [?montenegro_NJEGUSI_power]  \nPolitical Influence [?montenegro_NJEGUSI_inluence]                                                                                                                                                         \nCeklin Clan Loyalty : [ceklinloyalty]  Strength of the Army : [?montenegro_CEKLIN_power]  \nPolitical Influence  [?montenegro_CEKLIN_inluence]                                                                                                                                                     \nBjelice Clan Loyalty  [bjeliceloyalty]  Strength of the Army : [?montenegro_BJELICE_power]  \nPolitical Influence [?montenegro_BJELICE_inluence]                                                                                                                                                         \nGrahovo Clan Loyalty  [grahovoloyalty]  Strength of the Army : [?montenegro_GRAHOVO_power]  \nPolitical Influence [?montenegro_GRAHOVO_inluence] "
 
  MNT_decision_mobilize_the_clan_army: "Full Mobilization of Clan Army"
 
@@ -2145,9 +2242,11 @@
 
  reduce_the_growth_of_uprising: "Reduce §ggrowth§! of uprising by §g1§!"
 
- growth_increase_by_1: "Increase §ggrowth§! by §g1§!"
+ growth_decrease_by_1: "Decrease §ggrowth§! by §g1§!"
 
  intensity_drop_by_3: "§YOttoman Power§! drops by §Y3§!"
+
+ intensity_drop_by_1: "§YOttoman Power§! drops by §Y1§!"
 
  add_spies_5: "You will recruit §B5 spies§!"
 
@@ -2231,7 +2330,7 @@
 
  MNT_add_2_point_honestly: "You get §L2§! £negotiations_texticon  instead of §L1§! because you select §Gfight honestly§!."
 
- MNT_get_6_OTO_0: "[MNT.GetFlag] get §L6§! £negotiations_texticon [OTO.GetFlag] get §L6§! £negotiations_texticon "
+ MNT_get_6_OTO_0: "[MNT.GetFlag] get §L6§! £negotiations_texticon [OTO.GetFlag] get §L0§! £negotiations_texticon "
 
  MNT_get_5_OTO_1: "[MNT.GetFlag] get §L5§! £negotiations_texticon [OTO.GetFlag] get §L1§! £negotiations_texticon "
 
@@ -2303,6 +2402,8 @@
 
  MNT_decision_category_gui_visible: "£negotiations_texticon"
 
+ MNT_custom_trigger_tooltip_must_be_neutral_or_supporter: "country must §Ysupport§! Montenegro or remain §Yneutral§!"
+
 	### TRAITS ###
 
  MNT_trait_darinka_petrovic_njegos: "Princess Consort of Montenegro"
@@ -2360,6 +2461,12 @@
  MNT_Supported_Vukalovic: "Montenegrin Support for Vukalović"
  
  breach_of_mostar_agreement: "Breach of Mostar Convention"
+
+ supported_montenegro_cause: "supported montenegro cause"
+
+ refused_to_support_montenegro_cause: "refused to support Montenegro cause"
+
+ interfering_in_Ottoman_affairs: "interfering in Ottoman affairs"
 
 
 

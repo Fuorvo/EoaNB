@@ -19,7 +19,7 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 0.01 }
 	set_variable = { current_loans_sum = 2 }
 
 	add_ideas = {
@@ -42,7 +42,7 @@
 		#ECONOMIC POLICY
 		mixed_economy
 		limited_exports
-		taxation_level_3
+		taxation_level_1
 		civilian_economy
 		cl_legal
 		agrarian
@@ -105,7 +105,7 @@
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Lütticher Gewehr M/1813
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
-		tech_infantry_percussion_cap = 1 #Infanteriegewehr M/1842
+		  #Infanteriegewehr M/1842
 		tech_infantry_practical_rifling = 1 #Practical Rifling
 		tech_infantry_infantry_swords = 1 #Infantry Swords
 		socket_bayonet = 1 #Socket Bayonet
@@ -179,6 +179,9 @@
 		#Food Preservation
 		early_medicine = 1 #Early Medicine
 		food_preserving_icebox = 1 #Icebox Preservation
+		#Agriculture
+		early_artificial_fertilizer = 1 #Early Artificial Fertilizer
+		pre_industrial_farms = 1 #Pre-Industrial Farms
 		
 		###Electronics and Instruments
 		#Alternating Current
@@ -206,11 +209,7 @@
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 300 producer = MCK }
 	add_equipment_to_stockpile = { type = cavalry_equipment_0 amount = 100 producer = MCK }
 	add_equipment_to_stockpile = { type = cannon_equipment_0 amount = 6 producer = MCK }
-
-	#How to set up initial debt_level
-	#MCK = {
-	#	add_to_variable = {var = debt_level value = 1} #Mecklenburg's National Debt amounted to 12.1m Thaler (roughly 0.403m pounds of Silver; 36,3m Mark as of 1871/73 exchange rate = 1.78m Pound Sterling as of 1871) at the end of 1857; income per year 3.29m Thaler (= 0.48m Pound Sterling) = 3.71 GDP of debt
-	#}
+	#Mecklenburg's National Debt amounted to 12.1m Thaler (roughly 0.403m pounds of Silver; 36,3m Mark as of 1871/73 exchange rate = 1.78m Pound Sterling as of 1871) at the end of 1857; income per year 3.29m Thaler (= 0.48m Pound Sterling) = 3.71 GDP of debt
 
 	#Country Leaders
 	recruit_character = MCK_friedrich_franz_ii

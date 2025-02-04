@@ -1,4 +1,4 @@
-﻿add_namespace = boer_states
+add_namespace = boer_states
 
 country_event = { #OFS asks for recognition
 	id = boer_states.1
@@ -144,10 +144,16 @@ country_event = { # SAF - Act of union
 		name = boer_states.8.a
 		SAF={
 			drop_cosmetic_tag = yes
-			add_ideas={
-				SAF_idea_divided_administration
-				SAF_idea_afrikkan_agitation
-
+			if = {
+				limit = {
+					NOT = {
+						has_idea = SAF_idea_local_traditions
+					}
+				}
+				add_ideas={
+					SAF_idea_divided_administration
+					SAF_idea_afrikkan_agitation
+				}
 			}
 			if={
 				limit = {ZUL={exists = yes}}
@@ -373,7 +379,7 @@ country_event = { #OFS - Boshoff Resigns
 	is_triggered_only=yes
 	option = {
 		name = boer_states.15.a
-		ai_chance = { factor = }
+		ai_chance = { factor = 100 }
 		country_event = { id = boer_states.16 days = 15 }
 		add_political_power = -50
 	}
@@ -563,19 +569,25 @@ country_event = { #OFS - UK Mediates peace
 	}
 }
 
-country_event = { #OFS - Boshoff Resigns... again
-	id = boer_states.26
-	title = boer_states.26.t
-	desc = boer_states.26.d
-	is_triggered_only=yes
-	option = { #
-		name = boer_states.26.a
-		ai_chance = { factor = 100 }
-		add_stability = -0.1
-		add_political_power = -100
-		retire_character = OFS_Jacobus_Nicolaas_Boshoff
-		promote_character = OFS_Volksraad
-	}
+country_event = {
+    id = boer_states.26
+    title = boer_states.26.t
+    desc = boer_states.26.d
+    is_triggered_only = yes
+    
+    trigger = {
+        tag = OFS
+    }
+
+    option = {
+        name = boer_states.26.a
+        ai_chance = { factor = 100 }
+        add_stability = -0.1
+        add_political_power = -100
+
+        promote_character = OFS_Volksraad
+        retire_character  = OFS_Jacobus_Nicolaas_Boshoff
+    }
 }
 
 #############################################################
@@ -1105,27 +1117,50 @@ country_event = { #TRV - Schoeman attempts coup
 	}
 }
 
-country_event = { #TRV - Schoeman stars civil war
-	id = boer_states.43
-	title = boer_states.43.t
-	desc = boer_states.43.d
+country_event = {
+    id = boer_states.43
+    title = boer_states.43.t
+    desc = boer_states.43.d
+    is_triggered_only = yes
+    
+    option = {
+        name = boer_states.43.a
+        ai_chance = { factor = 75 }
+        
+        # First release NIR and set it as fully independent
+        TRV = { 
+            release = NIR
+            end_puppet = NIR  # Explicitly end the puppet relationship
+        }
+        
+        # Small delay to ensure independence is processed
+        hidden_effect = {
+            NIR = {
+                country_event = {
+                    id = boer_states.80  # New event for war declaration
+                    days = 1
+                }
+            }
+        }
+        
+        set_country_flag = TRV_civil_War
+    }
+}
 
-	is_triggered_only=yes
-
-	option = {
-		name = boer_states.43.a
-		ai_chance = { factor = 75 }
-		release_puppet = NIR
-		NIR = {
-			declare_war_on = {
-				target = TRV
-				type = annex_everything
-			}
-		}
-		hidden_effect = {
-			set_country_flag = TRV_civil_War
-		}
-	}
+# New event to handle the war declaration after independence
+country_event = {
+    id = boer_states.80
+    title = boer_states.80.t
+    desc = boer_states.80.d
+    hidden = yes
+    is_triggered_only = yes
+    
+    immediate = {
+        declare_war_on = {
+            target = TRV
+            type = annex_everything
+        }
+    }
 }
 
 country_event = { #TRV - Elections are held
@@ -1736,5 +1771,106 @@ country_event = { #Shepstone Arrives in TRV
 			set_country_flag = TRV_shepstone_takeover
 			complete_national_focus = TRV_focus_shepstone_arrival
 		}
+	}
+}
+
+country_event = { #Diplomats in London
+	id = boer_states.61
+	title = boer_states.61.t
+	desc = boer_states.61.d
+	picture = GFX_report_event_south_africa
+
+	is_triggered_only=yes
+	fire_only_once = yes
+
+	option = {
+		name = boer_states.61.a
+		ai_chance = { factor = 75 }
+		add_political_power = -75
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #OFS Joins confederation
+	id = boer_states.62
+	title = boer_states.62.t
+	desc = boer_states.62.d
+	picture = GFX_report_event_south_africa
+
+	is_triggered_only=yes
+	fire_only_once = yes
+
+	option = {
+		name = boer_states.62.a
+		ai_chance = { factor = 75 }
+		ENG = {
+			set_autonomy = {
+				target = OFS
+				autonomy_state = autonomy_british_self_gov
+			}
+		}
+		set_cosmetic_tag = OFS_ENG
+		add_ideas = AFR_british_colony
+		add_popularity = { 
+			ideology = traditional_conservatism
+			popularity = 0.03 
+		}
+		set_politics = { ruling_party = traditional_conservatism elections_allowed = no }
+	}
+}
+
+country_event = { #OFS Joins confederation (local)
+	id = boer_states.63
+	title = boer_states.63.t
+	desc = boer_states.63.d
+	picture = GFX_report_event_south_africa
+
+	is_triggered_only=yes
+	fire_only_once = yes
+
+	option = {
+		name = boer_states.63.a
+		ai_chance = { factor = 75 }
+		ENG = {
+			set_autonomy = {
+				target = OFS
+				autonomy_state = autonomy_british_self_gov
+			}
+		}
+		set_cosmetic_tag = OFS_ENG
+		add_ideas = AFR_british_colony
+		add_popularity = { 
+			ideology = centrism
+			popularity = 0.03 
+		}
+		set_politics = { ruling_party = traditional_conservatism elections_allowed = no }
+	}
+}
+
+country_event = { #TRV Joins confederation (local)
+	id = boer_states.64
+	title = boer_states.64.t
+	desc = boer_states.64.d
+	picture = GFX_report_event_south_africa
+
+	is_triggered_only=yes
+	fire_only_once = yes
+
+	option = {
+		name = boer_states.64.a
+		ai_chance = { factor = 75 }
+		ENG = {
+			set_autonomy = {
+				target = TRV
+				autonomy_state = autonomy_british_self_gov
+			}
+		}
+		set_cosmetic_tag = TRV_ENG_dominated
+		add_ideas = AFR_british_colony
+		add_popularity = { 
+			ideology = centrism
+			popularity = 0.03 
+		}
+		set_politics = { ruling_party = traditional_conservatism elections_allowed = no }
 	}
 }

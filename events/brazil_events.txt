@@ -10,12 +10,17 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-	name = brazil.1.a
-		BRA = {
-			add_timed_idea = {
-				idea = BRA_anglo_brazilian_research_treaty
-				days = 100
-			}
+		name = brazil.1.a
+		add_political_power = -200
+		activate_advisor = BRA_francisco_pereira_jugde
+		activate_advisor = BRA_viscount_of_maranguape_foreign
+		activate_advisor = BRA_viscount_of_sousa_franco_finance
+		activate_advisor = BRA_jeronimo_coelho_army_chief
+		activate_advisor = BRA_jose_antonio_saraiva_navy_chief
+		set_country_flag = brazil_conciliatory
+		hidden_effect = { 
+			country_event = { id = brazil.204 days = 1 }
+			complete_national_focus = BRA_1857_conciliatory_cabinet
 		}
 	}
 	
@@ -248,146 +253,170 @@ country_event = {
 		}
  }
 
- country_event = {
-	id = brazil.25
-	title = brazil.25.t
-	desc = {
-		trigger = {	BRA = { has_completed_focus = BRA_direct_intervention}	}
-		text = brazil.25.d
-	}
-	desc = {
-		trigger = {	BRA = { has_completed_focus = BRA_the_second_cisplatine_war } }
-		text = brazil.25.d_b
-	}
-	picture = GFX_report_event_amazonas
+country_event = {
+    id = brazil.25
+    title = brazil.25.t
+    desc = {
+        trigger = { BRA = { has_completed_focus = BRA_direct_intervention } }
+        text = brazil.25.d
+    }
+    desc = {
+        trigger = { BRA = { has_completed_focus = BRA_the_second_cisplatine_war } }
+        text = brazil.25.d_b
+    }
+    picture = GFX_report_event_amazonas
+    is_triggered_only = yes
 
-	is_triggered_only = yes
+    # Empire historical
+    option = {
+        name = brazil.25.a
+        trigger = { 
+            original_tag = BRA 
+            NOT = { has_completed_focus = BRA_the_second_cisplatine_war }
+        }
+        BRA = {
+            add_political_power = 35
+            load_oob = "BRA_volunteers2"
+            add_equipment_to_stockpile = {
+                type = cavalry_equipment
+                amount = 1000
+                producer = BRA
+            }
+        }
+        declare_war_on = {
+            target = URG
+            type = annex_everything
+        }
+    }
 
-	#  Empire historical
-	option = {
-		name = brazil.25.a
-		trigger = { 
-			original_tag = BRA 
-			NOT={has_completed_focus = BRA_the_second_cisplatine_war}
-		}
-		BRA = {
-			add_political_power = 35
-			load_oob = "BRA_volunteers2"
-			add_equipment_to_stockpile = {
-				type = cavalry_equipment
-				amount = 1000
-				producer = BRA
-			}
-		}
-		declare_war_on = {
-			target = URG
-			type = annex_everything
-		}
-	}
-	option = {#Empire traditionalist
-		name = brazil.25.a2
-		trigger = {
-			original_tag = BRA
-			has_completed_focus = BRA_the_second_cisplatine_war
-		}
-		add_political_power = 35
-		add_manpower = -18000
-		declare_war_on = {
-			target = URG
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = URC
-			type = annex_everything
-		}
-	}
-	##  Uraguay conflict starts 
-	option = { 
-		name = brazil.25.b
-		trigger = { 
-			original_tag = URG 
-			BRA = { NOT={has_completed_focus = BRA_the_second_cisplatine_war }}
-		}
-		add_political_power = -25
-		add_stability = -0.5
-		remove_ideas = {URG_colorado_blanco_war}
-		URC = { ## add BRA desire volunters
-			transfer_state = 1097
-			transfer_state = 1094
-			load_oob = "URC_1857"
-			inherit_technology = URG
-			every_state = {
-				limit = {
-					is_core_of = URG
-				}
-				add_core_of = URC
-			}
-		}
-		declare_war_on = {
-			target = URC
-			type = civil_war
-		}
-		add_civil_war_target = URC
-	}
-	option = {
-		trigger = {
-			original_tag = URG
-			BRA = { has_completed_focus = BRA_the_second_cisplatine_war }
-		}
-		remove_ideas = {URG_colorado_blanco_war}
-		URC = {
-			transfer_state = 1094
-			inherit_technology = URG
-			load_oob = "URC_1857-alt"
-			every_state = {
-				limit = {
-					is_core_of = URG
-				}
-				add_core_of = URC
-			}
-		}
-		URG = {
-			declare_war_on = {
-				target = URC
-				type = civil_war
-			}
-			add_civil_war_target = URC
-		}
-	}
-	option = { #  everyone else
-		name = brazil.25.c
-		trigger = {
-			NOT = { original_tag = URG }
-			NOT = { original_tag = BRA }
-			NOT = { original_tag = ARG }
-		}
-	}
+    option = {#Empire traditionalist
+        name = brazil.25.a2
+        trigger = {
+            original_tag = BRA
+            has_completed_focus = BRA_the_second_cisplatine_war
+        }
+        add_political_power = 35
+        add_manpower = -18000
+        
+        # Create URC first if it doesn't exist
+        if = {
+            limit = { NOT = { country_exists = URC } }
+            URG = {
+                URC = {
+                    transfer_state = 1094
+                    inherit_technology = URG
+                    load_oob = "URC_1857-alt"
+                    every_state = {
+                        limit = {
+                            is_core_of = URG
+                        }
+                        add_core_of = URC
+                    }
+                }
+            }
+        }
+        
+        # Now declare wars after ensuring URC exists
+        declare_war_on = {
+            target = URG
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = URC
+            type = annex_everything
+        }
+    }
 
-	option = { #  Argentinan asstance
-		name = brazil.25.d1
-		trigger = { original_tag = ARG }
-		add_manpower = -2000
-		URC = { add_manpower = 2000 }
-	}
-	option = {
-		name = brazil.25.d2
-		trigger = {
-			original_tag = ARG
-			BRA = { has_completed_focus = BRA_the_second_cisplatine_war }
-		}
-		ARG = {
-			add_manpower = -2000
-		}
-		URC = {
-			add_manpower = 2000
-			load_oob = "URC_army_rebels"
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-				producer = ARG
-			}
-		}
-	}
+    ##  Uruguay conflict starts 
+    option = { 
+        name = brazil.25.b
+        trigger = { 
+            original_tag = URG 
+            BRA = { NOT = { has_completed_focus = BRA_the_second_cisplatine_war } }
+        }
+        add_political_power = -25
+        add_stability = -0.5
+        remove_ideas = { URG_colorado_blanco_war }
+        URC = { ## add BRA desire volunters
+            transfer_state = 1097
+            transfer_state = 1094
+            load_oob = "URC_1857"
+            inherit_technology = URG
+            every_state = {
+                limit = {
+                    is_core_of = URG
+                }
+                add_core_of = URC
+            }
+        }
+        declare_war_on = {
+            target = URC
+            type = civil_war
+        }
+        add_civil_war_target = URC
+    }
+
+    option = {
+        trigger = {
+            original_tag = URG
+            BRA = { has_completed_focus = BRA_the_second_cisplatine_war }
+        }
+        remove_ideas = { URG_colorado_blanco_war }
+        URC = {
+            transfer_state = 1094
+            inherit_technology = URG
+            load_oob = "URC_1857-alt"
+            every_state = {
+                limit = {
+                    is_core_of = URG
+                }
+                add_core_of = URC
+            }
+        }
+        URG = {
+            declare_war_on = {
+                target = URC
+                type = civil_war
+            }
+            add_civil_war_target = URC
+        }
+    }
+
+    option = { #  everyone else
+        name = brazil.25.c
+        trigger = {
+            NOT = { original_tag = URG }
+            NOT = { original_tag = BRA }
+            NOT = { original_tag = ARG }
+        }
+    }
+
+    option = { #  Argentinan assistance
+        name = brazil.25.d1
+        trigger = { original_tag = ARG }
+        add_manpower = -2000
+        URC = { add_manpower = 2000 }
+    }
+
+    option = {
+        name = brazil.25.d2
+        trigger = {
+            original_tag = ARG
+            BRA = { has_completed_focus = BRA_the_second_cisplatine_war }
+        }
+        ARG = {
+            add_manpower = -2000
+        }
+        URC = {
+            add_manpower = 2000
+            load_oob = "URC_army_rebels"
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = ARG
+            }
+        }
+    }
 }
 
 country_event = {
@@ -1836,31 +1865,22 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			tag = PAR
-		}
-
-		ai_chance = { base = 50 }
-
 		name = brazil.304.a
 		add_opinion_modifier = { 
 			target = PAR
 			modifier = BRA_trade_treaty
 		}
-		add_opinion_modifier = {
+		add_opinion_modifier = { 
 			target = PAR
 			modifier = BRA_friendship_treaty
 		}
-		add_opinion_modifier = {
-			target = PAR
-			modifier = BRA_boundary_treaty
-		}
 		PAR = {
-			add_opinion_modifier = { 
+			country_event = { id = brazil.305 }
+			add_opinion_modifier = {
 				target = BRA
 				modifier = BRA_trade_treaty
 			}
-			add_opinion_modifier = {
+			add_opinion_modifier = { 
 				target = BRA
 				modifier = BRA_friendship_treaty
 			}
@@ -1911,32 +1931,22 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			tag = ARG
-		}
-		ai_chance = {
-			base = 50
-		}
-
 		name = brazil.306.a
 		add_opinion_modifier = { 
 			target = ARG
 			modifier = BRA_trade_treaty
 		}
-		add_opinion_modifier = {
+		add_opinion_modifier = { 
 			target = ARG
 			modifier = BRA_friendship_treaty
 		}
-		add_opinion_modifier = {
-			target = ARG
-			modifier = BRA_boundary_treaty
-		}
 		ARG = {
+			country_event = { id = brazil.305 }
 			add_opinion_modifier = { 
 				target = BRA
 				modifier = BRA_trade_treaty
 			}
-			add_opinion_modifier = {
+			add_opinion_modifier = { 
 				target = BRA
 				modifier = BRA_friendship_treaty
 			}
@@ -2016,6 +2026,7 @@ country_event = {
 	id = brazil.310
 	title = brazil.310.t
 	desc = brazil.310.d
+	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = brazil.310.a
@@ -2038,6 +2049,7 @@ country_event = {
 	title = brazil.311.t
 	desc = brazil.311.d
 	is_triggered_only = yes
+	fire_only_once = yes
 	option = {
 		name = brazil.311.a
 	}
@@ -2131,10 +2143,11 @@ country_event = {
 		ai_chance = { base = 100 }
 		if = {
 			limit = {
-				has_idea = egy_vic_debt
+				set_temp_variable = { loan_size_to_check = 10 }
+				has_less_than_specific_loan_size = no
 				has_country_flag = brazil_big_investments
 			}
-			debt_level_increase_by_2 = yes
+			 
 			every_owned_state={
 				limit = { is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 1
@@ -2157,7 +2170,10 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				NOT = {	has_idea = egy_vic_debt	}
+				NOT = {	
+					set_temp_variable = { loan_size_to_check = 10 }
+					has_less_than_specific_loan_size = no	
+				}
 				has_country_flag = brazil_big_investments
 			}
 			every_owned_state={
@@ -2185,10 +2201,10 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				has_idea = egy_vic_debt
+				set_temp_variable = { loan_size_to_check = 10 }
+				has_less_than_specific_loan_size = no
 				has_country_flag = brazil_small_investments
 			}
-			debt_level_increase_by_1 = yes
 			every_owned_state={
 				limit = { is_in_home_area = yes }
 
@@ -2198,7 +2214,10 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				NOT = { has_idea = egy_vic_debt }
+				NOT = { 
+					set_temp_variable = { loan_size_to_check = 10 }
+					has_less_than_specific_loan_size = no
+				}
 				has_country_flag = brazil_small_investments
 			}
 			every_owned_state={
@@ -6889,34 +6908,6 @@ country_event = {
 	}
 }
 
-#Legacy of 1852
-country_event = {
-	id = brazil.701
-	title = brazil.701.t
-	desc = brazil.701.d
-	picture = GFX_report_event_platine_wars
-	is_triggered_only = yes
-	option = {
-		name = brazil.701.a
-	}
-}
-
-#National Guard Issue
-country_event = {
-	id = brazil.702
-	title = brazil.702.t
-	desc = brazil.702.d
-	picture = GFX_report_event_national_guard
-	is_triggered_only = yes
-	option = {
-		name = brazil.702.a
-		BRA = { complete_national_focus =BRA_maintain_the_national_guard }
-	}
-	option = {
-		name = brazil.702.b
-		BRA = { complete_national_focus = BRA_abolish_the_national_guard }
-	}
-}
 
 country_event = {
 	id = brazil.900
@@ -6946,10 +6937,28 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = brazil.901.a
+		ai_chance = {
+			base = 34
+			modifier = {
+				is_historical_focus_on = yes
+				add = 66
+			}
+		}
 		hidden_effect = { country_event = { id = brazil.902 days = 1 } }
 	}
 	option = {
 		name = brazil.901.b
+		ai_chance = {
+			base = 33
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = no
+				factor = 1
+			}
+		}
 		add_political_power = -25
 		hidden_effect = {
 			random_list = {
@@ -6960,6 +6969,17 @@ country_event = {
 	}
 	option = {
 		name = brazil.901.c
+		ai_chance = {
+			base = 33
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = no
+				factor = 1
+			}
+		}
 		add_command_power = -10
 		hidden_effect = {
 			random_list = {
@@ -7079,11 +7099,11 @@ country_event = {
 }
 
 country_event = {
-id = brazil.907
-title = brazil.907.t
-desc = brazil.907.d
-picture = GFX_report_event_military_supression
-is_triggered_only = yes
+	id = brazil.907
+	title = brazil.907.t
+	desc = brazil.907.d
+	picture = GFX_report_event_military_supression
+	is_triggered_only = yes
 	option = {
 		name = brazil.907.a
 		499 = {
@@ -7110,40 +7130,154 @@ is_triggered_only = yes
 }
 
 country_event = {
-		id = brazil.908
-		title = brazil.31.t
-		desc = brazil.31.d
+	id = brazil.908
+	title = brazil.31.t
+	desc = brazil.31.d
+	picture = GFX_report_event_prince_wales
 
-		picture = GFX_report_event_prince_wales
+	fire_only_once = yes
 
-		fire_only_once = yes
-
-		trigger = {  
-			AND  = {
-				tag = ENG
-				date > 1857.4.4
-				NOT = {
-					has_country_flag = ENG_christie_crisis1
-				}
+	trigger = {  
+		AND  = {
+			tag = ENG
+			date > 1857.4.4
+			NOT = {
+				has_country_flag = ENG_christie_crisis1
 			}
-		}  
+		}
+	}
 
-		option = {
-			name = brazil.31.b
-				trigger = {
-					tag = ENG
+	option = {
+		name = brazil.31.b
+			trigger = {
+				tag = ENG
+			}
+		add_war_support = 0.012
+		ENG = {
+			add_opinion_modifier = {
+				target = BRA
+				modifier = protest_action_light
+			}
+		}
+	}
+}
+
+country_event = {
+	id = brazil.909
+	title = brazil.909.t
+	desc = brazil.909.d
+	is_triggered_only = yes
+	picture = GFX_report_event_typographer_strike
+	option = {
+		name = brazil.909.a
+		add_political_power = -25
+		add_ideas = BRA_typographer_strikes
+		decrease_ps_by_one = yes
+		hidden_effect = { country_event = { id = brazil.910 days = 7 } }
+	}
+}
+
+country_event = {
+	id = brazil.910
+	title = brazil.910.t
+	desc = brazil.910.d
+	is_triggered_only = yes
+	picture = GFX_report_event_typographer_strike
+	option = {
+		name = brazil.910.a
+		add_political_power = -25
+		hidden_effect = {
+			random_list = {
+				50 = {
+					modifier = {
+						add = 50
+						is_historical_focus_on = yes
+					}
+					country_event = { id = brazil.911 days = 1 }
 				}
-
-			add_war_support = 0.012
-			ENG = {
-				add_opinion_modifier = {
-					target = BRA
-					modifier = protest_action_light
+				50 = {
+					modifier = {
+						add = -50
+						is_historical_focus_on = yes
+					}
+					country_event = { id = brazil.912 days = 1 }
 				}
 			}
 		}
-
 	}
+	option = {
+		name = brazil.910.b
+		add_command_power = -10
+		hidden_effect = { country_event = { id = brazil.913 days = 1 } }
+	}
+	option = {
+		name = brazil.910.c
+		hidden_effect = { country_event = { id = brazil.914 days = 23 } }
+	}
+}
+
+
+
+country_event = {
+	id = brazil.911
+	title = brazil.911.t
+	desc = brazil.911.d
+	picture = GFX_report_event_typographer_strike
+	is_triggered_only = yes
+	option = {
+		name = brazil.911.a
+		remove_ideas = BRA_typographer_strikes
+		increase_ps_by_one = yes
+		add_stability = 0.05
+		set_temp_variable = { political_legitimacy_change = 0.05 }
+		eoanb_political_legitimacy_change = yes
+	}
+}
+
+country_event = {
+	id = brazil.912
+	title = brazil.912.t
+	desc = brazil.912.d
+	picture = GFX_report_event_typographer_strike
+	is_triggered_only = yes
+	option = {
+		name = brazil.912.a
+		remove_ideas = BRA_typographer_strikes
+		increase_ps_by_one = yes
+		set_temp_variable = { political_legitimacy_change = -0.05 }
+		eoanb_political_legitimacy_change = yes
+	}
+}
+
+country_event = {
+	id = brazil.913
+	title = brazil.913.t
+	desc = brazil.913.d
+	picture = GFX_report_event_typographer_strike
+	is_triggered_only = yes
+	option = {
+		name = brazil.913.a
+		remove_ideas = BRA_typographer_strikes
+		add_stability = -0.05
+		decrease_ps_by_one = yes
+		set_temp_variable = { political_legitimacy_change = -0.05 }
+		eoanb_political_legitimacy_change = yes
+	}
+}
+
+country_event = {
+	id = brazil.914
+	title = brazil.914.t
+	desc = brazil.914.d
+	picture = GFX_report_event_typographer_strike
+	is_triggered_only = yes
+	option = {
+		name = brazil.914.a
+		remove_ideas = BRA_typographer_strikes
+		add_stability = 0.05
+		increase_ps_by_one = yes
+	}
+}
 
 #USA relations
 #CSA relations
@@ -8550,249 +8684,6 @@ country_event = {
 	}
 }
 
-#EVENTS - BRAZIL PRIME-MINISTER APPOINTED
-add_namespace = brazil.prime.minister.appointed
-#Ministers Appointed - 1858.12
-country_event = {
-	id = brazil.prime.minister.appointed.1
-	title = brazil.prime.minister.appointed.1.t
-	desc =  brazil.prime.minister.appointed.1.d
-	picture = GFX_report_event_election_vote
-	is_triggered_only = yes
-	immediate = {
-		BRA = {
-			complete_national_focus = BRA_1858_president_of_council_of_ministers
-			#country_event = { id = brazil.minister.actions.3 }
-			if = { limit= { has_country_flag = brazil_conciliatory }
-				remove_country_leader_role = { ideology = conserv }
-				clr_country_flag = brazil_conciliatory
-				deactivate_advisor = BRA_francisco_pereira_jugde
-				deactivate_advisor = BRA_viscount_of_maranguape_foreign
-				deactivate_advisor = BRA_viscount_of_sousa_franco_finance
-				deactivate_advisor = BRA_jeronimo_coelho_army_chief
-				deactivate_advisor = BRA_jose_antonio_saraiva_navy_chief
-			}
-		}
-	}
-	option = {#Visconde de Abaeté
-		name = brazil.prime.minister.appointed.1.a
-		add_country_leader_role = {
-			character = BRA_viscount_of_abaete
-			promote_leader = yes
-			country_leader = {
-				desc = "POLITICS_VISCOUNT_OF_ABAETE_DESC"
-				ideology = federal
-				expire = "1883.9.14.1"
-				traits = {
-					BRA_trait_president_of_council_of_ministers
-					BRA_trait_minister_of_the_navy
-				}
-			}
-		}
-		set_country_flag = brazil_conciliatory
-		add_popularity = { ideology = traditional_conservatism popularity = 0.005 }
-		add_popularity = { ideology = centrism popularity = 0.005 }
-		complete_national_focus = BRA_1858_conciliatory_cabinet
-	}
-	option = {#Eusébio de Queirós
-		name = brazil.prime.minister.appointed.1.b
-		set_politics = { ruling_party = radical_democracy }
-		add_trait = {
-			character = BRA_eusebio_de_queiros
-			ideology = plutocracy
-			trait =	BRA_trait_president_of_council_of_ministers
-		}
-		add_trait = {
-			character = BRA_eusebio_de_queiros
-			ideology = plutocracy
-			trait = BRA_trait_minister_of_justice
-		}
-		set_country_flag = brazil_ultraconservative
-		add_popularity = { ideology = radical_democracy popularity = 0.01 }
-		complete_national_focus = BRA_1858_ultra_conservative_cabinet
-	}
-	option = {#Viscount of Uruguai
-		name = brazil.prime.minister.appointed.1.c
-		add_country_leader_role = {
-			character = BRA_viscount_of_uruguay
-			promote_leader = yes
-			country_leader = {
-				DESC = "POLITICS_VISCOUNT_OF_URUGUAY_DESC"
-				ideology = natconserv
-				expire = 1866.6.15.1
-				traits = {
-					BRA_trait_president_of_council_of_ministers
-					BRA_trait_foreign_minister
-					eoanb_trait_experienced_diplomat
-				}
-			}
-		}
-		set_country_flag = brazil_conservative
-		add_popularity = { ideology = traditional_conservatism popularity = 0.01}
-		complete_national_focus = BRA_1858_conservative_cabinet
-	}
-	option = {#Francisco Furtado
-		name = brazil.prime.minister.appointed.1.e
-        set_politics = { ruling_party = centrism }
-		add_trait = {
-			character = BRA_Francisco_Jose_Furtado
-			ideology = conserv_liberal
-			trait = BRA_trait_president_of_council_of_ministers
-		}
-		add_trait = {
-			character = BRA_Francisco_Jose_Furtado
-			ideology = conserv_liberal
-			trait = BRA_trait_minister_of_justice
-		}
-		set_country_flag = brazil_liberal
-		add_popularity = { ideology = centrism popularity = 0.01 }
-		complete_national_focus = BRA_1858_liberal_cabinet
-	}
-}
-
-#Appointed Prime-Minister 1859.08
-country_event = {
-	id = brazil.prime.minister.appointed.2
-	title = brazil.prime.minister.appointed.1.t
-	desc =  brazil.prime.minister.appointed.1.d
-	picture = GFX_report_event_election_vote
-	is_triggered_only = yes
-	immediate = {
-		if = { 
-		limit = { has_country_flag = brazil_conciliatory }
-			deactivate_advisor = BRA_viscount_of_rio_branco_army_chief
-			deactivate_advisor = BRA_sergio_teixeira_macedo_adm
-			deactivate_advisor = BRA_Jose_Tomas_Nabuco_de_Araujo_Filho_judge
-			deactivate_advisor = BRA_viscount_of_inhomirim_finance
-			deactivate_advisor = BRA_viscount_of_rio_branco_army_chief
-			deactivate_advisor = BRA_viscount_of_rio_branco_foreign
-			clr_country_flag = brazil_conciliatory
-			remove_country_leader_role = { ideology = federal }
-		}
-		if = {
-		limit = { has_country_flag = brazil_conservative }
-			deactivate_advisor = BRA_sergio_teixeira_macedo_adm
-			deactivate_advisor = BRA_marquis_of_muritiba_judge
-			deactivate_advisor = BRA_viscount_of_rio_branco_finance
-			deactivate_advisor = BRA_Luis_Alves_de_Lima_e_Silva_army_chief
-			deactivate_advisor = BRA_Joaquim_Marques_Lisboa_navy_chief
-        	remove_country_leader_role = { ideology = natconserv }
-			clr_country_flag = brazil_conservative
-        }
-		if = { 
-			limit = { has_country_flag = brazil_ultraconservative }
-			deactivate_advisor = BRA_viscount_of_niteroi_adm
-			deactivate_advisor = BRA_viscount_of_uruguay_foreign
-			deactivate_advisor = BRA_viscount_of_itaborai_finance
-			deactivate_advisor = BRA_manuel_felizardo_de_sousa_e_melo_army_chief
-			deactivate_advisor = BRA_marquis_of_muritiba_navy_chief
-			remove_country_leader_role = { ideology = plutocracy }
-			clr_country_flag = brazil_ultraconservative
-		}
-		if = { 
-		limit = { has_country_flag = brazil_liberal }
-			deactivate_advisor = BRA_jose_liberato_barroso_adm
-			deactivate_advisor = BRA_viscount_of_caravelas_finance
-			deactivate_advisor = BRA_joao_pedro_dias_vieira_foreign
-			deactivate_advisor = BRA_baron_of_pinto_lima_navy_chief
-			deactivate_advisor = BRA_Henrique_de_Beaurepaire_Rohan_army_chief
-    		remove_country_leader_role = { ideology = conserv_liberal }
-			clr_country_flag = brazil_liberal
-		}
-		BRA = {
-			complete_national_focus = BRA_1859_president_of_council_of_ministers
-		}
-	}
-
-	option = {#uruguaiana
-		name = brazil.prime.minister.appointed.2.a
-		add_country_leader_role = {
-			character = BRA_Angelo_Muniz_de_Silva_Ferraz
-			promote_leader = yes
-			country_leader = {
-				ideology = paleoconserv
-				expire = "1867.1.18.1"
-				desc = "POLITICS_BARON_OF_URUGUAIANA_DESC"
-				traits = {
-					BRA_trait_president_of_council_of_ministers
-					BRA_trait_finance_minister
-					BRA_trait_minister_of_empire
-				}
-			}
-		}
-		set_country_flag = brazil_conservative
-		set_politics = { ruling_party = traditional_conservatism }
-		add_popularity = { ideology = traditional_conservatism popularity = 0.01 }
-	}
-	option = {#zacarias
-		name = brazil.prime.minister.appointed.2.b
-		add_country_leader_role = {
-			character = BRA_Zacarias_de_Gois_e_Vasconcelos
-			promote_leader = yes
-			country_leader = {
-				ideology = neoconserv
-				expire = "1877.12.29.1"
-				desc = "POLITICS_ZACARIAS_DE_GOIS_DESC"
-				traits = {
-					BRA_trait_president_of_council_of_ministers
-					BRA_trait_minister_of_empire
-					eoanb_trait_pol_author
-				}
-			}
-		}
-		set_country_flag = brazil_conciliatory
-		set_politics = { ruling_party = traditional_conservatism }
-		add_popularity = { ideology = traditional_conservatism popularity = 0.005}
-		add_popularity = { ideology = centrism popularity = 0.005}
-	}
-	option = {#monte alegre
-		name = brazil.prime.minister.appointed.2.c
-		add_country_leader_role = {
-			character = BRA_Marquis_of_Monte_Alegre
-			promote_leader = yes
-			country_leader = {
-				ideology = reactionary
-				expire = "1860.9.18.1"
-				desc = "POLITICS_MARQUIS_OF_MONTE_ALEGRE_DESC"
-				traits = {
-					BRA_trait_president_of_council_of_ministers
-					BRA_trait_minister_of_empire
-				}
-			}
-		}
-		set_country_flag = brazil_ultraconservative
-		set_politics = { ruling_party = radical_democracy }
-		add_popularity = { ideology = radical_democracy popularity = 0.01}
-		
-	}
-	option = {#Maua
-		name = brazil.prime.minister.appointed.2.e
-		add_country_leader_role = {
-			character = BRA_baron_of_maua
-			promote_leader = yes
-			country_leader = {
-				ideology = market_liberal
-				expire = "1889.10.21.1"
-				DESC = "POLITICS_BARON_OF_MAUA_DESC"
-				traits = {
-					BRA_trait_president_of_council_of_ministers
-					BRA_trait_finance_minister
-				}
-			}
-		}
-		set_politics = { ruling_party = centrism }
-		set_country_flag = brazil_liberal
-		add_popularity = { ideology = centrism popularity = 0.01 }
-	}
-
-	option = {#Ottoni
-		name = brazil.prime.minister.appointed.2.f
-		set_politics = { ruling_party = ideology_social_liberalism }
-		set_country_flag = brazil_radical_liberal
-		add_popularity = { ideology = ideology_social_liberalism popularity = 0.01 }
-	}
-}
-
 add_namespace = brazil_news
 
 news_event = {
@@ -9105,6 +8996,201 @@ country_event = {
     }
 }
 
+#Ministers Appointed - 1858.12
+country_event = {
+	id = brazil.202
+	title = brazil.202.t
+	desc =  brazil.202.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	immediate = {
+		BRA = {
+			complete_national_focus = BRA_1858_president_of_council_of_ministers
+			#country_event = { id = brazil.201 }
+			if = { limit= { has_country_flag = brazil_conciliatory }
+				remove_country_leader_role = { ideology = conserv }
+				clr_country_flag = brazil_conciliatory
+				deactivate_advisor = BRA_francisco_pereira_jugde
+				deactivate_advisor = BRA_viscount_of_maranguape_foreign
+				deactivate_advisor = BRA_viscount_of_sousa_franco_finance
+				deactivate_advisor = BRA_jeronimo_coelho_army_chief
+				deactivate_advisor = BRA_jose_antonio_saraiva_navy_chief
+			}
+		}
+	}
+	option = {#Visconde de Abaeté
+		name = brazil.202.a
+		add_country_leader_role = {
+			character = BRA_viscount_of_abaete
+			promote_leader = yes
+			country_leader = {
+				desc = "POLITICS_VISCOUNT_OF_ABAETE_DESC"
+				ideology = federal
+				expire = "1883.9.14.1"
+				traits = {
+					BRA_trait_president_of_council_of_ministers
+					BRA_trait_minister_of_the_navy
+				}
+			}
+		}
+		set_country_flag = brazil_conciliatory
+		add_popularity = { ideology = traditional_conservatism popularity = 0.005 }
+		add_popularity = { ideology = centrism popularity = 0.005 }
+		complete_national_focus = BRA_1858_conciliatory_cabinet
+	}
+	option = {#Eusébio de Queirós
+		name = brazil.202.b
+		set_politics = { ruling_party = radical_democracy }
+		add_trait = {
+			character = BRA_eusebio_de_queiros
+			ideology = plutocracy
+			trait =	BRA_trait_president_of_council_of_ministers
+		}
+		add_trait = {
+			character = BRA_eusebio_de_queiros
+			ideology = plutocracy
+			trait = BRA_trait_minister_of_justice
+		}
+		set_country_flag = brazil_ultraconservative
+		add_popularity = { ideology = radical_democracy popularity = 0.01 }
+		complete_national_focus = BRA_1858_ultra_conservative_cabinet
+	}
+	option = {#Viscount of Uruguai
+		name = brazil.202.c
+		add_country_leader_role = {
+			character = BRA_viscount_of_uruguay
+			promote_leader = yes
+			country_leader = {
+				DESC = "POLITICS_VISCOUNT_OF_URUGUAY_DESC"
+				ideology = natconserv
+				expire = 1866.6.15.1
+				traits = {
+					BRA_trait_president_of_council_of_ministers
+					BRA_trait_foreign_minister
+					eoanb_trait_experienced_diplomat
+				}
+			}
+		}
+		set_country_flag = brazil_conservative
+		add_popularity = { ideology = traditional_conservatism popularity = 0.01}
+		complete_national_focus = BRA_1858_conservative_cabinet
+	}
+	option = {#Francisco Furtado
+		name = brazil.202.e
+        set_politics = { ruling_party = centrism }
+		add_trait = {
+			character = BRA_Francisco_Jose_Furtado
+			ideology = conserv_liberal
+			trait = BRA_trait_president_of_council_of_ministers
+		}
+		add_trait = {
+			character = BRA_Francisco_Jose_Furtado
+			ideology = conserv_liberal
+			trait = BRA_trait_minister_of_justice
+		}
+		set_country_flag = brazil_liberal
+		add_popularity = { ideology = centrism popularity = 0.01 }
+		complete_national_focus = BRA_1858_liberal_cabinet
+	}
+}
+
+#Appointed Prime-Minister 1859.08
+country_event = {
+	id = brazil.203
+	title = brazil.202.t
+	desc =  brazil.202.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	immediate = {
+		if = { 
+		limit = { has_country_flag = brazil_conciliatory }
+			deactivate_advisor = BRA_viscount_of_rio_branco_army_chief
+			deactivate_advisor = BRA_sergio_teixeira_macedo_adm
+			deactivate_advisor = BRA_Jose_Tomas_Nabuco_de_Araujo_Filho_judge
+			deactivate_advisor = BRA_viscount_of_inhomirim_finance
+			deactivate_advisor = BRA_viscount_of_rio_branco_army_chief
+			deactivate_advisor = BRA_viscount_of_rio_branco_foreign
+			clr_country_flag = brazil_conciliatory
+			remove_country_leader_role = { ideology = federal }
+		}
+		if = {
+		limit = { has_country_flag = brazil_conservative }
+			deactivate_advisor = BRA_sergio_teixeira_macedo_adm
+			deactivate_advisor = BRA_marquis_of_muritiba_judge
+			deactivate_advisor = BRA_viscount_of_rio_branco_finance
+			deactivate_advisor = BRA_Luis_Alves_de_Lima_e_Silva_army_chief
+			deactivate_advisor = BRA_Joaquim_Marques_Lisboa_navy_chief
+        	remove_country_leader_role = { ideology = natconserv }
+			clr_country_flag = brazil_conservative
+        }
+		if = { 
+			limit = { has_country_flag = brazil_ultraconservative }
+			deactivate_advisor = BRA_viscount_of_niteroi_adm
+			deactivate_advisor = BRA_viscount_of_uruguay_foreign
+			deactivate_advisor = BRA_viscount_of_itaborai_finance
+			deactivate_advisor = BRA_manuel_felizardo_de_sousa_e_melo_army_chief
+			deactivate_advisor = BRA_marquis_of_muritiba_navy_chief
+			remove_country_leader_role = { ideology = plutocracy }
+			clr_country_flag = brazil_ultraconservative
+		}
+		if = { 
+		limit = { has_country_flag = brazil_liberal }
+			deactivate_advisor = BRA_jose_liberato_barroso_adm
+			deactivate_advisor = BRA_viscount_of_caravelas_finance
+			deactivate_advisor = BRA_joao_pedro_dias_vieira_foreign
+			deactivate_advisor = BRA_baron_of_pinto_lima_navy_chief
+			deactivate_advisor = BRA_Henrique_de_Beaurepaire_Rohan_army_chief
+    		remove_country_leader_role = { ideology = conserv_liberal }
+			clr_country_flag = brazil_liberal
+		}
+		BRA = {
+			complete_national_focus = BRA_1859_president_of_council_of_ministers
+		}
+	}
+
+	option = {#uruguaiana
+		name = brazil.203.a
+		add_country_leader_role = {
+			character = BRA_Angelo_Muniz_de_Silva_Ferraz
+			promote_leader = yes
+			country_leader = {
+				ideology = paleoconserv
+				expire = "1867.1.18.1"
+				desc = "POLITICS_BARON_OF_URUGUAIANA_DESC"
+				traits = {
+					BRA_trait_president_of_council_of_ministers
+					BRA_trait_finance_minister
+					BRA_trait_minister_of_empire
+				}
+			}
+		}
+		set_country_flag = brazil_conservative
+		set_politics = { ruling_party = traditional_conservatism }
+		add_popularity = { ideology = traditional_conservatism popularity = 0.01 }
+	}
+	option = {#zacarias
+		name = brazil.203.b
+		add_country_leader_role = {
+			character = BRA_Zacarias_de_Gois_e_Vasconcelos
+			country_leader = { 
+				ideology = market_liberal
+				desc = "POLITICS_ZACARIAS_DESC"
+			}
+			promote_leader = yes
+		}
+		add_trait = {
+			character = BRA_Viscount_of_Sinimbu
+			trait = BRA_trait_minister_of_empire
+		}
+		add_trait = {
+			character = BRA_Viscount_of_Sinimbu
+			trait = BRA_trait_president_of_council_of_ministers
+		}
+		set_politics = { ruling_party = centrism }
+		set_country_flag = brazil_liberal
+		add_popularity = { ideology = centrism popularity = 0.01 }
+	}
+}
 
 country_event = {
 	id = brazil.minister.actions.5
@@ -9165,7 +9251,7 @@ country_event = {
 		activate_advisor = BRA_viscount_of_caravelas_finance
 		activate_advisor = BRA_joao_pedro_dias_vieira_foreign
 		activate_advisor = BRA_baron_of_pinto_lima_navy_chief
-		activate_advisor = BRA_Henrique_de_Beaurepaire_Rohan_army_chief
+		activate_advisor = BRA_henrique_de_beaurepaire_rohan_high_command
 	}
 	option = {
 		name = brazil.minister.actions.5.e
@@ -13065,22 +13151,22 @@ country_event = {
 		BHA = {
 			499 = {
 				create_unit = {
-					division = "name = \"2nd Companhia Fixa de Cavalaria Leve\" division_template = \"Companhia Fixa de Cavalaria Leve\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
+					division = "name = \"2nd Cavalaria de Rebeldes Malês\" division_template = \"Companhia Fixa de Cavalaria Leve\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
 					owner = BHA
 					prioritize_location = 14029
 				}
 				create_unit = {
-					division = "name = \"2nd Companhia Fixa de Caçadores\" division_template = \"Companhia Fixa de Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
+					division = "name = \"2nd Infantaria de Rebeldes Malês\" division_template = \"Companhia Fixa de Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
 					owner = BHA
 					prioritize_location = 14027
 				}
 				create_unit = {
-					division = "name = \"4th Companhia Fixa de Caçadores\" division_template = \"Companhia Fixa de Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
+					division = "name = \"4th Infantaria de Rebeldes Malês\" division_template = \"Companhia Fixa de Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
 					owner = BHA
 					prioritize_location = 14026
 				}
 				create_unit = {
-					division = "name = \"3rd Companhia Fixa de Caçadores\" division_template = \"Companhia Fixa de Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
+					division = "name = \"3rd Infantaria de Rebeldes Malês\" division_template = \"Companhia Fixa de Caçadores\" start_experience_factor = 0.1 start_equipment_factor = 0.85"
 					owner = BHA
 					prioritize_location = 14028
 				}
@@ -13095,19 +13181,25 @@ country_event = {
 	desc = bahia.3.d
 	picture = GFX_report_event_males_crushed
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			BRA = {
+				remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
+				annex_country = {
+					target = BHA
+				}
+			}
+		}
+	}
 	option = {
 		name = bahia.3.a
-		BRA = {
-			annex_country = {
-				target = BHA
-			}
-			add_stability = 0.05
-			increase_ps_by_two = yes
-			set_temp_variable = { political_legitimacy_change = 0.05 }
-			eoanb_political_legitimacy_change = yes
-			add_political_power = -20
-			499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
-		}
+		add_stability = 0.05
+		increase_ps_by_two = yes
+		set_temp_variable = { political_legitimacy_change = 0.05 }
+		eoanb_political_legitimacy_change = yes
+		add_political_power = -20
+		499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
 	}
 }
 
@@ -13117,23 +13209,28 @@ country_event = {
 	desc = bahia.4.d
 	picture = GFX_report_event_males_victory
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			BRA = {
+				remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
+				annex_country = {
+					target = BHA
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 	option = {
 		name = bahia.4.a
-		BRA = {
-			annex_country = {
-				target = BHA
-				transfer_troops = yes
-			}
-			add_stability = -0.05
-			increase_ps_by_one = yes
-			set_temp_variable = { political_legitimacy_change = -0.05 }
-			eoanb_political_legitimacy_change = yes
-			add_political_power = -100
-			499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
-			add_timed_idea = {
-				idea = BRA_male_revolt_reparation
-				days = 730
-			}
+		add_stability = -0.05
+		increase_ps_by_one = yes
+		set_temp_variable = { political_legitimacy_change = -0.05 }
+		eoanb_political_legitimacy_change = yes
+		add_political_power = -100
+		499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
+		add_timed_idea = {
+			idea = BRA_male_revolt_reparation
+			days = 730
 		}
 	}
 }
@@ -13144,16 +13241,21 @@ country_event = {
 	desc = bahia.5.d
 	picture = GFX_report_event_males_stalemate
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			BRA = {
+				remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
+				annex_country = {
+					target = BHA
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 	option = {
 		name = bahia.5.a
-		BRA = {
-			annex_country = {
-				target = BHA
-				transfer_troops = yes
-			}
-			increase_ps_by_one = yes
-			add_political_power = -50
-			499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
-		}
+		increase_ps_by_one = yes
+		add_political_power = -50
+		499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
 	}
 }

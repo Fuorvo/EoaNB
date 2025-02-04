@@ -193,7 +193,7 @@ add_namespace = JAP_tokugawa_shogunate
 			option = {
 				name = JAP_tokugawa_shogunate.5.b
 				EOANBSYS_pandemics_progress_add_one = yes
-				reverse_add_opinion_modifier = { target = USA modifier = eoanb_minor_opinion_malice }
+				reverse_add_opinion_modifier = { target = USA modifier = eoanb_minor_opinion_drop }
 				# SEPARATECHAINHERE?
 			}
 		}
@@ -7641,7 +7641,7 @@ add_namespace = JAP_tokugawa_shogunate
 			immediate = {
 				add_manpower = -5000
 				random_character = {
-					limit = { is_character = JAP_chracter_kirino_toshiaki }
+					limit = { is_character = JAP_character_kirino_toshiaki }
 					set_nationality = JAP
 				}
 				random_character = {

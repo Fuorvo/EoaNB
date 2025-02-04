@@ -17,7 +17,7 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 0.01 }
 	set_variable = { current_loans_sum = 1 }
 
 	add_ideas = {
@@ -33,7 +33,7 @@
 		low_economic_mobilisation
 		limited_exports
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 	cl_legal
 
 		#stagnation_growth
@@ -119,18 +119,14 @@ set_popularities = {
 	}
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 300 producer = PAR }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 250 producer = PAR }
-
-	#How to set up initial debt_level
-	#PAR = {
-	#	add_to_variable = {var = debt_level value = 1} #Paraguay's National Debt amounts to 0.9m Pesos (= 0.175m Pound Sterling) as of 1857; income per year 2.5m Pesos (= 0.488m Pound Sterling; roughly 500,000 Pesos more than expenses annually) = 0.36 GDP of debt
-	#}
+	#Paraguay's National Debt amounts to 0.9m Pesos (= 0.175m Pound Sterling) as of 1857; income per year 2.5m Pesos (= 0.488m Pound Sterling; roughly 500,000 Pesos more than expenses annually) = 0.36 GDP of debt
 
 	# POLITICAL LEADERS
 
 create_country_leader = {
 		name = "Carlos Antonio López"
 		desc = "POLITICS_TEMP_DESC"
-		picture = "Portrait_PAR_Carlos_Antonio_Lopez.dds"
+		picture = GFX_Portrait_PAR_Carlos_Antonio_Lopez
 		expire = 1862.1.1
 		ideology = conserv
 }

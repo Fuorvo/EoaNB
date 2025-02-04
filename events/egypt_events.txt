@@ -1,4 +1,4 @@
-﻿add_namespace = afr_EGY_vic
+add_namespace = afr_EGY_vic
 
 #OTO - EGY expands their army
 country_event = {
@@ -645,7 +645,8 @@ country_event = {
 		name = afr_EGY_vic.10.b
 		ai_chance = { factor = 25 }
 		custom_effect_tooltip = EGY_afr_decrease_debt_2
-		subtract_from_variable = {var = debt_level value = 2}
+		set_temp_variable = { loans_amount = 2}
+		take_loan_without_inflation_effect = yes		
 	}
 }
 
@@ -657,17 +658,21 @@ country_event = { #ENG- EGY is collapsing due to debt, should we move in?
 	trigger = {
 		tag = ENG
 		EGY={
-			has_idea = egy_vic_debt
+			set_temp_variable = { loan_size_to_check = 10 }
+			has_less_than_specific_loan_size = no
 			OR={
 				AND={
 					date > 1878.1.1
-					check_variable = {ROOT.debt_level > 24}
+					set_temp_variable = { loan_size_to_check = 25}
+					has_less_than_specific_loan_size = no					
 				}
 				AND={
 					date > 1874.1.1
-					check_variable = {ROOT.debt_level > 29}
+					set_temp_variable = { loan_size_to_check = 30}
+					has_less_than_specific_loan_size = no					
 				}
-				check_variable = {ROOT.debt_level > 34}
+				set_temp_variable = { loan_size_to_check = 35}
+				has_less_than_specific_loan_size = no				
 			}
 		}
 	}
@@ -707,18 +712,15 @@ country_event = { #EGY - FRA and ENG are seizing control of our country, what do
 	option = {#accept the move
 		name = afr_EGY_vic.12.a
 		ai_chance = { factor = 100 }
-		custom_effect_tooltip = remove_debt_effects
 		EGY={
-			set_variable = {debt_level = 0}
+			set_temp_variable = { loans_amount = -20}
+			take_loan_without_inflation_effect = yes
 		}
 		ENG={
 			country_event={id=afr_EGY_vic.14 days = 7}#egypt capitulates
 		}
 		add_ideas={
 			EGY_ENG_controlled_government
-		}
-		remove_ideas={
-			egy_vic_debt
 		}
 		if={
 			limit ={
@@ -910,106 +912,119 @@ country_event = { #EGY - Ahmed accident avoided
 		name = afr_EGY_vic.19.a
 	}
 }
-news_event = {# Grand Opening of the Suez
-	id = afr_EGY_vic.20
-	title = afr_EGY_vic.20.t
-	#desc = afr_EGY_vic.20.desc
-	picture = GFX_news_event_suez_canal
-	desc = {
-		text = afr_EGY_vic.20.2.desc#Egypt constructs the canal with less than 10% help from france
-		trigger = {
-			NOT={
-				has_variable = ENG.suez_investment
-			}
-			check_variable = { FRA.suez_investment < 20 }
-		}
-	}
-	desc = {
-		text = afr_EGY_vic.20.1.desc#historical, Egypt and france share the construction, still majorly egypt
-		trigger = {
-			check_variable = { FRA.suez_investment > 20 }
-			NOT= {has_variable = ENG.suez_investment}
-		}
-	}
-	desc = {
-		text = afr_EGY_vic.20.3.desc#France pulls in Britain
-		trigger = {
-			has_variable = ENG.suez_investment
-		}
-	}
-
-	is_triggered_only = yes ##
-	major = yes
-
-	option = {##The Gateway to the East
-		name = afr_EGY_vic.20.a
-		trigger = {
-			OR={
-				tag=EGY
-				tag=FRA
-				has_country_flag = suez_constructor
-			}
-		}
-		if={
-			limit={
-				NOT={tag = EGY}
-				has_country_flag = suez_constructor
-				check_variable = { suez_investment > 20 }
-			}
-			set_temp_variable = { eoanb_prestige_change = 10 }
-			eoanb_change_prestige_score = yes
-		}
-		if={
-			limit={
-				tag = EGY
-			}
-			set_temp_variable = { eoanb_prestige_change = 10 }
-			eoanb_change_prestige_score = yes
-		}
-		if={#contributed less than 20% but more than 4%
-			limit={
-				NOT={tag = EGY}
-				has_country_flag = suez_constructor
-				check_variable = { suez_investment < 20 }
-				check_variable = { suez_investment > 3 }
-			}
-			set_temp_variable = { eoanb_prestige_change = 5 }
-			eoanb_change_prestige_score = yes
-		}
-		if={#contributed less than 4%
-			limit={
-				NOT={tag = EGY}
-				has_country_flag = suez_constructor
-				check_variable = { suez_investment < 4 }
-			}
-			set_temp_variable = { eoanb_prestige_change = 2 }
-			eoanb_change_prestige_score = yes
-		}
-	}
-	option = {##Impressive
-		name = afr_EGY_vic.20.b
-		trigger = {
-			NOT={
-				tag=EGY
-				tag=ENG
-				tag=FRA
-				tag=OMA
-				tag=YEM
-				tag=MED
-			}
-			NOT={has_country_flag = suez_constructor}
-		}
-	}
-	option = {##Less Irrelevant Now
-		name = afr_EGY_vic.20.c
-		trigger = {
-			tag=OMA
-			tag=YEM
-			tag=ENG
-			tag=MED
-		}
-		add_timed_idea = {idea = eoanb_random_event_22_idea days = 120}
-	}
+news_event = {   # Grand Opening of the Suez
+    id = afr_EGY_vic.20
+    title = afr_EGY_vic.20.t
+    #desc = afr_EGY_vic.20.desc
+    picture = GFX_news_event_suez_canal
+    
+    desc = {
+        text = afr_EGY_vic.20.2.desc    #Egypt constructs the canal with less than 10% help from france
+        trigger = {
+            NOT = {
+                has_variable = ENG.suez_investment
+            }
+            check_variable = { FRA.suez_investment < 20 }
+        }
+    }
+    
+    desc = {
+        text = afr_EGY_vic.20.1.desc    #historical, Egypt and france share the construction, still majorly egypt
+        trigger = {
+            check_variable = { FRA.suez_investment > 20 }
+            NOT = { has_variable = ENG.suez_investment }
+        }
+    }
+    
+    desc = {
+        text = afr_EGY_vic.20.3.desc    #France pulls in Britain
+        trigger = {
+            has_variable = ENG.suez_investment
+        }
+    }
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {    ##The Gateway to the East
+        name = afr_EGY_vic.20.a
+        trigger = {
+            OR = {
+                tag = EGY
+                tag = FRA
+                has_country_flag = suez_constructor
+            }
+        }
+        
+        if = {
+            limit = {
+                NOT = { tag = EGY }
+                has_country_flag = suez_constructor
+                check_variable = { suez_investment > 20 }
+            }
+            set_temp_variable = { eoanb_prestige_change = 10 }
+            eoanb_change_prestige_score = yes
+        }
+        
+        if = {
+            limit = {
+                tag = EGY
+            }
+            set_temp_variable = { eoanb_prestige_change = 10 }
+            eoanb_change_prestige_score = yes
+        }
+        
+        if = {    #contributed less than 20% but more than 4%
+            limit = {
+                NOT = { tag = EGY }
+                has_country_flag = suez_constructor
+                check_variable = { suez_investment < 20 }
+                check_variable = { suez_investment > 3 }
+            }
+            set_temp_variable = { eoanb_prestige_change = 5 }
+            eoanb_change_prestige_score = yes
+        }
+        
+        if = {    #contributed less than 4%
+            limit = {
+                NOT = { tag = EGY }
+                has_country_flag = suez_constructor
+                check_variable = { suez_investment < 4 }
+            }
+            set_temp_variable = { eoanb_prestige_change = 2 }
+            eoanb_change_prestige_score = yes
+        }
+    }
+    
+    option = {    ##Impressive
+        name = afr_EGY_vic.20.b
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = EGY
+                    tag = ENG
+                    tag = FRA
+                    tag = OMA
+                    tag = YEM
+                    tag = MED
+                }
+            }
+            NOT = { has_country_flag = suez_constructor }
+        }
+    }
+    
+    option = {    ##Less Irrelevant Now
+        name = afr_EGY_vic.20.c
+        trigger = {
+            OR = {
+                tag = OMA
+                tag = YEM
+                tag = ENG
+                tag = MED
+            }
+        }
+        add_timed_idea = { idea = eoanb_random_event_22_idea days = 120 }
+    }
 }
 
 country_event = { #ENG - a plan to stop EGY using forced labour on the suez

@@ -17,7 +17,7 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 0.01 }
 
 	add_ideas = {
 		#POLITICS
@@ -63,7 +63,6 @@
 
 	}
 
-	add_opinion_modifier = { target = TOU modifier = AFR_futa_islamic_jihad }
 	add_opinion_modifier = { target = FTJ modifier = AFR_futa_islamic_jihad }
 
 	#Rivals
@@ -112,7 +111,7 @@ set_popularities = {
 	#create_country_leader = {
 	#	name = "Mamadu Biran Waan"
 	#	desc = "POLITICS_GEORGE_V_DESC"
-	#	picture = "gfx/leaders/Africa/generic_leader_king_4.png"
+	#	picture = "GFX_Portrait_AFRICA_Generic_Leader_King_4"
 	#	expire = "1900.1.1"
 	#	ideology = islamist
 	#	traits = {

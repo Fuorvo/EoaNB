@@ -8,6 +8,15 @@
 	}
 	set_variable = { sphere_overlord = ENG.id }
 
+
+	###Var For Great Game###
+	set_variable = {gg_ENG_tibet_pp_price_var = 100}
+	set_variable = {gg_ENG_tibet_ggpoint_price_var = 5}
+	set_variable = {gg_ENG_persia_pp_price_var = 100}
+	set_variable = {gg_ENG_persia_ggpoint_price_var = 5}
+	set_variable = {gg_ENG_afghanistan_pp_price_var = 100}
+	set_variable = {gg_ENG_afghanistan_ggpoint_price_var = 5}
+
 	set_convoys = 200
 
 	add_political_power = 5
@@ -85,10 +94,7 @@
 		doctrine_victorian_army_1
 	}
 
-	#How to set up initial debt_level
-	#ENG = {
-	#	add_to_variable = {var = debt_level value = 10} #The UK's pending National Debt amounted to £769.78m Pound Sterling in 1857/58 (total debt of £834m - £63.82m loans given to foreign countries); income per year £65.17m per year = 11.81 GDP of debt (but lots of securities; complex finanical system meant the government was able to reduce debts after 1850s)
-	#}
+	#The UK's pending National Debt amounted to £769.78m Pound Sterling in 1857/58 (total debt of £834m - £63.82m loans given to foreign countries); income per year £65.17m per year = 11.81 GDP of debt (but lots of securities; complex finanical system meant the government was able to reduce debts after 1850s)
 
 	set_variable = {
 		var = ENG_worker_unrest
@@ -166,7 +172,7 @@
 		#Weapons & Equipment
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Smoothbore
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1 #Minie Rifle
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
 		tech_infantry_caplock_pistol = 1 #Caplock Pistols
@@ -341,7 +347,7 @@
 		doctrine_napoleonic_improved_military_research = 1
 		doctrine_napoleonic_innovative_highcommand = 1
 		doctrine_napoleonic_focus_on_offense = 1
-		doctrine_napoleonic_the_column_formation = 1
+		doctrine_napoleonic_the_collumn_formation = 1
 		doctrine_napoleonic_line_formation = 1
 		doctrine_napoleonic_mixed_orders = 1
 		doctrine_napoleonic_skirmishing_tactics = 1
@@ -452,32 +458,6 @@
 			freedom_level = 0.1
 		}
 	}
-	if = {
-		limit = {
-			NOT = {
-				eoanb_enable_autonomy = yes
-			}
-		}
-		puppet = TRA
-		puppet = RAJ
-		puppet = NEP
-		puppet = CAN
-		puppet = NFL
-		puppet = BRK
-		puppet = NZL
-		puppet = NSW
-		puppet = TSM
-		puppet = SAS
-		puppet = TCS
-		puppet = HBC
-		puppet = BCO
-		puppet = NVS
-		puppet = SRC
-		puppet = NAT
-		puppet = SAF
-		puppet = MDV
-		puppet = VIC
-	}
 
 	# Trade
 	create_import = {
@@ -533,6 +513,13 @@
 	recruit_character = ENG_george_tomkyns_chesney 
 	recruit_character = ENG_charles_william_pasley
 	recruit_character = ENG_Richard_Powell
+	recruit_character = ENG_james_simpson
+	recruit_character = ENG_Henry_Cole
+	recruit_character = ENG_John_Johan_Ericsson
+	
+	# HIGH Command
+	recruit_character = ENG_John_Fox_Burgoyne
+	recruit_character = ENG_Thomas_Graham_Balfour
 
 ####################
 # BRITISH GENERALS #
@@ -560,6 +547,8 @@
 	# https://en.wikipedia.org/wiki/Richard_England_(British_Army_officer,_born_1793)
 	# Died 1877
 	recruit_character = ENG_sir_richard_england
+	
+	recruit_character = ENG_William_Codrington #Transitioned from the old MHC, need to be addressed on source and recruitment dates if needed @skoodge
 
 
 	#### Added mid-game
@@ -686,6 +675,11 @@
 	# Died in September 1869
 	recruit_character = ENG_robert_lambert_baynes
 	
+	recruit_character = ENG_Charles_Napier #Transitioned from the old MHC, need to be addressed on source and recruitment dates if needed @skoodge
+	recruit_character = ENG_Sydney_Colpoy #Transitioned from the old MHC, need to be addressed on source and recruitment dates if needed @skoodge
+	recruit_character = ENG_Alexander_Milne #Transitioned from the old MHC, need to be addressed on source and recruitment dates if needed @skoodge
+	recruit_character = ENG_Richard_Saunders #Transitioned from the old MHC, need to be addressed on source and recruitment dates if needed @skoodge
+	
 	#### Added mid-game
 	
 	# https://en.wikipedia.org/wiki/Edward_Seymour_(Royal_Navy_officer)
@@ -745,7 +739,7 @@
 				fixed_ship_armor_slot = empty
 				front_1_custom_slot = empty
 				mid_1_custom_slot = ship_cannon_battery_0
-				mid_2_custom_slot = ship_cannon_battery_0
+				mid_2_custom_slot = empty
 				rear_1_custom_slot = empty
 			}
 			#obsolete = no
@@ -946,7 +940,7 @@
 
 		#ECONOMY
 		export_focus
-		taxation_level_3
+		taxation_level_1
 		cl_illegal
 		
 		
@@ -969,7 +963,6 @@
 		research_spending_level_1
 
 		#NATIONAL SPIRITS
-		egy_vic_debt
 		ENG_idea_sun_never_sets
 		ENG_idea_european_isolationism
 		ENG_idea_working_class_exploitation
@@ -977,11 +970,6 @@
 		ENG_idea_wolseley_plan_2
 		ENG_idea_volunteer_movement_2
 	}
-
-	#How to set up initial debt_level
-	#ENG = {
-	#	add_to_variable = {var = debt_level value = 10} #The UK's pending National Debt amounted to £769.78m Pound Sterling in 1857/58 (total debt of £834m - £63.82m loans given to foreign countries); income per year £65.17m per year = 11.81 GDP of debt (but lots of securities; complex finanical system meant the government was able to reduce debts after 1850s)
-	#}
 
 	set_variable = {
 		var = ENG_worker_unrest
@@ -1053,7 +1041,7 @@
 		#Weapons & Equipment
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #Smoothbore
-		tech_infantry_percussion_cap = 1
+		 
 		rifle_equipment1 = 1 #Minie
 		rifle_equipment2 = 1 #Enfield
 		tech_infantry_breech_loading = 1

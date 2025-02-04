@@ -1,8 +1,9 @@
+# MONEY SYSTEM #
 guiTypes = {
 	containerWindowType = {
 		name = "topbar_money_info_window"
 		position = { x = 4 y = 47 }
-		size = { width = 96 height = 80 }
+		size = { width = 120 height = 80 }
 
 		buttonType = {
 			name = "background"
@@ -47,10 +48,10 @@ guiTypes = {
 			name = "value"
 			position = { x = 0 y = -20 }
 			font = "hoi_18mbs"
-			text = "[This.GetCurrentMoneyValueShort][GetCurrencyTextIcon]"
+			text = "[?ROOT.money|Y.2][GetCurrencyTextIcon]"
 			format = center
 			maxWidth = 117
-			multiline = no
+			maxHeight = 24
 			fixedsize = yes
 			alwaystransparent = yes
 		}
@@ -59,7 +60,7 @@ guiTypes = {
 			name = "value_2"
 			position = { x = -5 y = 8 }
 			font = "hoi_18mbs"
-			text = "[GetCurrentIncomeValueShort][GetCurrencyTextIcon]"
+			text = "[?total_income_temp|=.2+][GetCurrencyTextIcon]"
 			format = center
 			maxWidth = 62
 			multiline = no
@@ -71,7 +72,7 @@ guiTypes = {
 			name = "value_3"
 			position = { x = 55 y = 8 }
 			font = "hoi_18mbs"
-			text = "[GetCurrentExcomeValueShort][GetCurrencyTextIcon]"
+			text = "[?total_expenses_temp|.2+][GetCurrencyTextIcon]"
 			format = center
 			maxWidth = 62
 			multiline = no
@@ -104,7 +105,7 @@ guiTypes = {
 			name = "value"
 			position = { x = 4 y = 3 }
 			font = "hoi_18mbs"
-			text = "[?FROM.money|2]M[GetCurrencyTextIcon]"
+			text = "[?FROM.money|.2]M[GetCurrencyTextIcon]"
 			format = center
 			maxWidth = 116
 			multiline = no
@@ -191,11 +192,6 @@ guiTypes = {
 				position = { x = 305 y = 472 } #412
 				size = { width = 300 height = 67 }
 
-				background = {
-					name = "background"
-					spriteType = "GFX_tiled_bg"
-				}
-
 				containerWindowType = {
 					name = "entry_window"
 					position = { x = 9 y = 13 }
@@ -249,11 +245,6 @@ guiTypes = {
 				name = "balance_window_treasurey"
 				position = { x = 4 y = 472 } #412
 				size = { width = 300 height = 67 }
-
-				background = {
-					name = "background"
-					spriteType = "GFX_tiled_bg"
-				}
 
 				containerWindowType = {
 					name = "treasury_window"

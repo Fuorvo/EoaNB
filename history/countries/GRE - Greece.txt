@@ -5,6 +5,8 @@
 
 	set_convoys = 10
 
+	set_stability = 0.63
+
 	set_research_slots = 2
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 1000 producer = GRE }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1000 producer = GRE }
@@ -19,8 +21,14 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 0.01 }
 	set_variable = { current_loans_sum = 110 }
+
+	set_variable_to_random = {
+		var = GRE_cretan_greeks
+		min = 1000
+		max = 15000
+	}
 
 	add_ideas = {
 		#POLITICS
@@ -35,7 +43,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 		
 
@@ -93,10 +101,6 @@
 	#Diplomacy
 	set_variable = { influenced_by = GRE.id }
 	set_variable = { influenced_by2 = GRE.id }
-
-	#Debt
-		#add_to_variable = {var = debt_level value = 40}
-		#add_to_variable = { var = GRE_debt_repayment_profits value = 0.5 } 
 
 	set_politics = {
 		ruling_party = autocracy
@@ -180,13 +184,18 @@
 	recruit_character = GRE_ioannis_mamouris
 	recruit_character = GRE_panos_koronaios
 	recruit_character = GRE_spiros_milios
-	recruit_character = GRE_Richard_Church
+	recruit_character = GRE_richard_church
+	
+	#MHC
+	recruit_character = GRE_antonios_mavromichalis
+	recruit_character = GRE_antonios_kriezis
 
 	##Later can become PM
 	recruit_character = GRE_gennaios_kolokotronis
 
 	#Admirals
 	recruit_character = GRE_andreas_d_miaoulis
+	recruit_character = GRE_leonidas_palaskas
 	
 	#Political Advisors
 	recruit_character = GRE_anastasios_polyzoidis
@@ -198,10 +207,9 @@
 	recruit_character = GRE_ilias_kehagias
 	recruit_character = GRE_karl_johann_fix
 	recruit_character = GRE_anastassios_tassos_potamianos
-	recruit_character = GRE_emmanuel_han
+	recruit_character = GRE_amadeus_emmanuel_han #also part of MHC @skoodge
 	recruit_character = GRE_leonidas_smolents
-	recruit_character = GRE_Christodoulos_Hatzipetros
-	recruit_character = GRE_Dimitrios_Skalistiris
+	recruit_character = GRE_dimitrios_skalistiris
 	recruit_character = GRE_lysandros_kaftanzoglou
 	
 

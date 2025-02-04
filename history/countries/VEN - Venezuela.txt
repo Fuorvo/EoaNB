@@ -41,7 +41,7 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 0.01 }
 	set_variable = { current_loans_sum = 7 }
 
 	add_ideas = {
@@ -55,7 +55,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 		#stagnation_growth
 		border_control
@@ -73,7 +73,6 @@
 		navy_spending_level_1
 		research_spending_level_1
 		#NATIONAL SPIRITS
-		egy_vic_debt
 		VEN_caudillismo
 		VEN_army_corruption
 		VEN_triad_of_powers
@@ -210,12 +209,8 @@
 	#Favored
 	#	set_variable = { most_favoured_country = ENG.id }
 
-	#How to set up initial debt_level
 	VEN = {
-		add_to_variable = {
-			var = debt_level
-			value = 12
-		}		#Venezuela's National Debt amounts to 31.5m Dollars (= 6.55m Pound Sterling) as of 1857; income per year 2.7m Dollar (= 0.56m Pound Sterling) = 11.70 GDP of debt
+		#Venezuela's National Debt amounts to 31.5m Dollars (= 6.55m Pound Sterling) as of 1857; income per year 2.7m Dollar (= 0.56m Pound Sterling) = 11.70 GDP of debt
 		add_to_variable = {
 			var = SPR_debt_repayments_level
 			value = 10

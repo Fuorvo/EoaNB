@@ -17,7 +17,8 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 0.01 }
+	set_variable = { current_loans_sum = 6 }
 
 	add_ideas = {
 		#POLITICS
@@ -30,7 +31,7 @@
 		civilian_economy
 		limited_exports
 		army_spending_level_2
-		taxation_level_3
+		taxation_level_1
 		cl_legal
 
 		#stagnation_growth
@@ -129,10 +130,7 @@
 		doctrine_napoleonic_a_mobile_army = 1
 	}
 
-	#How to set up initial debt_level
-	#MOL = {
-	#	add_to_variable = {var = debt_level value = 1} #Moldavia's National Debt amounts to 6,984,148 Piasters (= 59,000 Pound Sterling) as of 1857; income per year 14,385,230 Piasters (= 122,000 Pound Sterling) = 0.48 GDP of debt; 715,000 Piasters as tribute to the Ottoman Empire
-	#}
+	#Moldavia's National Debt amounts to 6,984,148 Piasters (= 59,000 Pound Sterling) as of 1857; income per year 14,385,230 Piasters (= 122,000 Pound Sterling) = 0.48 GDP of debt; 715,000 Piasters as tribute to the Ottoman Empire
 	
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 1000 producer = MOL }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 1000 producer = MOL }
@@ -143,7 +141,7 @@
 	create_country_leader = {
 	name = "Căimăcămia de Trei"
 	desc = "POLITICS_GEORGE_V_DESC"
-	picture = "Portrait_MOL_Caimacamia_de_Trei.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Caimacamia_de_Trei.png"
 	expire = "1900.1.1"
 	ideology = conserv_liberal
 	traits = {
@@ -153,7 +151,7 @@
 	create_country_leader = {
 	name = "Nicolae Vogoride"
 	desc = "NICOLAE_VOGORIDE_DESC"
-	picture = "Portrait_MOL_Nicolas_Vogorides.dds"
+	picture = "gfx/leaders/MOL/Portrait_MOL_Nicolas_Vogorides.png"
 	expire = "1900.1.1"
 	ideology = despotism
 	traits = {
@@ -163,7 +161,7 @@
 	create_country_leader = {
 	name = "Lascăr Cataragiu"
 	desc = "NICOLAE_VOGORIDE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_generic_leader_politician_36.png"
+	picture = "GFX_Portrait_EUROPE_Generic_Politician_36"
 	expire = "1900.1.1"
 	ideology = conserv
 	traits = {

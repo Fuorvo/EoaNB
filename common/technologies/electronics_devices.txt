@@ -121,29 +121,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 			modifier = {
 				factor = 0
@@ -368,29 +346,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -2283,29 +2239,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -2961,6 +2895,7 @@ technologies = {
 		path = {
 			leads_to_tech = wireless_telegraphy
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		ai_will_do = {
@@ -2993,6 +2928,7 @@ technologies = {
 		path = {
 			leads_to_tech = early_radio
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		ai_will_do = {
@@ -3450,29 +3386,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 		}
 		
@@ -3843,7 +3757,7 @@ technologies = {
 	
 	early_alternators = {
 	
-		consumer_goods_expected_value = -0.01
+		consumer_goods_factor = -0.01
 		
 		research_cost = 0.15
 		start_year = 1850
@@ -3881,29 +3795,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 			modifier = {
 				factor = 100
@@ -3932,6 +3824,7 @@ technologies = {
 		path = {
 			leads_to_tech = early_dynamo_generator
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		dependencies={
@@ -3946,29 +3839,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 			modifier = {
 				factor = 100
@@ -4037,29 +3908,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				OR = { 
-					NOT = { has_tech = tribal_tatics }
-					NOT = { has_tech = tribal_gunpowder }
-					NOT = { has_tech = tribal_riding }
-					NOT = { has_tech = tribal_steam_experiments }
-					NOT = { has_tech = tribal_forging }
-					NOT = { has_tech = tribal_artisan }
-					NOT = { has_tech = tribal_chemistry }
-					NOT = { has_tech = tribal_guilds_trade }
-					NOT = { has_tech = tribal_steel_tools }
-					NOT = { has_tech = tribal_electrical_theory }
-					NOT = { has_tech = tribal_carrier_birds }
-					NOT = { has_tech = tribal_crop_rotation }
-					NOT = { has_tech = tribal_salted_smoked_goods }
-					NOT = { has_tech = tribal_leching }
-				}
-				OR = { has_idea = oral_tradition has_idea = traditional_uluma }
-				OR = { 
-					afr_is_tribal = yes
-					is_first_nations_tribe = yes
-					is_south_american_tribe = yes
-					has_country_flag = Oceania_industrializing
-				}
+				preindustrial_or_tribal_trigger = yes
 			}
 			modifier = {
 				factor = 100
@@ -4163,6 +4012,7 @@ technologies = {
 		path = {
 			leads_to_tech = hydroelectric_plant
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		path = {
@@ -4279,7 +4129,7 @@ technologies = {
 		industry_repair_factor = 0.05
 		production_speed_buildings_factor = 0.025
 		global_building_slots_factor = 0.025
-		consumer_goods_expected_value = 0.02
+		consumer_goods_factor = 0.02
 		
 		research_cost = 0.15
 		start_year = 1875
@@ -4398,7 +4248,7 @@ technologies = {
 	transformer = {
 	
 		line_change_production_efficiency_factor = 0.06
-		consumer_goods_expected_value = -0.02
+		consumer_goods_factor = -0.02
 		
 		research_cost = 0.15
 		start_year = 1885
@@ -4431,7 +4281,7 @@ technologies = {
 	
 		industry_repair_factor = 0.025
 		production_speed_buildings_factor = 0.025
-		consumer_goods_expected_value = 0.01
+		consumer_goods_factor = 0.01
 		
 		research_cost = 0.15
 		start_year = 1885
@@ -4467,7 +4317,7 @@ technologies = {
 	early_wind_turbine = {
 	
 		production_factory_max_efficiency_factor = 0.03
-		consumer_goods_expected_value = -0.01
+		consumer_goods_factor = -0.01
 		
 		research_cost = 0.15
 		start_year = 1885
@@ -4496,7 +4346,7 @@ technologies = {
 	vertical_axis_turbine = {
 	
 		production_factory_max_efficiency_factor = 0.03
-		consumer_goods_expected_value = -0.01
+		consumer_goods_factor = -0.01
 		
 		research_cost = 0.15
 		start_year = 1920
@@ -4525,7 +4375,7 @@ technologies = {
 	giromill_wind_turbine = {
 	
 		production_factory_max_efficiency_factor = 0.03
-		consumer_goods_expected_value = -0.01
+		consumer_goods_factor = -0.01
 		
 		research_cost = 0.15
 		start_year = 1925
@@ -4554,7 +4404,7 @@ technologies = {
 	darrieus_wind_turbine = {
 	
 		production_factory_max_efficiency_factor = 0.03
-		consumer_goods_expected_value = -0.01
+		consumer_goods_factor = -0.01
 		
 		research_cost = 0.15
 		start_year = 1930
@@ -4583,7 +4433,7 @@ technologies = {
 	smith-putnam_wind_turbine = {
 	
 		production_factory_max_efficiency_factor = 0.03
-		consumer_goods_expected_value = -0.01
+		consumer_goods_factor = -0.01
 		
 		research_cost = 0.15
 		start_year = 1940
@@ -4612,7 +4462,7 @@ technologies = {
 	#wind_turbine_1 = {
 	#
 	#	production_factory_max_efficiency_factor = 0.03
-	#	consumer_goods_expected_value = -0.01
+	#	consumer_goods_factor = -0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1950
@@ -4641,7 +4491,7 @@ technologies = {
 	#wind_turbine_2 = {
 	#
 	#	production_factory_max_efficiency_factor = 0.03
-	#	consumer_goods_expected_value = -0.01
+	#	consumer_goods_factor = -0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1965
@@ -4670,7 +4520,7 @@ technologies = {
 	#wind_turbine_3 = {
 	#
 	#	production_factory_max_efficiency_factor = 0.03
-	#	consumer_goods_expected_value = -0.01
+	#	consumer_goods_factor = -0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1980
@@ -4699,7 +4549,7 @@ technologies = {
 	#wind_turbine_4 = {
 	#
 	#	production_factory_max_efficiency_factor = 0.03
-	#	consumer_goods_expected_value = -0.01
+	#	consumer_goods_factor = -0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1990
@@ -4728,7 +4578,7 @@ technologies = {
 	#offshore_combined_wind-tidal_turbine = {
 	#
 	#	production_factory_max_efficiency_factor = 0.03
-	#	consumer_goods_expected_value = -0.01
+	#	consumer_goods_factor = -0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2000
@@ -4757,7 +4607,7 @@ technologies = {
 	#maglev_turbines = {
 	#
 	#	production_factory_max_efficiency_factor = 0.03
-	#	consumer_goods_expected_value = -0.01
+	#	consumer_goods_factor = -0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2005
@@ -4841,7 +4691,7 @@ technologies = {
 	
 		industry_repair_factor = 0.025
 		production_speed_buildings_factor = 0.025
-		consumer_goods_expected_value = 0.01
+		consumer_goods_factor = 0.01
 		
 		research_cost = 0.15
 		start_year = 1895
@@ -4888,6 +4738,7 @@ technologies = {
 #		path = {
 #			leads_to_tech = hydropower_3
 #			research_cost_coeff = 1
+#			ignore_for_layout = yes
 #		}
 #		path = {
 #			leads_to_tech = hydropower_5
@@ -5006,7 +4857,7 @@ technologies = {
 	
 		industry_repair_factor = 0.025
 		production_speed_buildings_factor = 0.025
-		consumer_goods_expected_value = 0.01
+		consumer_goods_factor = 0.01
 		
 		research_cost = 0.15
 		start_year = 1905
@@ -5098,7 +4949,7 @@ technologies = {
 	
 		industry_repair_factor = 0.025
 		production_speed_buildings_factor = 0.025
-		consumer_goods_expected_value = 0.01
+		consumer_goods_factor = 0.01
 		
 		research_cost = 0.15
 		start_year = 1920
@@ -5128,7 +4979,7 @@ technologies = {
 	
 		industry_repair_factor = 0.025
 		production_speed_buildings_factor = 0.025
-		consumer_goods_expected_value = 0.01
+		consumer_goods_factor = 0.01
 		
 		research_cost = 0.15
 		start_year = 1925
@@ -5158,7 +5009,7 @@ technologies = {
 	
 		industry_repair_factor = 0.025
 		production_speed_buildings_factor = 0.025
-		consumer_goods_expected_value = 0.01
+		consumer_goods_factor = 0.01
 		
 		research_cost = 0.15
 		start_year = 1940
@@ -5191,7 +5042,7 @@ technologies = {
 	#atomic_reactors = {
 	#
 	#	production_speed_buildings_factor = 0.05
-	#	consumer_goods_expected_value = 0.02
+	#	consumer_goods_factor = 0.02
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1950
@@ -5231,7 +5082,7 @@ technologies = {
 	#RBMK_reactors = {
 	#
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.02
+	#	consumer_goods_factor = 0.02
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1970
@@ -5260,7 +5111,7 @@ technologies = {
 	#mwe_advanced_bwr = {
 	#
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.02
+	#	consumer_goods_factor = 0.02
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1995
@@ -5318,7 +5169,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.01
 	#	production_speed_buildings_factor = 0.01
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1990
@@ -5410,7 +5261,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2025
@@ -5444,7 +5295,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1950
@@ -5474,7 +5325,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1960
@@ -5504,7 +5355,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1970
@@ -5534,7 +5385,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 1990
@@ -5564,7 +5415,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2000
@@ -5594,7 +5445,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.025
-	#	consumer_goods_expected_value = 0.01
+	#	consumer_goods_factor = 0.01
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2015
@@ -5624,7 +5475,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.05
-	#	consumer_goods_expected_value = 0.02
+	#	consumer_goods_factor = 0.02
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2030
@@ -5752,7 +5603,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.05
-	#	consumer_goods_expected_value = 0.02
+	#	consumer_goods_factor = 0.02
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2040
@@ -5787,7 +5638,7 @@ technologies = {
 	#
 	#	industry_repair_factor = 0.025
 	#	production_speed_buildings_factor = 0.075
-	#	consumer_goods_expected_value = -0.05
+	#	consumer_goods_factor = -0.05
 	#	
 	#	research_cost = 0.15
 	#	start_year = 2050

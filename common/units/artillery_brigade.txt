@@ -1,5 +1,4 @@
 sub_units = {
-
 	cannon_artillery = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -159,7 +158,7 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-	
+
 	howitzer_artillery = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -340,7 +339,6 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-	
 	siege_artillery = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -366,7 +364,7 @@ sub_units = {
 		manpower = 500
 		
 		need = {
-			uniform_equipment = 25
+			uniform_equipment = 50
 			infantry_equipment = 25
 			siege_gun_equipment = 48
 		}
@@ -406,7 +404,7 @@ sub_units = {
 		}
 
 		fort = {
-			attack = 0.35
+			attack = 0.65
 			defence = 0.05
 		}
 
@@ -419,6 +417,7 @@ sub_units = {
 			attack = -0.4
 		}
 	}
+	
 	siege_artillery_towed = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -465,7 +464,7 @@ sub_units = {
 		plains = {
 			movement = 0.05
 		}
-
+		
 		forest = {
 			attack = -0.2
 			movement = -0.2
@@ -527,20 +526,19 @@ sub_units = {
 		combat_width = 3
 
 		manpower = 500
+		
 		need = {
 			howitzer_equipment = 36
 			#horse_artillery_equipment = 48  ## This is a more modern Artillery meant to replicate vanilla 
 		}
-		
 		#transport = horse_artillery_equipment ##Removed for now?
-		
+				
 		max_strength = 0.6
 		max_organisation = 0
 		default_morale = 0.1
-		training_time = 120
+        training_time = 120
 		weight = 0.5
 		supply_consumption = 0.21
-
 		#Line artillery bonuses
 		# soft_attack = 0.25
 		
@@ -548,39 +546,31 @@ sub_units = {
 			attack = -0.2
 			movement = -0.2
 		}
-
 		hills = {
 			movement = -0.05
 		}
-
 		mountain = {
 			movement = -0.2
 		}
-
 		jungle = {
 			attack = -0.25
 			movement = -0.2
 		}
-
 		marsh = {
 			attack = -0.2
 			movement = -0.3
 		}
-
 		fort = {
 			attack = 0.1
 		}
-
 		river = {
 			attack = -0.2
 			movement = -0.2
 		}
-
 		amphibious = {
 			attack = -0.4
 		}
 	}
-
 	mot_artillery_brigade = {
 		sprite = artillery
 		map_icon_category = infantry
@@ -592,15 +582,13 @@ sub_units = {
 			motorized
 			artillery
 		}
-
 		group = mobile_combat_support
-		
 		categories = {
 			category_army
 			category_line_artillery
 			category_artillery
 		}
-
+		
 		combat_width = 3
 		transport = motorized_equipment
 		manpower = 500
@@ -615,7 +603,7 @@ sub_units = {
 		training_time = 120
 		weight = 0.5
 		supply_consumption = 0.25
-		
+
 		forest = {
 			attack = -0.2
 			movement = -0.5
@@ -652,7 +640,6 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-	
 	rocket_artillery_brigade = {
 		sprite = "artillery"
 		map_icon_category = infantry
@@ -749,7 +736,7 @@ sub_units = {
 			rocket_artillery_equipment = 36
 			motorized_equipment = 36
 		}
-		
+
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1

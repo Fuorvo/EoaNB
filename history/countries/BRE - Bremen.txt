@@ -17,7 +17,8 @@
         max = 1
     }
     update_unemployment_modifier = yes
-    add_to_variable = { money = 1 }
+    add_to_variable = { money = 0.01 }
+	set_variable = { current_loans_sum = 6 }
 
 	add_ideas = {
 		#POLITICAL LIBERTIES
@@ -39,7 +40,7 @@
 		#ECONOMIC POLICY
 		mixed_economy
 		export_focus
-		taxation_level_3
+		taxation_level_1
 		civilian_economy
 		cl_legal
 		industrializing
@@ -105,7 +106,7 @@
 		traditional_mixed_arms = 1 #Pike and Shot
 		infantry_weapons = 1 #M/1809
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
-		tech_infantry_percussion_cap = 1 #Dreyse M/41
+		  #Dreyse M/41
 		tech_infantry_practical_rifling = 1 #Practical Rifling
 		tech_infantry_infantry_swords = 1 #Infantry Swords
 		socket_bayonet = 1 #Socket Bayonet
@@ -187,6 +188,7 @@
 		food_preserving_icebox = 1 #Icebox Preservation
 		#Agriculture
 		early_artificial_fertilizer = 1 #Early Artificial Fertilizer
+		pre_industrial_farms = 1 #Pre-Industrial Farms
 		
 		###Electronics and Instruments
 		#Alternating Current
@@ -214,11 +216,7 @@
 
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 50 producer = BRE }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 50 producer = BRE }
-
-	#How to set up initial debt_level
-	#BRE = {
-	#	add_to_variable = {var = debt_level value = 1} #Bremen's National Debt amounted to 6.79m Thaler Gold (7.47m Thaler, 22.41m Mark as of 1871/73 exchange rate = 1.1m Pound Sterling as of 1871) at the end of 1855; income per year 1.2m Thaler Gold (1.32m Thaler = 0.19m Pound Sterling) = 5.79 GDP of debt (result of fire of 1842 and credits for rebuild)
-	#}
+	#Bremen's National Debt amounted to 6.79m Thaler Gold (7.47m Thaler, 22.41m Mark as of 1871/73 exchange rate = 1.1m Pound Sterling as of 1871) at the end of 1855; income per year 1.2m Thaler Gold (1.32m Thaler = 0.19m Pound Sterling) = 5.79 GDP of debt (result of fire of 1842 and credits for rebuild)
 
 	# POLITICAL LEADERS
 

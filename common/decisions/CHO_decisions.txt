@@ -535,7 +535,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
         icon = steel
 		
 		available = {
-		    debt_not_bankrupt_trigger = yes 
+		    set_temp_variable = { loan_size_to_check = 50}
+			has_less_than_specific_loan_size = yes 
 		    has_completed_focus = CHO_Ohitayama_Tatara_Iron_Works 
 			controls_state = 1210
 			NOT = { has_country_flag = CHO_industry_development_ongoing_flag }
@@ -545,8 +546,10 @@ eoanb_category_japan_daimyo_choshu_reform = {
 		}
 		
 		#allowed = { TAG = CHO }
-		custom_cost_trigger = { check_variable = { debt_level < 50 } }
-		custom_cost_text = eoanb_decision_cost_5_debt_loc
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
 		fire_only_once = yes
 		#is_good = yes
@@ -573,7 +576,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
 				}
 			}
 			hidden_effect = {
-				debt_level_increase_by_5 = yes
+				set_temp_variable = { money_to_gain = -0.7 }
+				add_money_with_tooltip_effect = yes	
 				clr_country_flag = CHO_industry_development_ongoing_flag 
 			}
 		}
@@ -588,7 +592,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
         icon = generic_operation
 		
 		available = {
-		    debt_not_bankrupt_trigger = yes 
+		    set_temp_variable = { loan_size_to_check = 50}
+			has_less_than_specific_loan_size = yes 
 		    has_completed_focus = CHO_Hagi_Reverbatory_Furnaces 
 			controls_state = 1210
 			NOT = { has_country_flag = CHO_industry_development_ongoing_flag }
@@ -598,8 +603,10 @@ eoanb_category_japan_daimyo_choshu_reform = {
 		}
 		
 		#allowed = { TAG = CHO }
-		custom_cost_trigger = { check_variable = { debt_level < 50 } }
-		custom_cost_text = eoanb_decision_cost_5_debt_loc
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
 
 		fire_only_once = yes
@@ -627,7 +634,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
 				}
 			}
 			hidden_effect = {
-				debt_level_increase_by_5 = yes
+				set_temp_variable = { money_to_gain = -0.7 }
+				add_money_with_tooltip_effect = yes	
 				clr_country_flag = CHO_industry_development_ongoing_flag
 			}
 		}
@@ -642,7 +650,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
         icon = generic_operation
 		
 		available = {
-		    debt_not_bankrupt_trigger = yes
+		    set_temp_variable = { loan_size_to_check = 50}
+			has_less_than_specific_loan_size = yes
 		    has_completed_focus = CHO_Choshus_Expanded_Metalworks 
 			controls_state = 1210
 			NOT = { has_country_flag = CHO_industry_development_ongoing_flag }
@@ -652,9 +661,10 @@ eoanb_category_japan_daimyo_choshu_reform = {
 		}
 		
 		#allowed = { TAG = CHO }
-		custom_cost_trigger = { check_variable = { debt_level < 50 } }
-		custom_cost_text = eoanb_decision_cost_5_debt_loc
-
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		fire_only_once = yes
 		#is_good = yes
 
@@ -681,7 +691,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
 				}
 		    }
 			hidden_effect = {
-				debt_level_increase_by_5 = yes
+				set_temp_variable = { money_to_gain = -0.7 }
+				add_money_with_tooltip_effect = yes	
 				clr_country_flag = CHO_industry_development_ongoing_flag
 			}
 		}
@@ -696,7 +707,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
         icon = generic_operation
 		
 		available = {
-		    debt_not_bankrupt_trigger = yes
+		    set_temp_variable = { loan_size_to_check = 50}
+			has_less_than_specific_loan_size = yes
 		    has_completed_focus = CHO_Washi_Paper_making 
 			controls_state = 1210
 			NOT = { has_country_flag = CHO_industry_development_ongoing_flag }
@@ -706,8 +718,10 @@ eoanb_category_japan_daimyo_choshu_reform = {
 		}
 		
 		#allowed = { TAG = CHO }
-		custom_cost_trigger = { check_variable = { debt_level < 50 } }
-		custom_cost_text = eoanb_decision_cost_5_debt_loc
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
 		fire_only_once = yes
 		#is_good = yes
@@ -735,7 +749,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
 				}
 		    }
 			hidden_effect = {
-				debt_level_increase_by_5 = yes
+				set_temp_variable = { money_to_gain = -0.7 }
+				add_money_with_tooltip_effect = yes	
 				clr_country_flag = CHO_industry_development_ongoing_flag
 			}
 		}
@@ -750,7 +765,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
         icon = generic_operation
 		
 		available = {
-		    debt_not_bankrupt_trigger = yes
+		    set_temp_variable = { loan_size_to_check = 50}
+			has_less_than_specific_loan_size = yes
 		    has_completed_focus = CHO_Salt_Deposits 
 			controls_state = 1210
 			NOT = { has_country_flag = CHO_industry_development_ongoing_flag }
@@ -760,8 +776,10 @@ eoanb_category_japan_daimyo_choshu_reform = {
 		}
 		
 		#allowed = { TAG = CHO }
-		custom_cost_trigger = { check_variable = { debt_level < 50 } }
-		custom_cost_text = eoanb_decision_cost_5_debt_loc
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
 		fire_only_once = yes
 		#is_good = yes
@@ -783,7 +801,8 @@ eoanb_category_japan_daimyo_choshu_reform = {
 		remove_effect = { 
 			add_offsite_building = { type = industrial_complex level = 2 }
 			hidden_effect = {
-				debt_level_increase_by_5 = yes
+				set_temp_variable = { money_to_gain = -0.7 }
+				add_money_with_tooltip_effect = yes	
 				clr_country_flag = CHO_industry_development_ongoing_flag
 			}
 		}

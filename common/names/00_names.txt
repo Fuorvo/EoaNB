@@ -1,4 +1,4 @@
-﻿### Names generation for aces ###
+### Names generation for aces ###
 # Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
 # Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
 # Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
@@ -1434,10 +1434,16 @@ MNT = {
 			Ljubisa Mihailo Milan Miliutin Milivoje Milojko Milos Miodrag Mirko Miroslav
 			Momcilo Nebojsa Nikola Pavle Peko Petar Radomir Ratko Sava Slobodan
 			Stepa Stojan Veljko Vaselien Vladimir Vojislav Zivojin Zivota Zoran Zvezdan
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = {
+			Ana Andjela Biljana Bojana Branka Danica Dusanka Gordana Irena Ivana
+			Jasna Jelena Jovana Katarina Kristina Ljiljana Maja Marija Milena Milica
+			Milijana Mira Mirjana Nada Nadezda Natasa Nevena Nikolina Olga Rada
+			Radmila Sanja Slavica Snezana Sofija Stanislavka Svetlana Tamara Vera Vesna
+			Violeta Zorica
+		}
 	}
 	surnames = {
 		Adzic Arandelovic Belimarkovic Blaznacac Bojovic Bozanovic Bozinovic Brankovic Damjanic Dapcevic
@@ -1667,18 +1673,18 @@ GRE = {
 			Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
 			Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
 			Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Aikaterini Eleni Ioanna Maria Sofia }
 	}
 	surnames = {
 		Altanis Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
 		Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
 		Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
 		Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas 
-		Trikoupis Tsakalotos Tsolakoglou  Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
-	 }
+		Trikoupis Tsakalotos Tsolakoglou Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+	}
 	callsigns = { }
 }
 
@@ -1690,18 +1696,18 @@ CET = {
 			Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
 			Nikolaos Odysseas Othon Panagiotis Pavlos Petros Sofoklis Sotiris Spyridion Spyros
 			Staikos Stefanos Stylianos Themistoklis Theodoros Tharyvoulos Tzannis Vasos Viktor Zinovios
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Aikaterini Eleni Ioanna Maria Sofia }
 	}
 	surnames = {
 		Altanis Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
 		Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
 		Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
 		Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas 
-		Trikoupis Tsakalotos Tsolakoglou  Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
-	 }
+		Trikoupis Tsakalotos Tsolakoglou Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
+	}
 	callsigns = { }
 }
 
@@ -1713,10 +1719,10 @@ ALB = {
 			Iliaz Ishak Ismail Izet Kara Kastriot Koçi Köpryly Kostaq Lekë
 			Maliq Marin Mehdi Musa Mustafa Pandeli Petro Qamil Qazim Ramush
 			Rexhep Shefqet Skënder Sulejman Tewfik Theofan Turhan Vasil Veton Xhafer
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Ajkuna Drita Lindita Teuta Vjosa }
 	}
 	surnames = { 
 		Ahmeti al-Albani Bardha Bazna "Bej Alizoti" "Bej Biçakçiu" "Bej Delvina" "Bej Frashëri" "Bej Libohova" "Bej Ndroque"
@@ -1736,11 +1742,10 @@ BUL = {
 			Kliment Konstantin Krastyu Leonid Mihail Nikifor Niloa Pencho Petar Petko
 			Petur Pravoslav Racho Radko Radoy Sava Simeon Sotir Stanislav Stanko
 			Stefan Stiliyan Stoyu Teodosi Todor Trifon Valko Vasil Velizar Vulko	
-		
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Ekaterina Irina Mariya Teodora Yoana }
 	}
 	surnames = { 
 		Agura Balabanov Balkanski Battemberg Blaskov Boyadzhiev Bradistilov Charakchiev Daskalov Dikov
@@ -1763,7 +1768,7 @@ HUN = {
 		}
 	}
 	female = {
-		names = { }
+		names = { Erzsébet Ilona Katalin Mária Zsuzsanna }
 	}
 	surnames = { 
 		Vajlok Andrássy Apponyi Aulich Bacher Baross Batthyány Beöthy Bothmer Damjanich Dessewffy
@@ -1783,10 +1788,10 @@ CRO = {
 			Luka Marijan Marin Matej Matko Maximiliam Medo Mihajlo Mirko Miroslav
 			Niko Nikola Orsat Pavle Petar Rafo Sebastijan Sismundo Slavko Stjepan
 			Svetoslav Svetozar Teo Teodor Toma Tomislav Vicko Vladimir Vlaho Zlatan
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Ana Ivana Jelena Marija Vesna }
 	}
 	surnames = {
 		Lasan Alapic Bakaric Bettera Bilic Blazevic Bondic Boroevic Bosnajk Bunic Crnkovic
@@ -1794,8 +1799,7 @@ CRO = {
 		Gucetic Gundulic Haulik Jelacic Kabuzic Keglevic Kostrencic Krstulovic Lagimja Mazuranic
 		Mihailovic Mohorovicic Mrazovic Natali Nazor Njegovan Palecek Pejacevic Philippovic Preradovic
 		Pucic Ranjina Sarkotic Sokcevic Sorkocevic Stankovaci Tomasic Tomlejnovic Vakanovic Vlasic
-	
-	 }
+	}
 	callsigns = { }
 }
 
@@ -1980,6 +1984,45 @@ AUS = {
 	callsigns = { }
 }
 
+LIE = {
+	male = {
+		names = {  Ezekiel Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl  }
+	}
+	female = {
+		names = { Sandra }
+	}
+	surnames = { Lugmair Neudinger Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
+		Beisswenger Duttmann Wilbs Berglen Behrmann 
+	}
+	callsigns = { }
+}
+
+MNC = {
+	male = {
+		names = {  
+		Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
+		Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
+		François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
+		Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
+		Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
+		
+		 }
+	}
+	female = {
+		names = { Anne Marie Annemarie Bella }
+	}
+	surnames = {
+		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
+		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau" 
+		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
+		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
+		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
+	}
+	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
+}
+
 POR = {
 	male = {
 		names = { 
@@ -1990,11 +2033,10 @@ POR = {
 			José Júlio Leopoldo Luís Manuel Mário Miguel Nicolau Nuno Orlando 
 			Óscar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
 			Sebastião Teodoro Teófilo Tiago Tomé Urbano Vasco Vicente Vitorino Vitório
-		
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Ana Beatriz Inês Maria Sofia }
 	}
 	surnames = { 
 		Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
@@ -2004,18 +2046,19 @@ POR = {
 		Herculano Ivens Keil Lopes Machado Magalhães Mendes Moniz Mouzinho Nogueira 
 		Nunes Ortigão Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
 		Ribeiro Rodrigues Salazar Sampaio Sérgio Silveira Tavares Teixeira Vidigal Vieira
-	 }
+	}
 	callsigns = { }
 }
+
 IRE = {
 	male = {
 		names = { Alexander Arthur Brian Cathal Christopher Con Daniel Denis Desmond Éamon
 			Edward Ernes Fionán Frank George Harry Jack James John Joseph
 			Kevin Liam Michael Patrick Peter Richard Robert Séan Thomas William
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Aoife Ciara Máire Niamh Síobhan }
 	}
 	surnames = {
 		Aiken Ashe Breen Brugha Collins Connolly Cosgrave Craig "de Valera" Donnelly
@@ -2024,23 +2067,23 @@ IRE = {
 	}
 	callsigns = { }
 }
+
 SWI = {
 	male = {
 		names = { 
 			Adolf Alexander Eduard Ernst Franz Hans Johann Josef Konstantin Martin
 			Melchior Robert Rudolf Ulrich Wilhelm Augusto Enrico Flavio Giuseppe Vincenzo
 			Antoine Charles Emmanuel Guillaume Gustave Henri Hugo Louis Marc Paul
-		
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Anna Heidi Lena Maria Sophie }
 	}
 	surnames = {
 		Brenner Deucher Funk Haab Herzog Knüsel Munzinger Näff Schneider 
 		"von Donatz" "von Salis-Soglio" "von Steiger" "von Tavel" Wille Celio Cotti Fogliardi Motta Zeni
 		Ador Calonder Chaudet Comtesse "de Prangins" Dufour Fornerod Guisan Ruchet Ruchonnet
-	 }
+	}
 	callsigns = { }
 }
 
@@ -2054,22 +2097,46 @@ SPR = {
 			Joaquín José Juan Julio Leopoldo Lorenzo 
 			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
 			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
-		  }
+		}
 	}
 	female = {
-		names = { }
+		names = { Ana Isabel María Pilar Sofia }
 	}
 	surnames = { 
-		Blázquez
-		Acuña Aguirre Allendesalazar Alonso Álvarez  Aranda  Asensio
+		Blázquez Acuña Aguirre Allendesalazar Alonso Álvarez Aranda Asensio
 		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz" 
 		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández Franco 
-		García  González Heredia Hernández Herrera Hevia  Linares López 
+		García González Heredia Hernández Herrera Hevia Linares López 
 		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
-		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz 
+		Narváez O'Donnell Ortega Pavía Pérez Rodríguez Rojo Ruiz 
 		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
-	
-	
+	}
+	callsigns = { }
+}
+
+ADR = {
+	male = {
+		names = { 
+			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Augusto Baldomero
+			Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
+			Diego Dionisio Eduardo Emilio Estanislao Federico Felipe Félix Fernando Francisco
+			Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
+			Joaquín José Juan Julio Leopoldo Lorenzo 
+			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
+			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
+		}
+	}
+	female = {
+		names = { Ana Isabel María Pilar Sofia }
+	}
+	surnames = { 
+		Blázquez Acuña Aguirre Allendesalazar Alonso Álvarez Aranda Asensio
+		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz" 
+		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández Franco 
+		García González Heredia Hernández Herrera Hevia Linares López 
+		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
+		Narváez O'Donnell Ortega Pavía Pérez Rodríguez Rojo Ruiz 
+		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
 	}
 	callsigns = { }
 }
@@ -2133,61 +2200,60 @@ OTO = {
 			Pertev Rauf Receb Reshad Refet Rifat Riza 
 			Sabaheddin Said Selim Shevket Shukru Suleyman 
 			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = { Ayşe Fatma Hatice Leyla Zeynep }
 	}
 	surnames = { 
 		Altay Karabekir Cakmak Gürman Orbay Subasi Erkilet Koval Omurtak Özsü Atli Gökberk
-	
 	}
 	callsigns = { }
 }
+
 AFG = {
 	male = {
 		names = { 
-			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram   Ayyub
+			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram Ayyub
 			Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil
 			Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar
 			Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman
-		
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = { Aziza Fatima Maryam Soraya Zainab }
 	}
 	surnames = { Khan Nuristani Sattari Sherkhanzai Yasin Abdul Ahmadi Aziz Karzai Nawabi Poya Shahnawaz }
 	callsigns = { }
 }
+
 AFO = {
 	male = {
 		names = { 
-			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram   Ayyub
+			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram Ayyub
 			Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil
 			Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar
 			Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman
-		
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = { Aziza Fatima Maryam Soraya Zainab }
 	}
 	surnames = { Khan Nuristani Sattari Sherkhanzai Yasin Abdul Ahmadi Aziz Karzai Nawabi Poya Shahnawaz }
 	callsigns = { }
 }
+
 BDK = {
 	male = {
 		names = { 
-			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram   Ayyub
+			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram Ayyub
 			Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil
 			Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar
 			Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman
-		
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = { Aziza Fatima Maryam Soraya Zainab }
 	}
 	surnames = { Khan Nuristani Sattari Sherkhanzai Yasin Abdul Ahmadi Aziz Karzai Nawabi Poya Shahnawaz }
 	callsigns = { }
@@ -2200,10 +2266,10 @@ IRQ = {
 			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid 
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
 			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = { Amira Fatima Layla Noor Zainab }
 	}
 	surnames = { Muammar "al-Baghdadi" "al-Basri" "al-Ghazzawi" "al-Halabi" "al-Hamawi" "al-Himsi" 
 			"al-Mawsili" "al-Nablusi" "al-Qudsi" "al-Shami"  
@@ -2211,7 +2277,6 @@ IRQ = {
 			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
 			"ibn Muhammad" "ibn Mustafa" "ibn Salim"   
 			"ibn Umar" "ibn Uthman" "ibn Yusuf" 
-	
 	}
 	callsigns = { }
 }
@@ -2263,6 +2328,98 @@ CIR = {
 	callsigns = { }
 }
 CAU = {
+	male = {
+		names = {
+			Surkhay Eldar Budai Alibek Aidemer Magomed Hassan Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi
+		}
+		surnames = {
+			Kurbanov Yusufov Musaev Isaev Majidov Omarov Shanavazov Kadyrov
+		}
+	}
+	female = {
+		names = { 
+			Elisu Gulandash Aamnat Ajmaani Ajsyat Ajza Ajzan Albiika Albiina Amiina Asma Asyat Azman Aznii Beliita Bilquis
+			Busana Dagman Dagmani Dagmara Deshi Dikman Duqyaakha Eliina Eliita Eliiza Esiila Havaa Kamiila Kamiisa Kariina
+		}
+		surnames = {
+			Omarova Ibragimova Labazanova
+		}
+	}
+	surnames = {
+		
+	}
+	callsigns = { }
+}
+BUK = {
+	male = {
+		names = {
+			Surkhay Eldar Budai Alibek Aidemer Magomed Hassan Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi
+		}
+		surnames = {
+			Kurbanov Yusufov Musaev Isaev Majidov Omarov Shanavazov Kadyrov
+		}
+	}
+	female = {
+		names = { 
+			Elisu Gulandash Aamnat Ajmaani Ajsyat Ajza Ajzan Albiika Albiina Amiina Asma Asyat Azman Aznii Beliita Bilquis
+			Busana Dagman Dagmani Dagmara Deshi Dikman Duqyaakha Eliina Eliita Eliiza Esiila Havaa Kamiila Kamiisa Kariina
+		}
+		surnames = {
+			Omarova Ibragimova Labazanova
+		}
+	}
+	surnames = {
+		
+	}
+	callsigns = { }
+}
+KHI = {
+	male = {
+		names = {
+			Surkhay Eldar Budai Alibek Aidemer Magomed Hassan Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi
+		}
+		surnames = {
+			Kurbanov Yusufov Musaev Isaev Majidov Omarov Shanavazov Kadyrov
+		}
+	}
+	female = {
+		names = { 
+			Elisu Gulandash Aamnat Ajmaani Ajsyat Ajza Ajzan Albiika Albiina Amiina Asma Asyat Azman Aznii Beliita Bilquis
+			Busana Dagman Dagmani Dagmara Deshi Dikman Duqyaakha Eliina Eliita Eliiza Esiila Havaa Kamiila Kamiisa Kariina
+		}
+		surnames = {
+			Omarova Ibragimova Labazanova
+		}
+	}
+	surnames = {
+		
+	}
+	callsigns = { }
+}
+KOK = {
+	male = {
+		names = {
+			Surkhay Eldar Budai Alibek Aidemer Magomed Hassan Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi
+		}
+		surnames = {
+			Kurbanov Yusufov Musaev Isaev Majidov Omarov Shanavazov Kadyrov
+		}
+	}
+	female = {
+		names = { 
+			Elisu Gulandash Aamnat Ajmaani Ajsyat Ajza Ajzan Albiika Albiina Amiina Asma Asyat Azman Aznii Beliita Bilquis
+			Busana Dagman Dagmani Dagmara Deshi Dikman Duqyaakha Eliina Eliita Eliiza Esiila Havaa Kamiila Kamiisa Kariina
+		}
+		surnames = {
+			Omarova Ibragimova Labazanova
+		}
+	}
+	surnames = {
+		
+	}
+	callsigns = { }
+}
+TMS = {
 	male = {
 		names = {
 			Surkhay Eldar Budai Alibek Aidemer Magomed Hassan Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi
@@ -2892,67 +3049,7 @@ SNS = {
 }
 
 #Mauritania
-TRZ = {
-	male = {
-		names = {  
-			Abdallahi Abderrahmane Abdoulaye Adama Ahmad Ahmed Ahmedou Ba Birama Boulah Cheikh Dah Dahmed Diallo Doudou Drissa Ely Hmeida Ibrahima Jidou Khalid Maaouya Mahfoud Messaoud Mohamed Moktar Moulaye Moussa Moustapha 
-			Mustafa Saleh Sghair Sid Sidi Souleyman Tene Thiam Tijani Yahya Zeidane Zeine
-		}
-	}
-	female = {
-		names = { 
-			Aicha Dimi Malouma Mintata 
-		}
-	}
-	surnames = {
-		Abba Abdallahi Abdi "Al-Shinqiti" "Abdel Aziz" Ba Bneijara "Ould Bneijara" "Ould Boubacar" "Ould Bouceif" "Ould Boulkheir" "Ould Daddah" Diagana Diallo Diombar Ebnou Fall Gaye Gueye Guidileye Guig "Ould Haidalla"
-		"Ould Hanenna" "Ould Harouna" Hedeid "Ben Hmeida" "Ould Hmeida" Hondo "Ould Kerim" "Ould Mohamed Khouna" "Ould Mohamed Laghdaf" "Ould Mohamed Lemine" "Ould Lemrabott" "Ould Louly" "Ould Maaouya" "dit Mbare" 
-		"Ould M'Bareck" Miske "El Moctar" Moctar "Ould Mogueye" "Ould Sidi Mohammed" "Ould Mohamedou" "Ould-Abdallah" Razqa "Ould Salek" Sall Sarr "Ould Sid'Ahmed" Sissako "Ould Ahmed Taleb" "Ould Sid'Ahmed Taya" "Ould Teguedi" 
-		Timbo "Ould Tolba" Toure "Ould Mohammed Vall" "Ould Ahmed El Waghef" "Ould Zeidane"
-	}
-	callsigns = { }
-}
-BRN = {
-	male = {
-		names = {  
-			Abdallahi Abderrahmane Abdoulaye Adama Ahmad Ahmed Ahmedou Ba Birama Boulah Cheikh Dah Dahmed Diallo Doudou Drissa Ely Hmeida Ibrahima Jidou Khalid Maaouya Mahfoud Messaoud Mohamed Moktar Moulaye Moussa Moustapha 
-			Mustafa Saleh Sghair Sid Sidi Souleyman Tene Thiam Tijani Yahya Zeidane Zeine
-		}
-	}
-	female = {
-		names = { 
-			Aicha Dimi Malouma Mintata 
-		}
-	}
-	surnames = {
-		Abba Abdallahi Abdi "Al-Shinqiti" "Abdel Aziz" Ba Bneijara "Ould Bneijara" "Ould Boubacar" "Ould Bouceif" "Ould Boulkheir" "Ould Daddah" Diagana Diallo Diombar Ebnou Fall Gaye Gueye Guidileye Guig "Ould Haidalla"
-		"Ould Hanenna" "Ould Harouna" Hedeid "Ben Hmeida" "Ould Hmeida" Hondo "Ould Kerim" "Ould Mohamed Khouna" "Ould Mohamed Laghdaf" "Ould Mohamed Lemine" "Ould Lemrabott" "Ould Louly" "Ould Maaouya" "dit Mbare" 
-		"Ould M'Bareck" Miske "El Moctar" Moctar "Ould Mogueye" "Ould Sidi Mohammed" "Ould Mohamedou" "Ould-Abdallah" Razqa "Ould Salek" Sall Sarr "Ould Sid'Ahmed" Sissako "Ould Ahmed Taleb" "Ould Sid'Ahmed Taya" "Ould Teguedi" 
-		Timbo "Ould Tolba" Toure "Ould Mohammed Vall" "Ould Ahmed El Waghef" "Ould Zeidane"
-	}
-	callsigns = { }
-}
 ARR = {
-	male = {
-		names = {  
-			Abdallahi Abderrahmane Abdoulaye Adama Ahmad Ahmed Ahmedou Ba Birama Boulah Cheikh Dah Dahmed Diallo Doudou Drissa Ely Hmeida Ibrahima Jidou Khalid Maaouya Mahfoud Messaoud Mohamed Moktar Moulaye Moussa Moustapha 
-			Mustafa Saleh Sghair Sid Sidi Souleyman Tene Thiam Tijani Yahya Zeidane Zeine
-		}
-	}
-	female = {
-		names = { 
-			Aicha Dimi Malouma Mintata 
-		}
-	}
-	surnames = {
-		Abba Abdallahi Abdi "Al-Shinqiti" "Abdel Aziz" Ba Bneijara "Ould Bneijara" "Ould Boubacar" "Ould Bouceif" "Ould Boulkheir" "Ould Daddah" Diagana Diallo Diombar Ebnou Fall Gaye Gueye Guidileye Guig "Ould Haidalla"
-		"Ould Hanenna" "Ould Harouna" Hedeid "Ben Hmeida" "Ould Hmeida" Hondo "Ould Kerim" "Ould Mohamed Khouna" "Ould Mohamed Laghdaf" "Ould Mohamed Lemine" "Ould Lemrabott" "Ould Louly" "Ould Maaouya" "dit Mbare" 
-		"Ould M'Bareck" Miske "El Moctar" Moctar "Ould Mogueye" "Ould Sidi Mohammed" "Ould Mohamedou" "Ould-Abdallah" Razqa "Ould Salek" Sall Sarr "Ould Sid'Ahmed" Sissako "Ould Ahmed Taleb" "Ould Sid'Ahmed Taya" "Ould Teguedi" 
-		Timbo "Ould Tolba" Toure "Ould Mohammed Vall" "Ould Ahmed El Waghef" "Ould Zeidane"
-	}
-	callsigns = { }
-}
-TGN = {
 	male = {
 		names = {  
 			Abdallahi Abderrahmane Abdoulaye Adama Ahmad Ahmed Ahmedou Ba Birama Boulah Cheikh Dah Dahmed Diallo Doudou Drissa Ely Hmeida Ibrahima Jidou Khalid Maaouya Mahfoud Messaoud Mohamed Moktar Moulaye Moussa Moustapha 
@@ -3164,6 +3261,52 @@ RIF = {
 	callsigns = { }
 }
 
+NJD = {
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { Aaliyah Aisha Amaal Anisa Ayda Basma Djamila Farah Fatin Gamila Hadia Haifa Haniyah Hosni Ihab Israa Jathibiyya Khalida Latifa Maha Mona Nadia Nashwa Nimat Rabab Rana Rayhana Ruqayyah Sahar Samia Sarah
+			Shahrizad Shayma Suraya Uzma Yasmin Zahia Zakiya Zulekha }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+}
+
+TCS = {
+	male = {
+		names = {  
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+		}
+	}
+	female = {
+		names = { Aaliyah Aisha Amaal Anisa Ayda Basma Djamila Farah Fatin Gamila Hadia Haifa Haniyah Hosni Ihab Israa Jathibiyya Khalida Latifa Maha Mona Nadia Nashwa Nimat Rabab Rana Rayhana Ruqayyah Sahar Samia Sarah
+			Shahrizad Shayma Suraya Uzma Yasmin Zahia Zakiya Zulekha }
+	}
+	surnames = { 
+		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+			"al-Najdi" "al-Hijazi"   
+	
+	}
+}
+
 ###############################################################
 # Asia
 ###############################################################
@@ -3171,17 +3314,15 @@ AST = {
 	male = {
 		names = {  
 			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = { Alice Emily Jane Margaret Sarah }
 	}
 	surnames = {
 		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
-	
-	 }
+	}
 	callsigns = { }
-
 	ace = {
 		name = Leslie
 		callsign = Les
@@ -3219,19 +3360,94 @@ AST = {
 		type = fighter
 	}
 }
+
+NSW = {
+	male = {
+		names = {  
+			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
+		}
+	}
+	female = {
+		names = { Alice Emily Jane Margaret Sarah }
+	}
+	surnames = {
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+	}
+	callsigns = { }
+}
+
+SRC = {
+	male = {
+		names = {  
+			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
+		}
+	}
+	female = {
+		names = { Alice Emily Jane Margaret Sarah }
+	}
+	surnames = {
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+	}
+	callsigns = { }
+}
+
+SAS = {
+	male = {
+		names = {  
+			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
+		}
+	}
+	female = {
+		names = { Alice Emily Jane Margaret Sarah }
+	}
+	surnames = {
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+	}
+	callsigns = { }
+}
+
+VIC = {
+	male = {
+		names = {  
+			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
+		}
+	}
+	female = {
+		names = { Alice Emily Jane Margaret Sarah }
+	}
+	surnames = {
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+	}
+	callsigns = { }
+}
+
+TSM = {
+	male = {
+		names = {  
+			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
+		}
+	}
+	female = {
+		names = { Alice Emily Jane Margaret Sarah }
+	}
+	surnames = {
+		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
+	}
+	callsigns = { }
+}
+
 NZL = {
 	male = {
 		names = {  
 			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
-		 }
+		}
 	}
 	female = {
-		names = { }
+		names = { Emma Grace Hannah Mary Sophie }
 	}
 	surnames = {
 		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
-	
-	 }
+	}
 	callsigns = { }
 }
 
@@ -3264,34 +3480,34 @@ INS = {
 
 BHU = {
 	male = {
-		names = { Tsarong Chamba Trimon Penor Gendün Jamphel Norbhu Mipham Tsepon Andruk Namgang   }
+		names = { Tsarong Chamba Trimon Penor Gendün Jamphel Norbhu Mipham Tsepon Andruk Namgang }
 	}
 	female = {
-		names = { }
+		names = { Chimi Deki Lhamo Pema Tashi }
 	}
-	surnames = { Dzasa Wangyal Shatra Lungshar Rinpoche Chöphel Shakabpa Tashi  }
+	surnames = { Dzasa Wangyal Shatra Lungshar Rinpoche Chöphel Shakabpa Tashi }
 	callsigns = { }
 }
 
 TIB = {
 	male = {
-		names = { Tsarong Chamba Trimon Penor Gendün Jamphel Norbhu Mipham Tsepon Andruk Namgang   }
+		names = { Tsarong Chamba Trimon Penor Gendün Jamphel Norbhu Mipham Tsepon Andruk Namgang }
 	}
 	female = {
-		names = { }
+		names = { Drolma Karma Palden Tsering Yangchen }
 	}
-	surnames = { Dzasa Wangyal Shatra Lungshar Rinpoche Chöphel Shakabpa Tashi  }
+	surnames = { Dzasa Wangyal Shatra Lungshar Rinpoche Chöphel Shakabpa Tashi }
 	callsigns = { }
 }
 
 NEP = {
 	male = {
-		names = { Bhimsen Amar Ranjur Bhakti Jang Renaudip Shamsher "Bir Shamsher" "Deva Shamsher" "Chandra Shamsher" "Bhim Shamsher"  }
+		names = { Bhimsen Amar Ranjur Bhakti Jang Renaudip Shamsher "Bir Shamsher" "Deva Shamsher" "Chandra Shamsher" "Bhim Shamsher" }
 	}
 	female = {
-		names = { }
+		names = { Devi Kumari Maya Parvati Sita }
 	}
-	surnames = { Thapa "Singh Thapa" Singh Rana "Bahadur Rana"  }
+	surnames = { Thapa "Singh Thapa" Singh Rana "Bahadur Rana" }
 	callsigns = { }
 }
 
@@ -3354,6 +3570,261 @@ RAJ = {
 	callsigns = { }
 }
 
+BIK = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+GWA = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+HYD = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+KAR = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+KAS = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+OUD = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+REW = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+SRS = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+MYS = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+GUJ = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+TRA = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+KLT= {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+ORS = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+RJP = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+JPR = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+SKK = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
+BTR = {
+	male = {
+		names = { 
+			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
+		  }
+	}
+	female = {
+		names = { Indira }
+	}
+	surnames = { 
+		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
+		}
+	callsigns = { }
+}
+
 PAK = {
 	male = {
 		names = { 
@@ -3361,7 +3832,7 @@ PAK = {
 		}
 	}
 	female = {
-		names = { }
+		names = { Amina Fatima Maryam Ayesha Zainab }
 	}
 	surnames = { 
 			Khan Ali Malik Nabiullah Sadiq Shafi Pirbhai Ahmed Baig Johar
@@ -3380,7 +3851,75 @@ CAN = {
 		}
 	}
 	female = {
-		names = { }
+		names = { Mary Elizabeth Margaret Anne Catherine }
+	}
+	surnames = { 
+			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
+			Hastings Blackwood MacDougall 
+	}
+	callsigns = { }
+}
+
+NVS = {
+	male = {
+		names = { 
+			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert 
+			Albert Victor Julian Francis James  
+		}
+	}
+	female = {
+		names = { Mary Elizabeth Margaret Anne Catherine }
+	}
+	surnames = { 
+			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
+			Hastings Blackwood MacDougall 
+	}
+	callsigns = { }
+}
+
+NFL = {
+	male = {
+		names = { 
+			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert 
+			Albert Victor Julian Francis James  
+		}
+	}
+	female = {
+		names = { Mary Elizabeth Margaret Anne Catherine }
+	}
+	surnames = { 
+			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
+			Hastings Blackwood MacDougall 
+	}
+	callsigns = { }
+}
+
+HBC = {
+	male = {
+		names = { 
+			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert 
+			Albert Victor Julian Francis James  
+		}
+	}
+	female = {
+		names = { Mary Elizabeth Margaret Anne Catherine }
+	}
+	surnames = { 
+			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
+			Hastings Blackwood MacDougall 
+	}
+	callsigns = { }
+}
+
+BRK = {
+	male = {
+		names = { 
+			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert 
+			Albert Victor Julian Francis James  
+		}
+	}
+	female = {
+		names = { Mary Elizabeth Margaret Anne Catherine }
 	}
 	surnames = { 
 			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
@@ -3408,4 +3947,979 @@ ALK = {
         Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
 	}
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
+}
+
+MIN = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+KNS = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+NMX = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+ORE = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+BCO = {
+	male = {
+		names = { 
+			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert 
+			Albert Victor Julian Francis James  
+		}
+	}
+	female = {
+		names = { Mary Elizabeth Margaret Anne Catherine }
+	}
+	surnames = { 
+			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
+			Hastings Blackwood MacDougall 
+	}
+	callsigns = { }
+}
+
+DAK = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+OKL = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+CIM = {
+	male = {
+		names = { 
+		
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
+			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
+		
+		  }
+	}
+	female = {
+		names = { Mary Jane }
+	}
+	surnames = { 
+		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
+		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
+		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
+		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
+		Wells Holmgren
+
+	}
+	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
+}
+
+QNL = {
+    male = {
+        names = {
+            John James William Thomas Robert George Edward Henry Charles David
+            Arthur Frederick Albert Richard Harold Walter Ernest Joseph Stanley
+            Herbert Alfred Leonard Norman Percy Sydney Cecil
+        }
+    }
+    female = {
+        names = {
+            Mary Elizabeth Sarah Jane Margaret Catherine Anne Emily Hannah
+            Isabella Alice Florence Ellen Agnes Clara Rose Martha Ethel
+            Edith Ada
+        }
+    }
+    surnames = {
+        Smith Brown Wilson Taylor Anderson Johnson White Walker Robinson Thompson
+        Herbert Palmer Wright Young King Scott Mitchell Turner Phillips Campbell
+        Clarke Cooper Edwards Hall Ward
+    }
+}
+
+USV = {
+    male = {
+        names = {
+            José Antonio Francisco Juan Manuel Pedro Carlos Miguel Rafael
+            Ramón Luis Fernando Simón Pablo Andrés Ezequiel Santiago
+            Julián Nicolás Eduardo Diego
+        }
+    }
+    female = {
+        names = {
+            María Carmen Ana Isabel Rosa Josefa Teresa Luisa Juana
+            Margarita Francisca Catalina Elena Victoria Dolores Mercedes
+            Gabriela
+        }
+    }
+    surnames = {
+        Páez Monagas Guzmán Blanco Falcón Zamora Castro Vargas González
+        López Rodríguez García Martínez Hernández Torres Flores Díaz
+        Pérez Rojas Mendoza Tovar Soublette
+    }
+}
+
+SHU = {
+    male = {
+        names = {
+            Wei Yong Ming Jing Cheng Hong Bo Hui Yang Zhi 
+            Xiang Jun Tao Feng Ping An Li Zhang Wu Chen
+            Guo Hua Shun Qiang Jian Long
+        }
+    }
+    female = {
+        names = {
+            Mei Ling Xia Hui Yan Qing Zhen Jin Yu Ying
+            Min Lan Wei Jing Xue Yun Fang Hong Juan
+        }
+    }
+    surnames = {
+        Wang Li Zhang Liu Chen Yang Huang Zhao Wu Zhou
+        Xu Sun Ma Zhu Shen Lin Luo Guo Tang Xie Han
+        Dong Feng Cao Yuan Deng Xu Fu Song
+    }
+}
+
+CBI = {
+    male = {
+        names = {
+            Giuseppe Antonio Francesco Giovanni Mario Alberto
+            Nino Enrico Carlo Pietro Paolo Giacomo Luigi
+            Roberto Stefano Marco Nicola Angelo Lorenzo
+            Vincenzo Salvatore Domenico Agostino
+        }
+    }
+    female = {
+        names = {
+            Maria Anna Giuseppina Rosa Teresa Lucia
+            Angela Carmela Caterina Sofia Elena Laura
+            Giovanna Francesca Isabella Vittoria
+        }
+    }
+    surnames = {
+        Garibaldi Bixio Medici Cosenz Sirtori Türr
+        Carini Castiglia Orsini Stocco Cairoli La Masa
+        Mordini Nicotera Crispi Abba Corrao Missori
+        Bandi Libertini Bertani La Farina
+    }
+}
+
+TAA = {
+    male = {
+        names = {
+            Wiremu Te Hōri Tāmati Eruera Pōtatau Kereopa
+            Riwha Titokowaru Kingi Rawiri Hōne Hapurona
+            Wētere Tohu Rewi Rāwiri Ihaia Wirihana
+            Patukakariki Taranaki
+        }
+    }
+    female = {
+        names = {
+            Maata Mere Heni Te Paea Rangi Hine
+            Pare Wiki Ripeka Mata Wai Aroha
+            Marama Rewa Moana
+        }
+    }
+    surnames = {
+        Te Rangitake Te Whiti Wharehanui Te Ua Haumene
+        Te Waitere Katatore Te Puni Te Teira Te Atiawa
+        Pehi Te Āti Awa Te Whitu Maniapoto Kīngi
+        Te Heuheu Te Keepa Manaia
+    }
+}
+
+TIP = {
+    male = {
+        names = {
+            Kwame Kwasi Kofi Kwadwo Yao Kojo
+            Folivi Komla Koffi Kodjo Kwabena
+            Foli Mlapa Folly Lawson Olympio
+            Mensah Atta Tetteh Addo Nii
+        }
+    }
+    female = {
+        names = {
+            Abena Akua Ama Yawa Esi
+            Efua Afua Adjoa Akosua Yaa
+            Adzo Afi Ama Akos Dela
+        }
+    }
+    surnames = {
+        Utetera Mensah Olympio Lawson Ajavon
+        Mlapa Wilson Cole Sasraku Tamakloe
+        Adangbe Bruce Brew Anthony Freeman
+        Anlo Grunitzky Aguiar Akolly
+    }
+}
+
+CSA = {
+    male = {
+        names = {
+            Robert Edward James Thomas John William Jefferson Alexander
+            Pierre Nathan Bedford Joseph Braxton Leonidas Sterling
+            Wade Richard Jubal George Patrick Henry Albert Sidney
+            Samuel Daniel Edmund Ambrose Dabney Jackson Stonewall
+        }
+    }
+    female = {
+        names = {
+            Mary Sarah Elizabeth Ann Margaret Catherine Rose Belle
+            Martha Caroline Augusta Varina Judith Ellen Julia Rebecca
+            Letitia Louisa Cornelia Florence Adelaide Susan
+        }
+    }
+    surnames = {
+        Lee Davis Jackson Stuart Beauregard Johnston Smith
+        Longstreet Forrest Early Price Cleburne Hampton Hood
+        Breckinridge Pickett Hill Polk Hardee Ewell Morgan
+        Bragg Benjamin Stephens Toombs Gordon Semmes Maury
+    }
+}
+
+ANH = {
+    male = {
+        names = {
+            Tianshun Yongchang Hongde Zhaoxiang Wenxiu Guangming
+            Zhiwei Jianguo Zhenhua Mingdao Baoji Yingtai
+            Hongyi Zhiping Shaoqi Xiuying Zhonghua Delong
+            Jinhai Weigang Xiaoping Qianfeng Zhihong
+        }
+    }
+    female = {
+        names = {
+            Xiulan Meiling Zhenzhen Huiying Xiaomei
+            Yuhong Lihua Guiying Yanmei Baozhai
+            Chunhua Mingxia Zhihua Xiuying Huifang
+        }
+    }
+    surnames = {
+        Li Wang Zhang Liu Chen Yang Huang
+        Zhou Wu Sun Zheng Xu Tang Han Zhao
+        Lin Feng Zhu He Gao Xie Song Pan
+    }
+}
+
+BFT = {
+    male = {
+        names = {
+            Tall Bull Black Kettle Little Raven Left Hand
+            White Antelope Stone Forehead Bird Chief Young Wolf
+            Yellow Bear Little Owl Medicine Man Bull Bear
+            Walking Coyote Mountain Sheep Red Cloud Lone Wolf
+            Standing Bear Running Antelope Big Horse
+        }
+    }
+    female = {
+        names = {
+            Morning Star Yellow Woman Medicine Water
+            White Buffalo Woman Singing Bird Red Feather
+            Walking Woman Sweet Medicine Standing Holy
+            Sage Woman Running Eagle Bright Eyes
+        }
+    }
+    surnames = {
+        Ouray Colorow Nevava Kaneatche Nicaagat
+            Shavano Tabeguache Yarmony Sapinero
+            Chipeta Piasano Uncompaghre Sawatch
+            Black Kettle Left Hand Little Raven
+            Bird Chief White Antelope Yellow Bear
+    }
+}
+
+NAV = {
+   male = {
+       names = {
+           Manuelito Barboncito Delgadito Ganado Mucho
+           Herrero Grande Armijo Red Shirt Black Horse
+           Mariano Martinez Cayetano Narbona Zarcillos Largos
+           Largo Caballo Negro Yellow Horse Many Horses
+           Standing Bear Running Bear Walking Thunder
+       }
+   }
+   female = {
+       names = {
+           Asdzáá Tl'ógí Changing Woman White Shell Woman
+           Juanita Morning Star Yellow Woman Salt Woman
+           Turquoise Woman White Corn Girl Dawn Woman
+           Mountain Woman Sacred Woman Eagle Woman
+       }
+   }
+   surnames = {
+       Narbona Bitsui Begay Tsosie Yazzie
+       Manuelito Herrera Delgadito Martinez Tso
+       Chee Hatathlie Benally Todacheene Largo
+       Hosteen Charley Draper Sandoval
+   }
+}
+
+FEG = {
+   male = {
+       names = {
+           Bai Linga Yongzheng Honghua Mingdao Zhenyi
+           Guangxu Zhiwei Shunzhi Tianming Baofeng
+           Yingxiong Weimin Zhonghua Xianzong Delong
+           Jinkai Weigang Qianlong Zhihong Kangxi
+       }
+   }
+   female = {
+       names = {
+           Xiuying Meiling Zhenzhen Huiying Baozhai
+           Lihua Guiying Yanmei Chunhua Mingxia
+           Fenghua Yuhong Zhaohui Xiulan Huifang
+           Meizhen Baotong Yingtai
+       }
+   }
+   surnames = {
+       Li Wang Zhang Liu Chen Yang Huang Wu
+       Zhou Sun Zheng Xu Tang Han Zhao Qian
+       Lin Feng Zhu He Gao Xie Song Pan Ma
+       Bai Gu Luo Gong Du Yan Fu
+   }
+}
+
+NKR = {
+   male = {
+       names = {
+           Choe Je-u Choe Si-hyeong Jeon Bong-jun Son Byong-hi
+           Cheol-jun Jeong-ho Gang-jin Min-seok Yong-hwan
+           Seung-won Tae-jin Dong-hyeon Byeong-ho Jae-seong
+           Gwan-ho Yeong-jin Seok-jin Hak-gyu Jong-ho
+       }
+   }
+   female = {
+       names = {
+           Sook-ja Young-hee Mi-sook Sun-hee Jin-hee
+           Hye-jin Eun-young Min-ji Joo-hee Kyung-hee
+           Mi-ae Ji-eun Ae-ra Yoon-hee Hye-won
+       }
+   }
+   surnames = {
+       Choe Kim Park Lee Jung Jeon Son Kang
+       Hwang Yoon Lim Han Shin Baek Ahn Jo
+       Yoo Ha Seo Ko Kwon Im Ryu No
+   }
+}
+
+TAW = {
+   male = {
+       names = {
+           Dacheng Xianfeng Mingde Zhao Yong Jinlong
+           Wenzong Xuantong Hongwu Yongzheng Qianlong
+           Zhiwei Shunzhi Tianming Baofeng Yingxiong
+           Weimin Guangming Zhaoming Bagua Xiantian
+       }
+   }
+   female = {
+       names = {
+           Xiuying Meiling Zhenzhen Huiying Baozhai
+           Lihua Guiying Yanmei Chunhua Mingxia
+           Fenghua Yuhong Zhaohui Xiulan Huifang
+           Meizhen Baotong Yingtai
+       }
+   }
+   surnames = {
+       Zhang Liu Chen Yang Huang Wu Zhou Sun
+       Li Wang Tang Han Zhao Qian Lin Feng
+       Zhu He Gao Xie Song Pan Ma Bai Gu
+       Luo Gong Du
+   }
+}
+
+ZHI = {
+   male = {
+       names = {
+           Ma Yonglin Ma Hualong Ma Zhan'ao Ma Guiyuan
+           Ma Qianling Du Wenxiu Ma Rulong Ma Zhengying
+           Yusuf Muhammad Ibrahim Ahmad Hassan
+           Ali Abdullah Omar Mustafa Ma Anliang
+           Ma Zhanao Ma Wenlu Ma Xinyi
+       }
+   }
+   female = {
+       names = {
+           Fatima Aisha Khadija Zainab Maryam
+           Amina Safiya Ruqayya Hafsa Halima
+           Lubna Masooma Bushra Kulsum Rabia
+       }
+   }
+   surnames = {
+       Ma Du Su Na Ha Bai Ding Chang
+       Yang Guo Zheng Ming Hu Wong Dai
+       La Qi Jin Zhang Liu Chen Huang
+   }
+}
+
+APA = {
+   male = {
+       names = {
+           Cochise Mangas Coloradas Victorio Geronimo
+           Nana Chatto Juh Chihuahua Nahilzay
+           Naiche Bonito Loco Delshay Pedro
+           Eskiminzin Zele Diablo Chiquito Ulzana
+           Massai Taza Kaytennae Pionsenay
+       }
+   }
+   female = {
+       names = {
+           Lozen Dahteste Gouyen Ishton Siki
+           Nadaste Nawasa Nagonda Nascha Nitaka
+           Nizhoni Talutah Weeko Nahimana
+       }
+   }
+   surnames = {
+       Chiricahua Mescalero Jicarilla Lipan Tonto
+       Bedonkohe Chihenne Chokonen Nednhi Mogollon
+       White Mountain San Carlos Warm Springs Aravaipa
+   }
+}
+
+ASI = {
+   male = {
+       names = {
+           Joseph Looking Glass Chief Red Heart White Bird
+           Five Wounds Old Joseph Eagle From Light Ollokot
+           Young Joseph Yellow Wolf Rainbow Thunder Cloud
+           Running Bear Black Eagle Twisted Hair Red Elk
+           Chief Timothy Red Owl Lawyer Big Thunder
+       }
+   }
+   female = {
+       names = {
+           Morning Dove Wet Flower Spring Water
+           Quiet Rain Red Moon Rising Sun Bright Sky
+           Sweet Water Mountain Bird Running Brook
+           Eagle Feather Morning Star Evening Star
+       }
+   }
+   surnames = {
+       Nez Perce Coeur dAlene Shoshone Bannock
+       Kootenai Palouse Cayuse Flathead Blackfeet
+       Kalispel Pend Oreille Spokane Yakima
+   }
+}
+
+PAI = {
+   male = {
+       names = {
+           Te Ua Haumene Te Whiti Tohu Titokowaru
+           Wiremu Kingi Tāmihana Te Keepa Hoani
+           Matutaera Pai Marire Kereopa Te Rau
+           Patara Raukatauri Hepanaia Riwha
+           Te Meihana Tāwhiao Te Whenuanui
+       }
+   }
+   female = {
+       names = {
+           Heni Maata Mere Te Paea Ripeka
+           Rangi Hine Pare Wiki Mata
+           Wai Aroha Marama Rewa Moana
+           Te Whiu Maraea Te Owai
+       }
+   }
+   surnames = {
+       Horopapera Tawhito Horomona Rangihau
+       Te Matakatea Hauwhenua Te Huirama
+       Te Manihera Haumene Te Whakatapu
+       Te Rangitake Te Hapurona Te Peehi
+       Te Karere Te Morere Te Tarata
+   }
+}
+
+TAF = {
+   male = {
+       names = {
+           Plenty Coups Iron Bull Two Moons Crazy Horse
+           Sitting Bull Dull Knife Little Wolf Pretty Eagle
+           White Man Runs Him Medicine Crow Red Cloud
+           Spotted Tail American Horse Little Thunder
+           Standing Bear Wolf Robe Black Moon
+       }
+   }
+   female = {
+       names = {
+           Pretty Shield Medicine Snake Woman Buffalo Bird Woman
+           Red Fish Woman Glancing Woman Pine Leaf
+           Bright Star Woman Running Eagle Pretty On Top
+           Medicine Woman Walking Woman
+       }
+   }
+   surnames = {
+       Crow Blackfeet Assiniboine Sioux Cheyenne
+       Arapaho Gros Ventre Kootenai Salish
+       Pend dOreille Nez Perce Shoshone Flathead
+       Northern Cheyenne
+   }
+}
+
+SHX = {
+   male = {
+       names = {
+           Zhandao Tianbao Yongxing Guangming Zhiwei
+           Liangfu Baosheng Hongde Mingdao Jinlong
+           Geming Yongzheng Zhonghua Xianzong Delong
+           Weigang Zhihong Tianxiang Gelao Shengzhi
+       }
+   }
+   female = {
+       names = {
+           Xiuying Meiling Zhenzhen Huiying Baozhai
+           Lihua Guiying Yanmei Chunhua Mingxia
+           Fenghua Yuhong Zhaohui Xiulan Huifang
+           Meizhen Baotong Yingtai
+       }
+   }
+   surnames = {
+       Chen Liu Yang Huang Wu Zhou Sun Zhang
+       Li Wang Tang Han Zhao Lin Feng Zhu
+       He Gao Xie Song Pan Ma Bai Gu Luo
+       Gong Du Yan Fu Yuan Deng
+   }
+}
+
+URC = {
+   male = {
+       names = {
+           Venancio Timoteo Aparicio Bernardo Leandro
+           Atanasio Ángel Anacleto Máximo Rufino
+           Francisco José Antonio Manuel Enrique
+           Eduardo Carlos Miguel Alejandro Ignacio
+       }
+   }
+   female = {
+       names = {
+           María Carmen Ana Rosa Teresa
+           Juana Francisca Isabel Mercedes Clara
+           Dolores Margarita Josefa Lucía Elena
+           Victoria Catalina Beatriz Laura
+       }
+   }
+   surnames = {
+       Flores Saravia Berro Aguirre Suárez
+       Oribe Lavalleja Rivera Gómez Pereira
+       Herrera Vidal Santos Batlle Giró
+       Bustamante Medina Villalba Muñoz Rodríguez
+       Zás Aparicio Muniz Varela
+   }
+}
+
+GAB = {
+   male = {
+       names = {
+           Kwame Kofi Kwadwo Kojo Kweku Yao
+           Pierre Louis François Jean Denis
+           Nzinga Mbemba Makoko Antchouet
+           Mba Ndong Nkoghe Oyono Ondo
+           Ngoua Bekale Ndama Rogombe
+       }
+   }
+   female = {
+       names = {
+           Abena Akua Ama Yaa Afua Marie
+           Louise Jeanne Adeline Claire
+           Josephine Pauline Angèle Sylvie
+           Essi Akissi Affoue Aminata
+       }
+   }
+   surnames = {
+       Bongo Aubame Gondja Gondjout Mintsa
+       Nkrumah Mensah Dupont Laurent Martin
+       Oyono Mba Ndong Nkoghe Bekale
+       Rogombe Ossa Moubamba Adande Mabika
+       Ngoua Meye Ndama Antchouet
+   }
+}
+
+SHO = {
+   male = {
+       names = {
+           Washakie Black Coal Sharp Nose Friday
+           Spotted Horse Bear Cloud Red Cloud Little Wolf
+           High Back Wolf Eagle Head Man Fear Morning Star
+           White Horse Black Bear Iron Mountain
+           Thunder Rolling Medicine Man Blue Horse
+       }
+   }
+   female = {
+       names = {
+           Morning Star Pretty Shield Little Moon
+           Sacred Woman Bright Eyes Running Water
+           Sweet Grass Walking Woman Mountain Bird
+           Buffalo Woman Eagle Plume Morning Dove
+       }
+   }
+   surnames = {
+       Shoshone Arapaho Sioux Cheyenne Crow
+       Eastern Shoshone Lemhi Northern Arapaho
+       Wind River Bannock Ute Snake Fort Washakie
+       White Thunder Black Coal Sharp Nose
+   }
+}
+
+TIC = {
+   male = {
+       names = {
+           Giuseppe Carlo Luigi Giovanni Antonio
+           Francesco Marco Enrico Paolo Pietro
+           Camillo Alfonso Alberto Cesare Vittorio
+           Gioacchino Giacomo Stefano Massimo Vincenzo
+       }
+   }
+   female = {
+       names = {
+           Maria Anna Giovanna Teresa Caterina
+           Lucia Angela Rosa Isabella Laura
+           Francesca Vittoria Elena Sofia Margherita
+           Beatrice Chiara Valentina
+       }
+   }
+   surnames = {
+       Minghetti Pepoli Cipriani Montanari Albicini 
+       Malvezzi Tanari Zanolini Ferrari Casarini
+       Berti Audinot Simonetti Martinelli Rossi
+       Zambeccari Sassoli Bentivoglio Hercolani
+   }
+}
+LOU = {
+    male = {
+        names = {
+            Philip John William Charles Henry Joseph
+            Benjamin Martin Alexander Louis Samuel
+            Robert James Thomas Andrew Ulysses
+            George Philip Daniel Edward Frank
+        }
+    }
+    female = {
+        names = {
+            Mary Elizabeth Sarah Margaret Ann
+            Catherine Louise Marie Claire Josephine
+            Alice Charlotte Rose Emily Frances
+            Julia Augusta Helen Rachel
+        }
+    }
+    surnames = {
+        Sheridan Banks Butler Longstreet Hancock
+        Beauregard Taylor Nicholls Warmoth Pinchback
+        Mower Reynolds Casey Antoine Wiltz
+        McEnery Wells Crawford Howard Burke
+    }
+}
+MIS = {
+    male = {
+        names = {
+            John William James Thomas George
+            Robert Henry Charles Samuel Joseph
+            Benjamin Edward David Michael Andrew
+            Daniel Francis Alexander Richard
+        }
+    }
+    female = {
+        names = {
+            Mary Elizabeth Sarah Margaret Ann
+            Catherine Jane Emily Martha Alice
+            Susan Caroline Frances Helen Clara
+            Rosa Augusta Julia Ellen
+        }
+    }
+    surnames = {
+        Ord Ames Alcorn Pease Powers Revels
+        Lynch Bruce Longstreet Davis Humphreys
+        Sharkey Clark Reynolds Porter Brown
+        Morgan Yerger Harris Dent
+    }
+}
+USG = {
+    male = {
+        names = {
+            Ulysses William John James Charles
+            Henry George Thomas Robert Edward
+            Benjamin Samuel Joseph David Richard
+            Frederick Daniel Philip Michael
+        }
+    }
+    female = {
+        names = {
+            Mary Elizabeth Sarah Jane Margaret
+            Anna Catherine Susan Emily Martha
+            Ellen Frances Clara Alice Helen
+            Julia Augusta Caroline Louise
+        }
+    }
+    surnames = {
+        Grant Sherman Meade Sheridan Thomas
+        Howard Hancock Slocum Wright Ord
+        Canby Terry Schofield Pope Sickles
+        Miles Brooks Reynolds Warren
+    }
+}
+NCA = {
+    male = {
+        names = {
+            John William James Robert Thomas
+            George Charles Henry Edward Samuel
+            Joseph Benjamin David Alexander Richard
+            Daniel Francis Michael Andrew
+        }
+    }
+    female = {
+        names = {
+            Mary Elizabeth Sarah Margaret Ann
+            Catherine Jane Emily Martha Alice
+            Susan Caroline Frances Helen Clara
+            Rosa Augusta Julia Ellen
+        }
+    }
+    surnames = {
+        Sickles Holden Worth Caldwell Vance
+            Pool Dockery Phillips Hampton Abbott
+            Merrimon Graham Fowle Reid Jarvis
+            Bragg Scales Davis Turner
+    }
+}
+WVG = {
+    male = {
+        names = {
+            John William James Thomas George
+            Robert Henry Charles Samuel Joseph
+            Benjamin Edward David Michael Andrew
+            Daniel Francis Alexander Richard
+        }
+    }
+    female = {
+        names = {
+            Mary Elizabeth Sarah Margaret Ann
+            Catherine Jane Emily Martha Alice
+            Susan Caroline Frances Helen Clara
+            Rosa Augusta Julia Ellen
+        }
+    }
+    surnames = {
+        Canby Woods Gordon Boreman Farnsworth
+        Pierpoint Stevenson Willey Camden Davis
+        Price Walker Summers Maxwell Brown
+        Stuart Jackson Lewis Berkeley
+    }
 }
