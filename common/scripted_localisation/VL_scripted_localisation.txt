@@ -1,0 +1,115 @@
+defined_text = {
+	name = VL_picture
+	#text = { # Example
+	#	trigger = { TAG = XYZ }
+	#	localization_key = [XYZ_VL_picture]
+	#}
+	text = {
+		trigger = { TAG = TSH }
+		localization_key = [TSH_VL_picture]
+	}
+	text = { localization_key = GFX_leader_unknown }
+}
+
+defined_text = {
+	name = VL_name
+	#text = { # Example
+	#	trigger = { TAG = XYZ }
+	#	localization_key = [XYZ_VL_picture]
+	#}
+	text = {
+		trigger = { TAG = TSH }
+		localization_key = [TSH_VL_name]
+	}
+	text = { localization_key = VL_name }
+}
+
+defined_text = {
+	name = VL_state
+	#text = { # Example
+	#	trigger = { TAG = XYZ }
+	#	localization_key = [XYZ_VL_state]
+	#}
+	text = {
+		trigger = { TAG = TSH }
+		localization_key = [TSH_VL_state]
+	}
+	text = { localization_key = VL_state }
+}
+
+defined_text = {
+	name = VL_Dip_state
+	#text = { # Example
+	#	trigger = { TAG = XYZ }
+	#	localization_key = [XYZ_VL_Dip_state]
+	#}
+	text = {
+		trigger = { TAG = TSH }
+		localization_key = [TSH_VL_Dip_state]
+	}
+	text = { localization_key = VL_Dip_state }
+}
+
+defined_text = {
+	name = VL_desc
+	#text = { # Example
+	#	trigger = { TAG = XYZ }
+	#	localization_key = [XYZ_VL_desc]
+	#}
+	text = {
+		trigger = { TAG = TSH }
+		localization_key = [TSH_VL_desc]
+	}
+	text = { localization_key = VL_desc }
+}
+
+defined_text = {
+	name = GetVLStatus
+	#text = {
+	#	trigger = { FROM = { check_variable = { VL_status_var = one number higher than the last } } }
+	#	localization_key = VL_Whatever_you_want
+	#}
+	text = {
+		trigger = { FROM = { check_variable = { VL_status_var = 1 } } }
+		localization_key = VL_Emperor
+	}
+	text = { localization_key = VL_normal_status }
+}
+
+#################### SHOGUNATE ####################
+
+defined_text = {
+    name = TSH_VL_picture
+	text = {
+		trigger = { has_idea = TSH_VL_Komei }
+		localization_key = GFX_Portrait_JAP_Emperor_Komei
+    }
+	text = { localization_key = GFX_leader_unknown }
+}
+
+defined_text = {
+    name = TSH_VL_name
+	text = {
+		trigger = { has_idea = TSH_VL_Komei }
+		localization_key = JAP_komei
+    }
+	text = { localization_key = VL_name }
+}
+
+defined_text = {
+    name = TSH_VL_state
+	text = {
+		trigger = { has_idea = TSH_VL_Komei }
+		localization_key = VL_state_Komei
+    }
+	text = { localization_key = VL_state }
+}
+
+defined_text = {
+    name = TSH_VL_desc
+	text = {
+		trigger = { has_idea = TSH_VL_Komei }
+		localization_key = JAP_characters_emperor_komei_desc
+    }
+	text = { localization_key = VL_desc }
+}

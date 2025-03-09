@@ -1,0 +1,16 @@
+on_actions = {
+	on_startup = {
+		effect = {
+
+			#XYZ = { # Example
+			#	set_variable = { VL_status_var = number }
+			#	add_ideas = XYZ_VL_NAME
+			#}
+
+			TSH = {
+				set_variable = { VL_status_var = 2 }
+				add_ideas = TSH_VL_Komei
+			}
+		}
+	}
+}

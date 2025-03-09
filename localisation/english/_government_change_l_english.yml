@@ -12,3 +12,16 @@
   gov_change_to_free_city_tt: "§COur Government will become a §!§RFree City§!"
   gov_change_to_military_junta_tt: "§COur Government will become a §!§RMilitary Junta§!"
   gov_change_to_anarchy_tt: "§COur Government will enter §!§RAnarchy§!"
+
+  VL_state_tt: "[VL_state]"
+  VL_desc_tt: "[VL_desc]"
+  GetDipStatus: "§C[FROM.GetVLStatus]§! of [FROM.GetFlag]§Y[FROM.GetName]§!\n"
+  Country_Vice_Header: "[GetVLStatus]"
+
+  VL_normal_status: "Second in Command"
+  VL_Emperor: "Emperor"
+
+  VL_name_Komei: "$Komei$"
+  VL_trait_Komei: ""
+  VL_state_Komei: "§Y$Komei$§!\n$VL_trait_Komei$"
+  VL_desc_Komei: "$I Wanna Fucking Die$"
