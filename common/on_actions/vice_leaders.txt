@@ -11,6 +11,11 @@ on_actions = {
 				set_variable = { VL_status_var = 2 }
 				add_ideas = TSH_VL_Komei
 			}
+
+			ENG = {
+				set_variable = { VL_status_var = 4 }
+				add_ideas = ENG_VL_Victoria
+			}
 		}
 	}
 }

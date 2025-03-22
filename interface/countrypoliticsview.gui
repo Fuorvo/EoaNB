@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "vice_leader"
 		position = { x = 10 y = 54 }
-		show_position = { x = -200 y = 54 }
+		#show_position = { x = -200 y = 54 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -11,7 +11,6 @@ guiTypes = {
 		iconType = {
 			name = "vice_leader_picture"
 			position = { x = 8 y = 10 }
-			pdx_tooltip = VL_state_tt
 			pdx_tooltip_delayed = VL_desc_tt
 		}
 		
@@ -27,7 +26,6 @@ guiTypes = {
 			position = { x = 10 y = 215 }
 			font = "hoi_18mbs"
 			text = "[VL_name]"
-			pdx_tooltip = VL_state_tt
 			pdx_tooltip_delayed = VL_desc_tt
 			maxWidth = 155
 			maxHeight = 36
