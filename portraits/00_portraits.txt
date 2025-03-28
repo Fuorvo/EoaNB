@@ -52,6 +52,7 @@ continent = {
 				"GFX_Portrait_EUROPE_Generic_Navy_1"
 				"GFX_Portrait_EUROPE_Generic_Navy_2"
 				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
 			}
 		}
 
@@ -287,6 +288,7 @@ continent = {
 				"GFX_Portrait_EUROPE_Generic_Navy_1"
 				"GFX_Portrait_EUROPE_Generic_Navy_2"
 				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
 			}
 		}
 
@@ -516,6 +518,7 @@ continent = {
 				"GFX_Portrait_EUROPE_Generic_Navy_1"
 				"GFX_Portrait_EUROPE_Generic_Navy_2"
 				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
 			}
 		}
 
@@ -745,6 +748,7 @@ continent = {
 				"GFX_Portrait_EUROPE_Generic_Navy_1"
 				"GFX_Portrait_EUROPE_Generic_Navy_2"
 				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
 			}
 		}
 
@@ -1490,6 +1494,15 @@ continent = {
 				"GFX_Portrait_EUROPE_Generic_Army_10"
 			}
 		}
+
+		navy = {
+			male = {
+				"GFX_Portrait_EUROPE_Generic_Navy_1"
+				"GFX_Portrait_EUROPE_Generic_Navy_2"
+				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
+			}
+		}
 	}
 
 	EGY = {
@@ -1515,30 +1528,16 @@ continent = {
 	ENG = {
 		army = {
 			male = {
-				"GFX_Portrait_ENG_Generic_Army_1"
-				"GFX_Portrait_ENG_Generic_Army_2"
-				"GFX_Portrait_ENG_Generic_Army_3"
-				"GFX_Portrait_ENG_Generic_Army_4"
-				"GFX_Portrait_ENG_Generic_Army_5"
-				"GFX_Portrait_ENG_Generic_Army_6"
-				"GFX_Portrait_ENG_Generic_Army_7"
-			}
-		}
-	}
-
-	EPD = {	
-		army = {
-			male = {
-				"GFX_Portrait_FRA_Generic_Army_1"
-				"GFX_Portrait_FRA_Generic_Army_2"
-				"GFX_Portrait_FRA_Generic_Army_3"
-				"GFX_Portrait_FRA_Generic_Army_4"
-				"GFX_Portrait_FRA_Generic_Army_5"
-				"GFX_Portrait_FRA_Generic_Army_6"
-				"GFX_Portrait_FRA_Generic_Army_7"
-				"GFX_Portrait_FRA_Generic_Army_8"
-				"GFX_Portrait_FRA_Generic_Army_9"
-				"GFX_Portrait_FRA_Generic_Army_10"
+				"GFX_Portrait_EUROPE_Generic_Army_1"
+				"GFX_Portrait_EUROPE_Generic_Army_2"
+				"GFX_Portrait_EUROPE_Generic_Army_3"
+				"GFX_Portrait_EUROPE_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_5"
+				"GFX_Portrait_EUROPE_Generic_Army_6"
+				"GFX_Portrait_EUROPE_Generic_Army_7"
+				"GFX_Portrait_EUROPE_Generic_Army_8"
+				"GFX_Portrait_EUROPE_Generic_Army_9"
+				"GFX_Portrait_EUROPE_Generic_Army_10"
 			}
 		}
 
@@ -1547,6 +1546,33 @@ continent = {
 				"GFX_Portrait_EUROPE_Generic_Navy_1"
 				"GFX_Portrait_EUROPE_Generic_Navy_2"
 				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
+			}
+		}
+	}
+
+	EPD = {	
+		army = {
+			male = {
+				"GFX_Portrait_EUROPE_Generic_Army_1"
+				"GFX_Portrait_EUROPE_Generic_Army_2"
+				"GFX_Portrait_EUROPE_Generic_Army_3"
+				"GFX_Portrait_EUROPE_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_5"
+				"GFX_Portrait_EUROPE_Generic_Army_6"
+				"GFX_Portrait_EUROPE_Generic_Army_7"
+				"GFX_Portrait_EUROPE_Generic_Army_8"
+				"GFX_Portrait_EUROPE_Generic_Army_9"
+				"GFX_Portrait_EUROPE_Generic_Army_10"
+			}
+		}
+
+		navy = {
+			male = {
+				"GFX_Portrait_EUROPE_Generic_Navy_1"
+				"GFX_Portrait_EUROPE_Generic_Navy_2"
+				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
 			}
 		}
 	}
@@ -1554,16 +1580,16 @@ continent = {
 	FRA = {	
 		army = {
 			male = {
-				"GFX_Portrait_FRA_Generic_Army_1"
-				"GFX_Portrait_FRA_Generic_Army_2"
-				"GFX_Portrait_FRA_Generic_Army_3"
-				"GFX_Portrait_FRA_Generic_Army_4"
-				"GFX_Portrait_FRA_Generic_Army_5"
-				"GFX_Portrait_FRA_Generic_Army_6"
-				"GFX_Portrait_FRA_Generic_Army_7"
-				"GFX_Portrait_FRA_Generic_Army_8"
-				"GFX_Portrait_FRA_Generic_Army_9"
-				"GFX_Portrait_FRA_Generic_Army_10"
+				"GFX_Portrait_EUROPE_Generic_Army_1"
+				"GFX_Portrait_EUROPE_Generic_Army_2"
+				"GFX_Portrait_EUROPE_Generic_Army_3"
+				"GFX_Portrait_EUROPE_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_5"
+				"GFX_Portrait_EUROPE_Generic_Army_6"
+				"GFX_Portrait_EUROPE_Generic_Army_7"
+				"GFX_Portrait_EUROPE_Generic_Army_8"
+				"GFX_Portrait_EUROPE_Generic_Army_9"
+				"GFX_Portrait_EUROPE_Generic_Army_10"
 			}
 		}
 	}
@@ -1581,6 +1607,32 @@ continent = {
 				"GFX_Portrait_EUROPE_Generic_Army_8"
 				"GFX_Portrait_EUROPE_Generic_Army_9"
 				"GFX_Portrait_EUROPE_Generic_Army_10"
+			}
+		}
+	}
+
+	GRE = {
+		army = {
+			male = {
+				"GFX_Portrait_EUROPE_Generic_Army_1"
+				"GFX_Portrait_EUROPE_Generic_Army_2"
+				"GFX_Portrait_EUROPE_Generic_Army_3"
+				"GFX_Portrait_EUROPE_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_5"
+				"GFX_Portrait_EUROPE_Generic_Army_6"
+				"GFX_Portrait_EUROPE_Generic_Army_7"
+				"GFX_Portrait_EUROPE_Generic_Army_8"
+				"GFX_Portrait_EUROPE_Generic_Army_9"
+				"GFX_Portrait_EUROPE_Generic_Army_10"
+			}
+		}
+
+		navy = {
+			male = {
+				"GFX_Portrait_EUROPE_Generic_Navy_1"
+				"GFX_Portrait_EUROPE_Generic_Navy_2"
+				"GFX_Portrait_EUROPE_Generic_Navy_3"
+				"GFX_Portrait_EUROPE_Generic_Navy_4"
 			}
 		}
 	}
@@ -1622,10 +1674,16 @@ continent = {
 	ITA = {
 		army = {
 			male = {
-				"GFX_Portrait_ITA_Generic_Army_1"
-				"GFX_Portrait_ITA_Generic_Army_2"
-				"GFX_Portrait_ITA_Generic_Army_3"
-				"GFX_Portrait_ITA_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_1"
+				"GFX_Portrait_EUROPE_Generic_Army_2"
+				"GFX_Portrait_EUROPE_Generic_Army_3"
+				"GFX_Portrait_EUROPE_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_5"
+				"GFX_Portrait_EUROPE_Generic_Army_6"
+				"GFX_Portrait_EUROPE_Generic_Army_7"
+				"GFX_Portrait_EUROPE_Generic_Army_8"
+				"GFX_Portrait_EUROPE_Generic_Army_9"
+				"GFX_Portrait_EUROPE_Generic_Army_10"
 			}
 		}
 	}
@@ -1816,10 +1874,16 @@ continent = {
 	PIE = {
 		army = {
 			male = {
-				"GFX_Portrait_ITA_Generic_Army_1"
-				"GFX_Portrait_ITA_Generic_Army_2"
-				"GFX_Portrait_ITA_Generic_Army_3"
-				"GFX_Portrait_ITA_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_1"
+				"GFX_Portrait_EUROPE_Generic_Army_2"
+				"GFX_Portrait_EUROPE_Generic_Army_3"
+				"GFX_Portrait_EUROPE_Generic_Army_4"
+				"GFX_Portrait_EUROPE_Generic_Army_5"
+				"GFX_Portrait_EUROPE_Generic_Army_6"
+				"GFX_Portrait_EUROPE_Generic_Army_7"
+				"GFX_Portrait_EUROPE_Generic_Army_8"
+				"GFX_Portrait_EUROPE_Generic_Army_9"
+				"GFX_Portrait_EUROPE_Generic_Army_10"
 			}
 		}
 	}
